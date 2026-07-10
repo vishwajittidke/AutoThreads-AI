@@ -8,6 +8,17 @@
     "start": "node src/index.js",
     "test": "node --test src/**/*.test.js"
   },
-  "keywords": ["threads", "ai", "automation", "gemini", "meta", "github-actions"],
-  "license": "MIT"
+  "keywords": [
+    "threads",
+    "ai",
+    "automation",
+    "gemini",
+    "meta",
+    "github-actions"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "jimp": "^1.6.1"
+  }
 }

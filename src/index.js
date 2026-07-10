@@ -1,189 +1,98 @@
-/**
- * ╔══════════════════════════════════════════════════════════════════╗
- * ║              AutoThreads-AI v3.0 — Main Orchestrator            ║
- * ║  Zero-Cost Autonomous Content Publisher for Instagram Threads    ║
- * ╚══════════════════════════════════════════════════════════════════╝
- *
- * Execution Phases:
- *   Phase 1: Context & Bootstrap (read state, validate environment)
- *   Phase 2: Core Content Generation (Gemini API + topic rotation)
- *   Phase 3: Text Sanitization & Checking (regex + bounds)
- *   Phase 4: Asynchronous Publishing Engine (Meta Graph API)
- *   Phase 5: Self-Writing State Persistence (git commit cycle)
- */
+import { readState, hasPostedToday, recordSuccessfulPost, recordError, commitAndPush } from "./state.js";
+import { DirectorEngine } from "./director.js";
+import { overlayTypography } from "./typography.js";
+import { InstagramPublisher } from "./instagram.js";
+import fs from "fs/promises";
+import { execSync } from "child_process";
 
-import { generateContent } from "./gemini.js";
-import { publishToThreads } from "./threads.js";
-import {
-  readState,
-  writeState,
-  hasPostedToday,
-  recordSuccessfulPost,
-  recordError,
-  checkTokenHealth,
-  needsKeepAlive,
-  performKeepAlive,
-  commitAndPush,
-} from "./state.js";
-import { notifyTokenExpiring, notifyError, notifySuccess } from "./notifier.js";
-
-// ─── Environment Variable Extraction ─────────────────────────────────────────
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-const META_ACCESS_TOKEN = process.env.META_ACCESS_TOKEN;
-const THREADS_USER_ID = process.env.THREADS_USER_ID;
-const NOTIFICATION_WEBHOOK = process.env.NOTIFICATION_WEBHOOK;
-
-// ─── Main Execution ──────────────────────────────────────────────────────────
 async function main() {
-  const startTime = Date.now();
-
   console.log("╔══════════════════════════════════════════════════════════════╗");
-  console.log("║              AutoThreads-AI v3.0 — Daily Run               ║");
+  console.log("║              AutoThreads-AI: The Ace Engine                  ║");
   console.log("╚══════════════════════════════════════════════════════════════╝");
-  console.log(`   🕐 Execution started: ${new Date().toISOString()}\n`);
+  console.log(\`   🕐 Execution started: \${new Date().toISOString()}\\n\`);
 
-  // ═══ Phase 1: Context & Bootstrap ═══════════════════════════════════════
   console.log("═══ Phase 1: Context & Bootstrap ═══════════════════════════════");
+  
+  const apiKeys = process.env.GEMINI_API_KEYS;
+  const metaToken = process.env.META_ACCESS_TOKEN;
+  const igUserId = process.env.INSTAGRAM_USER_ID;
 
-  // Validate required environment variables
-  const missingVars = [];
-  if (!GEMINI_API_KEY) missingVars.push("GEMINI_API_KEY");
-  if (!META_ACCESS_TOKEN) missingVars.push("META_ACCESS_TOKEN");
-  if (!THREADS_USER_ID) missingVars.push("THREADS_USER_ID");
-
-  if (missingVars.length > 0) {
-    const errorMsg = `Missing required environment variables: ${missingVars.join(", ")}`;
-    console.error(`   ❌ ${errorMsg}`);
-    await notifyError(NOTIFICATION_WEBHOOK, errorMsg, "Bootstrap");
+  if (!apiKeys || !metaToken || !igUserId) {
+    console.error("❌ Missing environment variables. Please configure GitHub Secrets.");
     process.exit(1);
   }
 
-  console.log("   ✅ Environment variables validated.");
-
-  // Read state tracking file
   const state = readState();
-  console.log(`   📊 Total posts to date: ${state.total_posts || 0}`);
-  console.log(`   📅 Last post date: ${state.last_post_date || "Never"}`);
-
-  // Idempotency check: prevent duplicate daily posts
+  
   if (hasPostedToday(state)) {
-    console.log("\n   🛑 Idempotency lock: Post already published today. Exiting.");
-
-    // Still check token health and keep-alive even if already posted
-    await handleTokenAndKeepAlive(state);
-    logExecutionTime(startTime);
-    return;
+    console.log("   ✅ A post has already been published today (IST). Idempotency lock active.");
+    console.log("   🛑 Terminating safely to prevent duplicate posts.");
+    process.exit(0);
   }
 
-  // Token health check
-  const tokenHealth = checkTokenHealth(state);
-  if (tokenHealth.expiring) {
-    console.log("   📢 Dispatching token expiration alert...");
-    await notifyTokenExpiring(NOTIFICATION_WEBHOOK, tokenHealth.ageDays);
-  }
-
-  // ═══ Phase 2 & 3: Content Generation + Sanitization ════════════════════
-  console.log("\n═══ Phase 2 & 3: Content Generation & Sanitization ═════════════");
-
-  let contentResult;
   try {
-    contentResult = await generateContent(GEMINI_API_KEY);
+    // Phase 2 & 3: Generation
+    console.log("\\n═══ Phase 2: Generation Engine ═══════════════════════════════\\n");
+    const director = new DirectorEngine(apiKeys);
+    
+    // Generate Quote & Image Prompt
+    const data = await director.generateQuoteAndScene();
+    console.log(\`\\n💭 Quote: "\${data.quote_text}"\`);
+    console.log(\`✍️  Author: \${data.author}\\n\`);
+    
+    // Generate Raw Image
+    const base64Image = await director.generateImage(data.imagen_prompt);
+
+    // Overlay Typography
+    const finalBuffer = await overlayTypography(base64Image, data.quote_text, data.author);
+
+    // Save Image Locally
+    const imagePath = "outputs/today_post.jpg";
+    await fs.mkdir("outputs", { recursive: true });
+    await fs.writeFile(imagePath, finalBuffer);
+    console.log(\`   ✅ Image saved to \${imagePath}\`);
+
+    // Phase 4: Stage & Push Image to GitHub for Public URL
+    console.log("\\n═══ Phase 4: Asset Staging ═══════════════════════════════════\\n");
+    console.log("   📤 Pushing image to GitHub to generate public URL...");
+    execSync('git config user.name "AutoThreads-AI Bot"');
+    execSync('git config user.email "autothreads-bot@automated.dev"');
+    execSync(\`git add \${imagePath}\`);
+    execSync(\`git commit -m "chore(assets): staging image for Instagram"\`);
+    execSync(\`git push\`);
+    
+    // Get commit hash for cache busting
+    const commitHash = execSync("git rev-parse HEAD").toString().trim();
+    const publicImageUrl = \`https://raw.githubusercontent.com/vishwajittidke/AutoThreads-AI/\${commitHash}/\${imagePath}\`;
+    console.log(\`   🔗 Public Image URL: \${publicImageUrl}\`);
+
+    // Phase 5: Instagram Publishing
+    console.log("\\n═══ Phase 5: Instagram Publishing ════════════════════════════\\n");
+    const publisher = new InstagramPublisher(igUserId, metaToken);
+    
+    // Create caption
+    const caption = \`"\${data.quote_text}"\\n\\n— \${data.author}\\n\\n#quotes #motivation #aesthetic #philosophy\`;
+    const postId = await publisher.publishImage(publicImageUrl, caption);
+
+    // Phase 6: State Persistence
+    console.log("\\n═══ Phase 6: State Persistence ═══════════════════════════════\\n");
+    recordSuccessfulPost(state, {
+      postId: postId,
+      topic: data.author,
+      content: data.quote_text
+    });
+    
+    commitAndPush(\`chore(state): post published [\${data.author.slice(0, 30)}]\`);
+    console.log("\\n   ✅ Daily run completed successfully!");
+
   } catch (error) {
-    console.error(`\n   ❌ Content generation failed: ${error.message}`);
-    recordError(state, error.message, "Content Generation");
-    writeState(state);
-    commitAndPush("chore(state): log content generation error");
-    await notifyError(NOTIFICATION_WEBHOOK, error.message, "Content Generation");
+    console.error(\`\\n❌ FATAL ERROR: \${error.message}\`);
+    recordError(state, error.message, "Engine");
+    try {
+      commitAndPush(\`fix(state): record error log\`);
+    } catch (e) {}
     process.exit(1);
   }
-
-  console.log(`\n   ✅ Content ready: "${contentResult.content.slice(0, 60)}..."`);
-  console.log(`   📋 Topic: ${contentResult.topic}`);
-  console.log(`   🔄 Generation attempts: ${contentResult.attempts}`);
-
-  // ═══ Phase 4: Asynchronous Publishing Engine ═══════════════════════════
-  console.log("\n═══ Phase 4: Asynchronous Publishing Engine ═════════════════════");
-
-  let publishResult;
-  try {
-    publishResult = await publishToThreads(
-      THREADS_USER_ID,
-      META_ACCESS_TOKEN,
-      contentResult.content
-    );
-  } catch (error) {
-    console.error(`\n   ❌ Publishing failed: ${error.message}`);
-    recordError(state, error.message, "Publishing");
-    writeState(state);
-    commitAndPush("chore(state): log publishing error");
-    await notifyError(NOTIFICATION_WEBHOOK, error.message, "Publishing");
-    process.exit(1);
-  }
-
-  // ═══ Phase 5: Self-Writing State Persistence ═══════════════════════════
-  console.log("\n═══ Phase 5: Self-Writing State Persistence ═════════════════════");
-
-  // Record successful post
-  recordSuccessfulPost(state, {
-    postId: publishResult.postId,
-    topic: contentResult.topic,
-    content: contentResult.content,
-  });
-
-  // Handle keep-alive logic
-  if (needsKeepAlive(state)) {
-    performKeepAlive(state);
-  }
-
-  // Persist state and commit
-  writeState(state);
-  commitAndPush(`chore(state): post ${state.total_posts} published [${contentResult.topic.slice(0, 40)}]`);
-
-  // Send success notification
-  await notifySuccess(NOTIFICATION_WEBHOOK, contentResult.content);
-
-  // ═══ Execution Complete ════════════════════════════════════════════════
-  logExecutionTime(startTime);
-
-  console.log("\n╔══════════════════════════════════════════════════════════════╗");
-  console.log("║               ✅ Daily run completed successfully            ║");
-  console.log("╚══════════════════════════════════════════════════════════════╝\n");
 }
 
-// ─── Helper Functions ────────────────────────────────────────────────────────
-
-/**
- * Handles token health monitoring and keep-alive independently
- * (runs even when idempotency lock prevents posting).
- */
-async function handleTokenAndKeepAlive(state) {
-  const tokenHealth = checkTokenHealth(state);
-  if (tokenHealth.expiring) {
-    await notifyTokenExpiring(NOTIFICATION_WEBHOOK, tokenHealth.ageDays);
-  }
-
-  if (needsKeepAlive(state)) {
-    performKeepAlive(state);
-    writeState(state);
-    commitAndPush("chore(state): keep-alive heartbeat");
-  }
-}
-
-/**
- * Logs total execution time.
- */
-function logExecutionTime(startTime) {
-  const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-  console.log(`\n   ⏱️  Total execution time: ${elapsed}s`);
-
-  if (elapsed > 90) {
-    console.warn(`   ⚠️  Execution exceeded 90s target (${elapsed}s). Review for optimization.`);
-  }
-}
-
-// ─── Execute ─────────────────────────────────────────────────────────────────
-main().catch((error) => {
-  console.error(`\n💥 Unhandled fatal error: ${error.message}`);
-  console.error(error.stack);
-  process.exit(1);
-});
+main();
