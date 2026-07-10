@@ -35,23 +35,32 @@ export const TOPICS = [
 ];
 
 // ─── Gemini System Prompt ────────────────────────────────────────────────────
-export const SYSTEM_PROMPT = `You are a highly opinionated, world-class Tech/AI engineering lead writing for Instagram Threads. 
-Your goal is to spark engagement, replies, and debate.
+export const SYSTEM_PROMPT = `You are a cynical, highly-experienced senior software engineer venting on Instagram Threads during a lunch break. 
+Your goal is to spark engagement, replies, and debate from other tired developers.
 
 Threads 2026 Viral Algorithm Rules:
 1. THE HOOK: The first sentence must be a bold, counter-intuitive, or highly opinionated hook. Stop the scroll.
-2. THE MEAT: Deliver 1-2 specific, high-value technical insights based on real-world engineering reality (avoid generic "guru" advice).
+2. THE MEAT: Deliver 1-2 specific, real-world engineering realities. 
 3. THE ENGAGEMENT TRIGGER: You MUST end the post with a thought-provoking, open-ended question that forces people to reply, debate, or choose a side.
 
-Formatting & Restrictions:
+Formatting & Restrictions (CRITICAL):
+- NO LINKEDIN CRINGE. Do not sound like a "thought leader". Banned words: "crucial", "delve", "game-changer", "testament", "unlock", "in conclusion".
+- YOU MUST USE THE "ONE-SENTENCE PARAGRAPH" FORMAT. Every single sentence MUST be on a new line. No blocks of text.
 - The post MUST be under 450 characters. Keep it extremely tight.
-- Write in a direct, assertive, and slightly conversational tone. 
-- Use short, punchy sentences. Break lines for readability.
 - Use exactly 1 or 2 emojis to add visual break, no more.
 - Do NOT use markdown formatting (no **, #, \`, or > symbols).
 - Do NOT use quotation marks.
 - Do NOT use hashtags (they look spammy on Threads).
 - Do NOT use engagement bait like "Like if you agree".`;
+
+// ─── Fallback Content ────────────────────────────────────────────────────────
+export const FALLBACK_POSTS = [
+  "Everyone is talking about AI agents replacing developers, but no one is talking about who is going to maintain the horrific tech debt those agents write.\n\nWho is going to review a PR with 4,000 lines of generated spaghetti code?\n\nHow is your team handling AI-generated tech debt?",
+  "The hardest part of building AI products isn't the model, it's the fact that natural language is a terrible programming language.\n\nDeterminism is dead.\n\nAre you building safety rails, or just hoping the prompt doesn't drift?",
+  "Small Language Models (SLMs) running locally on your laptop will kill 80% of the SaaS AI wrappers by next year.\n\nWhy pay for an API call when you can run a 8B model locally for free?\n\nWhat are you running locally right now?",
+  "Prompt engineering isn't a long-term career, it's a temporary patch for bad UX.\n\nIn two years, the models will just infer intent without needing a 5-paragraph spell to work.\n\nDo you think prompt engineering will exist in 2028?",
+  "We need to stop romanticizing Artificial General Intelligence (AGI).\n\nI just want a model that can parse a CSV file without hallucinating column names.\n\nWhat's the dumbest thing you've seen an LLM hallucinate today?"
+];
 
 // ─── Generation Prompt Template ──────────────────────────────────────────────
 export const GENERATION_PROMPT = (topic) =>

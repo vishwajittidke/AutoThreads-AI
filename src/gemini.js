@@ -9,26 +9,35 @@ import {
   GENERATION_PROMPT,
   REDUCTION_PROMPT,
   CONSTANTS,
+  FALLBACK_POSTS,
 } from "./config.js";
 import { sanitize, validate } from "./sanitizer.js";
 
+import { readState } from "./state.js";
+
 /**
- * Calculates today's topic index using day-of-year modulo rotation.
- * Guarantees consistent, varied daily content cycles without external state.
+ * Selects a random topic that hasn't been used recently to prevent repetition.
  *
  * @returns {{ topic: string, index: number, dayOfYear: number }}
  */
 export function getTodaysTopic() {
-  const now = new Date();
-  const startOfYear = new Date(now.getFullYear(), 0, 0);
-  const diff = now - startOfYear;
-  const dayOfYear = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const index = dayOfYear % TOPICS.length;
+  const state = readState();
+  const recentTopics = (state.history || []).slice(-10).map(h => h.topic);
+  
+  // Filter out recently used topics
+  let availableTopics = TOPICS.filter(t => !recentTopics.includes(t));
+  
+  if (availableTopics.length === 0) {
+    availableTopics = TOPICS; // Fallback if history is too large
+  }
+
+  const index = Math.floor(Math.random() * availableTopics.length);
+  const topic = availableTopics[index];
 
   return {
-    topic: TOPICS[index],
-    index,
-    dayOfYear,
+    topic: topic,
+    index: TOPICS.indexOf(topic),
+    dayOfYear: new Date().getDate(),
   };
 }
 
@@ -128,7 +137,17 @@ export async function generateContent(apiKey) {
   // Initial generation
   attempts++;
   console.log(`   🔄 Generating content (attempt ${attempts})...`);
-  let rawText = await callGemini(apiKey, GENERATION_PROMPT(topic));
+  let rawText;
+  try {
+    rawText = await callGemini(apiKey, GENERATION_PROMPT(topic));
+  } catch (err) {
+    console.error(`   ❌ Gemini failed completely: ${err.message}`);
+    console.log(`   🆘 Using emergency fallback post...`);
+    const fallbackIndex = Math.floor(Math.random() * FALLBACK_POSTS.length);
+    rawText = FALLBACK_POSTS[fallbackIndex];
+    allWarnings.push("Used emergency fallback post due to Gemini API failure.");
+  }
+
   let cleaned = sanitize(rawText);
   let validation = validate(cleaned);
 
