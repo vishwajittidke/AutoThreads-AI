@@ -43,8 +43,8 @@ export class GeminiRotator {
       const apiKey = this.getCurrentKey();
       const genAI = new GoogleGenerativeAI(apiKey);
       
-      // We use gemini-1.5-pro-latest for director-level reasoning
-      const model = genAI.getGenerativeModel({ model: "gemini-flash-latest" });
+      // Use gemini-2.5-flash to bypass the strict 20/day limit of gemini-3.5-flash
+      const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
       
       console.log(`[Gemini Rotator] 🧠 Generating content using Key Index ${this.currentKeyIndex} (Attempt ${this.attemptsOnCurrentKey}/3)`);
       const result = await model.generateContent(prompt);
