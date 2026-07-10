@@ -63,7 +63,7 @@ You MUST output ONLY a valid JSON object with exactly two keys. Do NOT wrap it i
     // We can also rotate keys for image generation!
     for (let i = 0; i < this.rotator.keys.length; i++) {
       const apiKey = this.rotator.keys[this.rotator.currentKeyIndex];
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/imagen-3.0-generate-001:predict?key=${apiKey}`;
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key=${apiKey}`;
 
       try {
         const response = await fetch(url, {
