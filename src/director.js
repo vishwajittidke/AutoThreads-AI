@@ -56,48 +56,26 @@ You MUST output ONLY a valid JSON object with exactly two keys. Do NOT wrap it i
   /**
    * Phase 3-6: Generate Image via Imagen 3 API
    */
-  async generateImage(imagePrompt) {
-    console.log("[Director] 📸 Phase 3-6: Requesting Imagen 3 render...");
-    
-    let lastError;
-    // We can also rotate keys for image generation!
-    for (let i = 0; i < this.rotator.keys.length; i++) {
-      const apiKey = this.rotator.keys[this.rotator.currentKeyIndex];
-      const url = `https://generativelanguage.googleapis.com/v1beta/models/imagen-4.0-generate-001:predict?key=${apiKey}`;
+  async generateImage(prompt) {
+    console.log("[Director] 📸 Phase 3-6: Requesting free AI render via Pollinations...");
 
-      try {
-        const response = await fetch(url, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            instances: [{ prompt: imagePrompt }],
-            parameters: {
-              sampleCount: 1,
-              aspectRatio: "1:1",
-              outputOptions: { mimeType: "image/jpeg" }
-            }
-          })
-        });
-
-        if (!response.ok) {
-          const errText = await response.text();
-          throw new Error(`HTTP ${response.status}: ${errText}`);
-        }
-
-        const data = await response.json();
-        if (data.predictions && data.predictions[0] && data.predictions[0].bytesBase64Encoded) {
-          console.log("[Director] ✅ Image successfully generated.");
-          return data.predictions[0].bytesBase64Encoded;
-        } else {
-          throw new Error("No image data returned from Imagen.");
-        }
-      } catch (err) {
-        console.error(`[Director] ⚠️ Imagen API failed on key ${this.rotator.currentKeyIndex}: ${err.message}`);
-        lastError = err;
-        this.rotator.rotateKey();
+    try {
+      const encodedPrompt = encodeURIComponent(prompt + " dark moody aesthetic, minimal, high quality");
+      const url = `https://image.pollinations.ai/prompt/${encodedPrompt}?width=1080&height=1350&nologo=true`;
+      
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`Pollinations API failed: ${response.statusText}`);
       }
-    }
 
-    throw new Error(`All keys failed for Image Generation. Last error: ${lastError.message}`);
+      const arrayBuffer = await response.arrayBuffer();
+      const base64 = Buffer.from(arrayBuffer).toString("base64");
+      
+      console.log("[Director] ✅ Image rendered successfully!");
+      return base64;
+    } catch (error) {
+      console.error(`[Director] ⚠️ Image API failed: ${error.message}`);
+      throw new Error("All image generation attempts failed.");
+    }
   }
 }
