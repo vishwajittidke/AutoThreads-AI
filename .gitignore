@@ -1,0 +1,6 @@
+node_modules/
+.env
+prd_text.txt
+prd_output.txt
+extract_pdf.ps1
+extract_text.py

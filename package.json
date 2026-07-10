@@ -1,0 +1,13 @@
+{
+  "name": "autothreads-ai",
+  "version": "3.0.0",
+  "description": "Autonomous zero-cost serverless AI content publisher for Instagram Threads",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test src/**/*.test.js"
+  },
+  "keywords": ["threads", "ai", "automation", "gemini", "meta", "github-actions"],
+  "license": "MIT"
+}
