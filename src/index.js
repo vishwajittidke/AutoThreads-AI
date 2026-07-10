@@ -2,23 +2,24 @@ import { readState, hasPostedToday, recordSuccessfulPost, recordError, commitAnd
 import { DirectorEngine } from "./director.js";
 import { overlayTypography } from "./typography.js";
 import { InstagramPublisher } from "./instagram.js";
+import { generateContent } from "./gemini.js";
+import { publishToThreads } from "./threads.js";
 import fs from "fs/promises";
 import { execSync } from "child_process";
 
 async function main() {
   console.log("╔══════════════════════════════════════════════════════════════╗");
-  console.log("║              AutoThreads-AI: The Ace Engine                  ║");
+  console.log("║              AutoThreads-AI: Dual Engine (IG + Threads)      ║");
   console.log("╚══════════════════════════════════════════════════════════════╝");
   console.log(\`   🕐 Execution started: \${new Date().toISOString()}\\n\`);
 
-  console.log("═══ Phase 1: Context & Bootstrap ═══════════════════════════════");
-  
   const apiKeys = process.env.GEMINI_API_KEYS;
   const metaToken = process.env.META_ACCESS_TOKEN;
   const igUserId = process.env.INSTAGRAM_USER_ID;
+  const threadsUserId = process.env.THREADS_USER_ID;
 
-  if (!apiKeys || !metaToken || !igUserId) {
-    console.error("❌ Missing environment variables. Please configure GitHub Secrets.");
+  if (!apiKeys || !metaToken || !igUserId || !threadsUserId) {
+    console.error("❌ Missing environment variables. Please configure GitHub Secrets (GEMINI_API_KEYS, META_ACCESS_TOKEN, INSTAGRAM_USER_ID, THREADS_USER_ID).");
     process.exit(1);
   }
 
@@ -30,66 +31,86 @@ async function main() {
     process.exit(0);
   }
 
+  let finalIgTopic = "Unknown";
+  let finalThreadsTopic = "Unknown";
+  let hasError = false;
+
+  // ==========================================
+  // PIPELINE 1: INSTAGRAM (IMAGE + TYPOGRAPHY)
+  // ==========================================
   try {
-    // Phase 2 & 3: Generation
-    console.log("\\n═══ Phase 2: Generation Engine ═══════════════════════════════\\n");
+    console.log("\\n═══ [PIPELINE 1] Instagram Generation & Publishing ══════════\\n");
     const director = new DirectorEngine(apiKeys);
     
-    // Generate Quote & Image Prompt
     const data = await director.generateQuoteAndScene();
-    console.log(\`\\n💭 Quote: "\${data.quote_text}"\`);
+    console.log(\`\\n💭 IG Quote: "\${data.quote_text}"\`);
     console.log(\`✍️  Author: \${data.author}\\n\`);
+    finalIgTopic = data.author;
     
-    // Generate Raw Image
     const base64Image = await director.generateImage(data.imagen_prompt);
-
-    // Overlay Typography
     const finalBuffer = await overlayTypography(base64Image, data.quote_text, data.author);
 
-    // Save Image Locally
     const imagePath = "outputs/today_post.jpg";
     await fs.mkdir("outputs", { recursive: true });
     await fs.writeFile(imagePath, finalBuffer);
-    console.log(\`   ✅ Image saved to \${imagePath}\`);
-
-    // Phase 4: Stage & Push Image to GitHub for Public URL
-    console.log("\\n═══ Phase 4: Asset Staging ═══════════════════════════════════\\n");
-    console.log("   📤 Pushing image to GitHub to generate public URL...");
+    
+    console.log("   📤 Staging image to GitHub...");
     execSync('git config user.name "AutoThreads-AI Bot"');
     execSync('git config user.email "autothreads-bot@automated.dev"');
     execSync(\`git add \${imagePath}\`);
     execSync(\`git commit -m "chore(assets): staging image for Instagram"\`);
     execSync(\`git push\`);
     
-    // Get commit hash for cache busting
     const commitHash = execSync("git rev-parse HEAD").toString().trim();
     const publicImageUrl = \`https://raw.githubusercontent.com/vishwajittidke/AutoThreads-AI/\${commitHash}/\${imagePath}\`;
-    console.log(\`   🔗 Public Image URL: \${publicImageUrl}\`);
 
-    // Phase 5: Instagram Publishing
-    console.log("\\n═══ Phase 5: Instagram Publishing ════════════════════════════\\n");
     const publisher = new InstagramPublisher(igUserId, metaToken);
-    
-    // Create caption
     const caption = \`"\${data.quote_text}"\\n\\n— \${data.author}\\n\\n#quotes #motivation #aesthetic #philosophy\`;
-    const postId = await publisher.publishImage(publicImageUrl, caption);
+    await publisher.publishImage(publicImageUrl, caption);
+    
+  } catch (error) {
+    console.error(\`\\n❌ IG PIPELINE ERROR: \${error.message}\`);
+    recordError(state, "IG: " + error.message, "Instagram");
+    hasError = true;
+  }
 
-    // Phase 6: State Persistence
-    console.log("\\n═══ Phase 6: State Persistence ═══════════════════════════════\\n");
+  // ==========================================
+  // PIPELINE 2: THREADS (TEXT ONLY)
+  // ==========================================
+  try {
+    console.log("\\n═══ [PIPELINE 2] Threads Generation & Publishing ════════════\\n");
+    // We use the first key in the comma-separated list for the old Gemini system
+    const singleApiKey = apiKeys.split(",")[0].trim();
+    
+    const { content, topic } = await generateContent(singleApiKey);
+    finalThreadsTopic = topic;
+    
+    await publishToThreads(threadsUserId, metaToken, content);
+  } catch (error) {
+    console.error(\`\\n❌ THREADS PIPELINE ERROR: \${error.message}\`);
+    recordError(state, "Threads: " + error.message, "Threads");
+    hasError = true;
+  }
+
+  // ==========================================
+  // FINAL STATE COMMIT
+  // ==========================================
+  if (!hasError) {
     recordSuccessfulPost(state, {
-      postId: postId,
-      topic: data.author,
-      content: data.quote_text
+      postId: "dual-publish-success",
+      topic: \`IG: \${finalIgTopic} | Threads: \${finalThreadsTopic}\`,
+      content: "Published to both platforms"
     });
     
-    commitAndPush(\`chore(state): post published [\${data.author.slice(0, 30)}]\`);
-    console.log("\\n   ✅ Daily run completed successfully!");
-
-  } catch (error) {
-    console.error(\`\\n❌ FATAL ERROR: \${error.message}\`);
-    recordError(state, error.message, "Engine");
     try {
-      commitAndPush(\`fix(state): record error log\`);
+      commitAndPush(\`chore(state): daily posts published successfully\`);
+      console.log("\\n   ✅ Daily run completed successfully for BOTH platforms!");
+    } catch (e) {
+      console.log("\\n   ⚠️ Error committing state to GitHub:", e.message);
+    }
+  } else {
+    try {
+      commitAndPush(\`fix(state): record pipeline errors\`);
     } catch (e) {}
     process.exit(1);
   }
