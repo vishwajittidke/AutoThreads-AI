@@ -44,7 +44,7 @@ export class GeminiRotator {
       const genAI = new GoogleGenerativeAI(apiKey);
       
       // We use gemini-1.5-pro-latest for director-level reasoning
-      const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+      const model = genAI.getGenerativeModel({ model: "gemini-pro-latest" });
       
       console.log(`[Gemini Rotator] 🧠 Generating content using Key Index ${this.currentKeyIndex} (Attempt ${this.attemptsOnCurrentKey}/3)`);
       const result = await model.generateContent(prompt);
