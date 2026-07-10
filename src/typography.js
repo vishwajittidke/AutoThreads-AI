@@ -1,4 +1,5 @@
 import { Jimp, loadFont } from "jimp";
+import { SANS_64_WHITE, SANS_32_WHITE } from "jimp/fonts";
 
 /**
  * AutoThreads-AI: Phase 7 - Typography Integration
@@ -14,8 +15,8 @@ export async function overlayTypography(imageBase64, quoteText, authorName) {
   // 2. Load built-in Jimp fonts (using large white font for quote, smaller for author)
   // In a production setup, we would load custom TTF/BMFont files for ultra-luxury typography
   // For now we use the largest available built-in font
-  const fontQuote = await loadFont("FONT_SANS_64_WHITE");
-  const fontAuthor = await loadFont("FONT_SANS_32_WHITE");
+  const fontQuote = await loadFont(SANS_64_WHITE);
+  const fontAuthor = await loadFont(SANS_32_WHITE);
 
   // 3. Calculate text placement
   // Instagram 1:1 format is usually 1024x1024 from Imagen 3.
