@@ -29,7 +29,8 @@ jobs:
       - name: Execute Dual Engine (IG + Threads)
         env:
           GEMINI_API_KEYS: ${{ secrets.GEMINI_API_KEYS }}
-          META_ACCESS_TOKEN: ${{ secrets.META_ACCESS_TOKEN }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
           THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
         run: node src/index.js

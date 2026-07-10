@@ -14,12 +14,13 @@ async function main() {
   console.log(`   🕐 Execution started: ${new Date().toISOString()}\n`);
 
   const apiKeys = process.env.GEMINI_API_KEYS;
-  const metaToken = process.env.META_ACCESS_TOKEN;
+  const igToken = process.env.INSTAGRAM_ACCESS_TOKEN;
+  const threadsToken = process.env.THREADS_ACCESS_TOKEN;
   const igUserId = process.env.INSTAGRAM_USER_ID;
   const threadsUserId = process.env.THREADS_USER_ID;
 
-  if (!apiKeys || !metaToken || !igUserId || !threadsUserId) {
-    console.error("❌ Missing environment variables. Please configure GitHub Secrets (GEMINI_API_KEYS, META_ACCESS_TOKEN, INSTAGRAM_USER_ID, THREADS_USER_ID).");
+  if (!apiKeys || !igToken || !threadsToken || !igUserId || !threadsUserId) {
+    console.error("❌ Missing environment variables. Please configure GitHub Secrets (GEMINI_API_KEYS, INSTAGRAM_ACCESS_TOKEN, THREADS_ACCESS_TOKEN, INSTAGRAM_USER_ID, THREADS_USER_ID).");
     process.exit(1);
   }
 
@@ -64,7 +65,7 @@ async function main() {
     const commitHash = execSync("git rev-parse HEAD").toString().trim();
     const publicImageUrl = `https://raw.githubusercontent.com/vishwajittidke/AutoThreads-AI/${commitHash}/${imagePath}`;
 
-    const publisher = new InstagramPublisher(igUserId, metaToken);
+    const publisher = new InstagramPublisher(igUserId, igToken);
     const caption = `"${data.quote_text}"\n\n— ${data.author}\n\n#quotes #motivation #aesthetic #philosophy`;
     await publisher.publishImage(publicImageUrl, caption);
     
@@ -85,7 +86,7 @@ async function main() {
     const { content, topic } = await generateContent(singleApiKey);
     finalThreadsTopic = topic;
     
-    await publishToThreads(threadsUserId, metaToken, content);
+    await publishToThreads(threadsUserId, threadsToken, content);
   } catch (error) {
     console.error(`\n❌ THREADS PIPELINE ERROR: ${error.message}`);
     recordError(state, "Threads: " + error.message, "Threads");
