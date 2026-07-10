@@ -101,7 +101,7 @@ export const CONSTANTS = {
   META_BASE_URL: "https://graph.threads.net/v1.0",
 
   // Gemini API endpoint
-  GEMINI_BASE_URL: "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent",
+  GEMINI_BASE_URL: "https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent",
 
   // State file path
   STATE_FILE: "state.json",
