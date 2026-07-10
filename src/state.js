@@ -217,11 +217,12 @@ export function commitAndPush(commitMessage) {
     console.log(`   ✅ State committed and pushed: "${commitMessage}"`);
   } catch (error) {
     // If there's nothing to commit, that's fine
-    if (error.message.includes("nothing to commit")) {
+    const out = error.stdout ? error.stdout.toString() : "";
+    if (error.message.includes("nothing to commit") || out.includes("nothing to commit")) {
       console.log("   ℹ️  No state changes to commit.");
       return;
     }
-    console.error(`   ❌ Git commit/push failed: ${error.message}`);
+    console.error(`   ❌ Git commit/push failed: ${error.message} \n ${out}`);
     throw error;
   }
 }

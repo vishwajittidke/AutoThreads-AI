@@ -1,4 +1,4 @@
-import { readState, hasPostedToday, recordSuccessfulPost, recordError, commitAndPush } from "./state.js";
+import { readState, writeState, hasPostedToday, recordSuccessfulPost, recordError, commitAndPush } from "./state.js";
 import { DirectorEngine } from "./director.js";
 import { overlayTypography } from "./typography.js";
 import { InstagramPublisher } from "./instagram.js";
@@ -103,7 +103,9 @@ async function main() {
       content: "Published to both platforms"
     });
     
+    
     try {
+      writeState(state);
       commitAndPush(`chore(state): daily posts published successfully`);
       console.log("\\n   ✅ Daily run completed successfully for BOTH platforms!");
     } catch (e) {
@@ -111,6 +113,7 @@ async function main() {
     }
   } else {
     try {
+      writeState(state);
       commitAndPush(`fix(state): record pipeline errors`);
     } catch (e) {}
     process.exit(1);
