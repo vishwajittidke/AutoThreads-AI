@@ -3,71 +3,69 @@
  * Central configuration for topic rotation, prompts, and system constants.
  */
 
-// ─── Technology Topic Array ──────────────────────────────────────────────────
-// Used for algorithmic topic rotation via day-of-year modulo indexing.
+// ─── Viral Tech/AI Topic Array ────────────────────────────────────────────────
+// Shifted from academic topics to opinionated, conversation-starting themes.
 export const TOPICS = [
-  "Large Language Models and Transformer Architectures",
-  "AI Agents and Autonomous Systems",
-  "Retrieval-Augmented Generation (RAG)",
-  "Edge AI and On-Device Machine Learning",
-  "Computer Vision Breakthroughs",
-  "Natural Language Processing Advances",
-  "AI in Healthcare and Drug Discovery",
-  "Generative AI for Code and Software Engineering",
-  "Reinforcement Learning and Robotics",
-  "AI Ethics, Bias, and Alignment Research",
-  "Federated Learning and Privacy-Preserving AI",
-  "Neural Architecture Search and AutoML",
-  "AI-Powered Cybersecurity",
-  "Quantum Computing and Quantum Machine Learning",
-  "Multimodal AI and Vision-Language Models",
-  "AI Infrastructure and MLOps",
-  "Speech Recognition and Audio AI",
-  "Diffusion Models and Image Generation",
-  "Knowledge Graphs and Semantic AI",
-  "AI in Climate Science and Sustainability",
-  "Synthetic Data Generation",
-  "AI Chip Design and Hardware Acceleration",
-  "Autonomous Vehicles and Self-Driving AI",
-  "AI in Finance and Algorithmic Trading",
-  "Digital Twins and Simulation AI",
-  "Brain-Computer Interfaces and Neurotech",
-  "AI-Powered Search and Recommendation Systems",
-  "Prompt Engineering and LLM Optimization",
-  "Open-Source AI Models and Democratization",
-  "AI Regulation and Global Governance Frameworks",
-  "Small Language Models and Efficient AI",
-  "AI in Education and Personalized Learning",
-  "Zero-Shot and Few-Shot Learning",
-  "AI for Scientific Discovery",
-  "Embodied AI and Physical Intelligence",
-  "AI Video Generation and Understanding",
-  "Agentic Workflows and Tool-Using AI",
+  "Why most AI wrappers will fail in the next 12 months",
+  "The uncomfortable truth about Prompt Engineering as a career",
+  "Why junior developers shouldn't rely entirely on AI coding assistants",
+  "The hidden infrastructure cost of Retrieval-Augmented Generation (RAG)",
+  "Why Small Language Models (SLMs) will beat giant models in production",
+  "The biggest misconception non-technical founders have about AI",
+  "Why we need to stop romanticizing Artificial General Intelligence (AGI)",
+  "The harsh reality of scaling AI products to thousands of users",
+  "Why open-source AI is terrifying proprietary tech giants",
+  "The most overrated AI trend right now",
+  "Why vector databases aren't always the answer",
+  "The exact reason why your AI agent keeps hallucinating",
+  "Why tech debt is accelerating faster than ever with AI tools",
+  "The quiet death of the 'traditional' software engineer role",
+  "Why fine-tuning is rarely the first step you should take",
+  "The real bottleneck in AI development isn't compute, it's data quality",
+  "Why multi-agent AI systems are harder to build than you think",
+  "The security nightmare of giving AI agents write-access",
+  "Why UX is suddenly the most important part of AI development",
+  "The truth about how much OpenAI/Anthropic APIs actually cost at scale",
+  "Why 'prompt injection' is the biggest unsolved problem in AI",
+  "Why everyone is pivoting to AI agents but no one has cracked it",
+  "The one skill software engineers need in the age of generative AI",
+  "Why local AI running on your laptop is the next big shift",
+  "The unspoken challenge of testing and evaluating LLM outputs",
+  "Why natural language is actually a terrible programming language",
 ];
 
 // ─── Gemini System Prompt ────────────────────────────────────────────────────
-export const SYSTEM_PROMPT = `You are a world-class AI and technology thought leader writing for Instagram Threads.
+export const SYSTEM_PROMPT = `You are a highly opinionated, world-class Tech/AI engineering lead writing for Instagram Threads. 
+Your goal is to spark engagement, replies, and debate.
 
-Your mandate:
-- Write a single punchy, high-density technical insight or value-bomb.
-- The post MUST be under 480 characters (hard limit).
-- Write in a direct, confident voice. No fluff. No filler.
-- Use short, impactful sentences. Break lines for readability.
-- Include 1-2 relevant emojis maximum, placed naturally.
+Threads 2026 Viral Algorithm Rules:
+1. THE HOOK: The first sentence must be a bold, counter-intuitive, or highly opinionated hook. Stop the scroll.
+2. THE MEAT: Deliver 1-2 specific, high-value technical insights based on real-world engineering reality (avoid generic "guru" advice).
+3. THE ENGAGEMENT TRIGGER: You MUST end the post with a thought-provoking, open-ended question that forces people to reply, debate, or choose a side.
+
+Formatting & Restrictions:
+- The post MUST be under 450 characters. Keep it extremely tight.
+- Write in a direct, assertive, and slightly conversational tone. 
+- Use short, punchy sentences. Break lines for readability.
+- Use exactly 1 or 2 emojis to add visual break, no more.
 - Do NOT use markdown formatting (no **, #, \`, or > symbols).
-- Do NOT wrap the text in quotation marks.
-- Do NOT include hashtags.
-- Do NOT start with "Did you know" or similar clichés.
-- Focus on delivering genuine technical insight that makes engineers stop scrolling.
-- Be specific. Name real technologies, architectures, or research when possible.`;
+- Do NOT use quotation marks.
+- Do NOT use hashtags (they look spammy on Threads).
+- Do NOT use engagement bait like "Like if you agree".`;
 
 // ─── Generation Prompt Template ──────────────────────────────────────────────
 export const GENERATION_PROMPT = (topic) =>
-  `Write a single Threads post about: ${topic}. Remember: under 480 characters, no markdown, no hashtags, no quotation marks. Pure technical value.`;
+  `Write a highly engaging, controversial, or thought-provoking Threads post about: ${topic}. 
+Remember: 
+1. Strong bold hook.
+2. Real technical insight. 
+3. End with an engaging question to drive replies.
+4. Under 450 chars.
+5. No markdown, no hashtags, no quotes.`;
 
 // ─── Emergency Reduction Prompt ──────────────────────────────────────────────
 export const REDUCTION_PROMPT = (text) =>
-  `This text is too long for Threads (max 500 characters). Rewrite it as a single punchy sentence or two that captures the core insight. Keep it under 400 characters. No markdown, no hashtags, no quotes. Original text: "${text}"`;
+  `This text is too long for Threads (max 500 characters). Rewrite it to be shorter, keeping the bold hook and the ending question. Keep it under 400 characters. No markdown, no hashtags, no quotes. Original text: "${text}"`;
 
 // ─── System Constants ────────────────────────────────────────────────────────
 export const CONSTANTS = {
