@@ -1,4 +1,4 @@
-import { Jimp, loadFont } from "jimp";
+import { Jimp, loadFont, HorizontalAlign, VerticalAlign } from "jimp";
 import { SANS_64_WHITE, SANS_32_WHITE } from "jimp/fonts";
 
 /**
@@ -27,30 +27,30 @@ export async function overlayTypography(imageBase64, quoteText, authorName) {
   // We will trust the Director's image prompt to create "negative space".
 
   // Print Quote (centered or left aligned)
-  image.print(
-    fontQuote,
-    startX,
-    image.bitmap.height / 2 - 100, // Centered vertically roughly
-    {
+  image.print({
+    font: fontQuote,
+    x: startX,
+    y: image.bitmap.height / 2 - 100, // Centered vertically roughly
+    text: {
       text: `"${quoteText}"`,
-      alignmentX: Jimp.HORIZONTAL_ALIGN_CENTER,
-      alignmentY: Jimp.VERTICAL_ALIGN_MIDDLE
+      alignmentX: HorizontalAlign.CENTER,
+      alignmentY: VerticalAlign.MIDDLE
     },
-    maxWidth
-  );
+    maxWidth: maxWidth
+  });
 
   // Print Author
-  image.print(
-    fontAuthor,
-    startX,
-    image.bitmap.height - 200, 
-    {
+  image.print({
+    font: fontAuthor,
+    x: startX,
+    y: image.bitmap.height - 200, 
+    text: {
       text: `— ${authorName}`,
-      alignmentX: Jimp.HORIZONTAL_ALIGN_CENTER,
-      alignmentY: Jimp.VERTICAL_ALIGN_MIDDLE
+      alignmentX: HorizontalAlign.CENTER,
+      alignmentY: VerticalAlign.MIDDLE
     },
-    maxWidth
-  );
+    maxWidth: maxWidth
+  });
 
   console.log("[Typography] ✅ Typography perfectly integrated.");
 
