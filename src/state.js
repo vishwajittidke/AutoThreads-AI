@@ -229,8 +229,12 @@ export function commitAndPush(commitMessage) {
 // ─── Utility ─────────────────────────────────────────────────────────────────
 
 /**
- * Returns today's date as a YYYY-MM-DD string.
+ * Returns today's date as a YYYY-MM-DD string, locked to Indian Standard Time (IST).
+ * Prevents double-posting bugs if manual runs occur across the UTC/IST midnight boundary.
  */
 function getDateString() {
-  return new Date().toISOString().split("T")[0];
+  // Create a date object, add 5.5 hours to convert UTC to IST
+  const now = new Date();
+  now.setMinutes(now.getMinutes() + 330); 
+  return now.toISOString().split("T")[0];
 }
