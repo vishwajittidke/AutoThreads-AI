@@ -11,14 +11,14 @@ export class InstagramPublisher {
     }
     this.userId = userId;
     this.accessToken = accessToken;
-    this.baseUrl = \`https://graph.facebook.com/v19.0/\${this.userId}\`;
+    this.baseUrl = `https://graph.facebook.com/v19.0/${this.userId}`;
   }
 
   /**
    * Publishes an image to Instagram using a public URL.
    */
   async publishImage(imageUrl, caption) {
-    console.log(\`[Instagram] 🚀 Starting publication for URL: \${imageUrl}\`);
+    console.log(`[Instagram] 🚀 Starting publication for URL: ${imageUrl}`);
 
     // 1. Create Media Container
     const containerId = await this.createMediaContainer(imageUrl, caption);
@@ -29,43 +29,43 @@ export class InstagramPublisher {
     // 3. Publish Container
     const postId = await this.publishContainer(containerId);
     
-    console.log(\`[Instagram] 🎉 Post published successfully! Post ID: \${postId}\`);
+    console.log(`[Instagram] 🎉 Post published successfully! Post ID: ${postId}`);
     return postId;
   }
 
   async createMediaContainer(imageUrl, caption) {
     console.log("[Instagram] ── Stage 1: Container Creation ──");
-    const url = \`\${this.baseUrl}/media\`;
+    const url = `${this.baseUrl}/media`;
     const params = new URLSearchParams({
       image_url: imageUrl,
       caption: caption,
       access_token: this.accessToken
     });
 
-    const response = await fetch(\`\${url}?\${params.toString()}\`, { method: "POST" });
+    const response = await fetch(`${url}?${params.toString()}`, { method: "POST" });
     const data = await response.json();
 
     if (data.error) {
-      throw new Error(\`Meta API Error (Container): \${data.error.message}\`);
+      throw new Error(`Meta API Error (Container): ${data.error.message}`);
     }
 
-    console.log(\`[Instagram] 📦 Container created: \${data.id}\`);
+    console.log(`[Instagram] 📦 Container created: ${data.id}`);
     return data.id;
   }
 
   async pollContainerStatus(containerId) {
     console.log("[Instagram] ── Stage 2: Processing Verification ──");
-    const url = \`https://graph.facebook.com/v19.0/\${containerId}?fields=status_code&access_token=\${this.accessToken}\`;
+    const url = `https://graph.facebook.com/v19.0/${containerId}?fields=status_code&access_token=${this.accessToken}`;
     
     const maxAttempts = 10;
     for (let i = 1; i <= maxAttempts; i++) {
-      console.log(\`[Instagram] ⏳ Polling status (Attempt \${i}/\${maxAttempts})...\`);
+      console.log(`[Instagram] ⏳ Polling status (Attempt ${i}/${maxAttempts})...`);
       
       const response = await fetch(url);
       const data = await response.json();
 
       if (data.error) {
-        throw new Error(\`Meta API Error (Status Check): \${data.error.message}\`);
+        throw new Error(`Meta API Error (Status Check): ${data.error.message}`);
       }
 
       if (data.status_code === "FINISHED") {
@@ -86,17 +86,17 @@ export class InstagramPublisher {
 
   async publishContainer(containerId) {
     console.log("[Instagram] ── Stage 3: Live Publication ──");
-    const url = \`\${this.baseUrl}/media_publish\`;
+    const url = `${this.baseUrl}/media_publish`;
     const params = new URLSearchParams({
       creation_id: containerId,
       access_token: this.accessToken
     });
 
-    const response = await fetch(\`\${url}?\${params.toString()}\`, { method: "POST" });
+    const response = await fetch(`${url}?${params.toString()}`, { method: "POST" });
     const data = await response.json();
 
     if (data.error) {
-      throw new Error(\`Meta API Error (Publishing): \${data.error.message}\`);
+      throw new Error(`Meta API Error (Publishing): ${data.error.message}`);
     }
 
     return data.id;

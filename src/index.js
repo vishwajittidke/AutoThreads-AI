@@ -11,7 +11,7 @@ async function main() {
   console.log("╔══════════════════════════════════════════════════════════════╗");
   console.log("║              AutoThreads-AI: Dual Engine (IG + Threads)      ║");
   console.log("╚══════════════════════════════════════════════════════════════╝");
-  console.log(\`   🕐 Execution started: \${new Date().toISOString()}\\n\`);
+  console.log(`   🕐 Execution started: ${new Date().toISOString()}\n`);
 
   const apiKeys = process.env.GEMINI_API_KEYS;
   const metaToken = process.env.META_ACCESS_TOKEN;
@@ -43,8 +43,8 @@ async function main() {
     const director = new DirectorEngine(apiKeys);
     
     const data = await director.generateQuoteAndScene();
-    console.log(\`\\n💭 IG Quote: "\${data.quote_text}"\`);
-    console.log(\`✍️  Author: \${data.author}\\n\`);
+    console.log(`\n💭 IG Quote: "${data.quote_text}"`);
+    console.log(`✍️  Author: ${data.author}\n`);
     finalIgTopic = data.author;
     
     const base64Image = await director.generateImage(data.imagen_prompt);
@@ -57,19 +57,19 @@ async function main() {
     console.log("   📤 Staging image to GitHub...");
     execSync('git config user.name "AutoThreads-AI Bot"');
     execSync('git config user.email "autothreads-bot@automated.dev"');
-    execSync(\`git add \${imagePath}\`);
-    execSync(\`git commit -m "chore(assets): staging image for Instagram"\`);
-    execSync(\`git push\`);
+    execSync(`git add ${imagePath}`);
+    execSync(`git commit -m "chore(assets): staging image for Instagram"`);
+    execSync(`git push`);
     
     const commitHash = execSync("git rev-parse HEAD").toString().trim();
-    const publicImageUrl = \`https://raw.githubusercontent.com/vishwajittidke/AutoThreads-AI/\${commitHash}/\${imagePath}\`;
+    const publicImageUrl = `https://raw.githubusercontent.com/vishwajittidke/AutoThreads-AI/${commitHash}/${imagePath}`;
 
     const publisher = new InstagramPublisher(igUserId, metaToken);
-    const caption = \`"\${data.quote_text}"\\n\\n— \${data.author}\\n\\n#quotes #motivation #aesthetic #philosophy\`;
+    const caption = `"${data.quote_text}"\n\n— ${data.author}\n\n#quotes #motivation #aesthetic #philosophy`;
     await publisher.publishImage(publicImageUrl, caption);
     
   } catch (error) {
-    console.error(\`\\n❌ IG PIPELINE ERROR: \${error.message}\`);
+    console.error(`\n❌ IG PIPELINE ERROR: ${error.message}`);
     recordError(state, "IG: " + error.message, "Instagram");
     hasError = true;
   }
@@ -87,7 +87,7 @@ async function main() {
     
     await publishToThreads(threadsUserId, metaToken, content);
   } catch (error) {
-    console.error(\`\\n❌ THREADS PIPELINE ERROR: \${error.message}\`);
+    console.error(`\n❌ THREADS PIPELINE ERROR: ${error.message}`);
     recordError(state, "Threads: " + error.message, "Threads");
     hasError = true;
   }
@@ -98,19 +98,19 @@ async function main() {
   if (!hasError) {
     recordSuccessfulPost(state, {
       postId: "dual-publish-success",
-      topic: \`IG: \${finalIgTopic} | Threads: \${finalThreadsTopic}\`,
+      topic: `IG: ${finalIgTopic} | Threads: ${finalThreadsTopic}`,
       content: "Published to both platforms"
     });
     
     try {
-      commitAndPush(\`chore(state): daily posts published successfully\`);
+      commitAndPush(`chore(state): daily posts published successfully`);
       console.log("\\n   ✅ Daily run completed successfully for BOTH platforms!");
     } catch (e) {
       console.log("\\n   ⚠️ Error committing state to GitHub:", e.message);
     }
   } else {
     try {
-      commitAndPush(\`fix(state): record pipeline errors\`);
+      commitAndPush(`fix(state): record pipeline errors`);
     } catch (e) {}
     process.exit(1);
   }
