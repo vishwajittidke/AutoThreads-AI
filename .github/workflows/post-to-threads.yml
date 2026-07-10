@@ -11,10 +11,10 @@ name: "AutoThreads-AI: Daily Post"
 
 on:
   # ─── Scheduled Trigger ──────────────────────────────────────────────────────
-  # Runs daily at 06:30 UTC (off-peak global traffic window)
+  # Runs daily at 16:00 UTC (9:30 PM IST) to hit the global peak engagement window
   # Note: GitHub Actions cron can have delays of 5-15 minutes in the free queue
   schedule:
-    - cron: "30 6 * * *"
+    - cron: "0 16 * * *"
 
   # ─── Manual Trigger Override ────────────────────────────────────────────────
   # Allows on-demand execution for debugging, testing, and token sync
