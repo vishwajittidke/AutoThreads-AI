@@ -83,17 +83,22 @@ async function main() {
       const bucketName = process.env.AWS_BUCKET_NAME;
       const objectKey = `ig-posts/post-${Date.now()}.jpg`;
 
-      const command = new PutObjectCommand({
+      const putCommand = new PutObjectCommand({
         Bucket: bucketName,
         Key: objectKey,
         Body: finalBuffer,
         ContentType: 'image/jpeg'
       });
-      await s3Client.send(command);
+      await s3Client.send(putCommand);
 
       console.log("   🔗 Generating 1-hour secure pre-signed URL...");
       // Generate a presigned URL that expires in 1 hour (3600 seconds)
-      const publicImageUrl = await getSignedUrl(s3Client, command, { expiresIn: 3600 });
+      const { GetObjectCommand } = await import("@aws-sdk/client-s3");
+      const getCommand = new GetObjectCommand({
+        Bucket: bucketName,
+        Key: objectKey
+      });
+      const publicImageUrl = await getSignedUrl(s3Client, getCommand, { expiresIn: 3600 });
 
       const publisher = new InstagramPublisher(igUserId, igToken);
       // Clean quote to lowercase for caption
