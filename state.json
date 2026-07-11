@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 13,
-  "threads_total_posts": 10,
+  "threads_total_posts": 11,
   "ig_history": [
     {
       "date": "2026-07-11",
@@ -81,6 +81,13 @@
     }
   ],
   "threads_history": [
+    {
+      "date": "2026-07-11",
+      "postId": "threads-publish-success",
+      "topic": "Why tech debt is accelerating faster than ever with AI tools",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-11T15:29:53.060Z"
+    },
     {
       "date": "2026-07-10",
       "postId": "threads-publish-success",
