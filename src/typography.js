@@ -75,12 +75,28 @@ export async function overlayTypography(imageBase64, quoteText, authorName) {
   // Center slightly above exact middle for visual balance
   wrapText(ctx, cleanQuote, width / 2, height / 2 - 40, maxTextWidth, 54);
   
-  // 5. Draw Signature (Cursive 'Ace')
-  ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
-  ctx.font = 'italic 42px "Brush Script MT", "Great Vibes", "Snell Roundhand", cursive';
-  
-  // Print "Ace" logo at the bottom, just like the grid
-  ctx.fillText("Ace", width / 2, height - 160);
+  // 5. Draw Signature Logo
+  try {
+    // Attempt to load the user's custom transparent logo.png
+    // The user should place 'logo.png' in the root directory
+    const logoImg = await loadImage("./logo.png");
+    
+    // Scale logo dynamically (assuming we want it to be ~60px tall)
+    const logoHeight = 60;
+    const scale = logoHeight / logoImg.height;
+    const logoWidth = logoImg.width * scale;
+    
+    // Draw centered at the bottom
+    ctx.drawImage(logoImg, (width / 2) - (logoWidth / 2), height - 160, logoWidth, logoHeight);
+    console.log("[Typography] ♠️ Custom Ace logo successfully blended.");
+    
+  } catch (err) {
+    // Fallback if logo.png is not found
+    console.warn("[Typography] ⚠️ 'logo.png' not found in root directory! Falling back to cursive font.");
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+    ctx.font = 'italic 42px "Brush Script MT", "Great Vibes", "Snell Roundhand", cursive';
+    ctx.fillText("Ace", width / 2, height - 160);
+  }
   
   console.log("[Typography] ✅ Typography perfectly integrated.");
 

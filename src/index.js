@@ -66,7 +66,12 @@ async function main() {
     const publicImageUrl = `https://raw.githubusercontent.com/vishwajittidke/AutoThreads-AI/${commitHash}/${imagePath}`;
 
     const publisher = new InstagramPublisher(igUserId, igToken);
-    const caption = `"${data.quote_text}"\n\n— ${data.author}\n\n#quotes #motivation #aesthetic #philosophy`;
+    // Clean quote to lowercase for caption
+    const lowerQuote = data.quote_text.toLowerCase().replace(/^["']|["']$/g, '').replace(/\*/g, '').trim();
+    
+    // Create the exact aesthetic caption requested
+    const caption = `♠️ Drop ❤ if you believe\n\n${lowerQuote}\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n#likes #like #follow #likeforlikes #love #l #instagood #instagram #likeforlike #followme #followforfollowback #likeforfollow #f #followers #photooftheday #instalike #followback #likesforlikes #photography #followforfollow #comment #picoftheday #fashion #liker #bhfyp #likesforlike #likeback #me #beautiful #bhfyp`;
+
     await publisher.publishImage(publicImageUrl, caption);
     
   } catch (error) {
