@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 15,
-  "threads_total_posts": 11,
+  "threads_total_posts": 12,
   "ig_history": [
     {
       "date": "2026-07-11",
@@ -95,6 +95,13 @@
     }
   ],
   "threads_history": [
+    {
+      "date": "2026-07-11",
+      "postId": "threads-publish-success",
+      "topic": "The most overrated AI trend right now",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-11T15:47:14.329Z"
+    },
     {
       "date": "2026-07-11",
       "postId": "threads-publish-success",
