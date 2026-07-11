@@ -201,8 +201,15 @@
       "timestamp": "2026-07-10T19:37:04.509Z"
     }
   ],
-  "ig_total_posts_life_quotes": 1,
+  "ig_total_posts_life_quotes": 2,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-07-11",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Helen Hayes",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-11T18:11:42.195Z"
+    },
     {
       "date": "2026-07-11",
       "postId": "ig-publish-success",
