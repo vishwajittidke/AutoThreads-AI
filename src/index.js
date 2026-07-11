@@ -1,4 +1,6 @@
 import { readState, writeState, hasPostedToday, recordSuccessfulPost, recordError, commitAndPush } from "./state.js";
+import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
+import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import { DirectorEngine } from "./director.js";
 import { overlayTypography } from "./typography.js";
 import { InstagramPublisher } from "./instagram.js";
@@ -70,15 +72,28 @@ async function main() {
       await fs.mkdir("outputs", { recursive: true });
       await fs.writeFile(imagePath, finalBuffer);
       
-      console.log("   📤 Staging image to GitHub...");
-      execSync('git config user.name "AutoThreads-AI Bot"');
-      execSync('git config user.email "autothreads-bot@automated.dev"');
-      execSync(`git add ${imagePath}`);
-      execSync(`git commit -m "chore(assets): staging image for Instagram"`);
-      execSync(`git push`);
-      
-      const commitHash = execSync("git rev-parse HEAD").toString().trim();
-      const publicImageUrl = `https://raw.githubusercontent.com/vishwajittidke/AutoThreads-AI/${commitHash}/${imagePath}`;
+      console.log("   📤 Uploading image securely to AWS S3...");
+      const s3Client = new S3Client({
+        region: process.env.AWS_REGION,
+        credentials: {
+          accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+          secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+        }
+      });
+      const bucketName = process.env.AWS_BUCKET_NAME;
+      const objectKey = `ig-posts/post-${Date.now()}.jpg`;
+
+      const command = new PutObjectCommand({
+        Bucket: bucketName,
+        Key: objectKey,
+        Body: finalBuffer,
+        ContentType: 'image/jpeg'
+      });
+      await s3Client.send(command);
+
+      console.log("   🔗 Generating 1-hour secure pre-signed URL...");
+      // Generate a presigned URL that expires in 1 hour (3600 seconds)
+      const publicImageUrl = await getSignedUrl(s3Client, command, { expiresIn: 3600 });
 
       const publisher = new InstagramPublisher(igUserId, igToken);
       // Clean quote to lowercase for caption
