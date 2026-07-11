@@ -31,7 +31,8 @@ Create a 4K 3840x4800 minimalist editorial Instagram quote image. Select a compl
 
 CRITICAL: DO NOT use quotes from any of these previously used authors: ${usedAuthors || 'None yet'}.
 
-Ensure the quote is philosophically substantial, properly attributed, and not overused. The background must be visually distinct and unpredictable. Avoid repeating previously used environmental themes or symbolic elements. Maintain minimalist composition with strong negative space for text overlay. Use only one primary focal element. Symbolism must be subtle and indirect. Lighting natural but varied. Composition must differ in perspective, spatial depth, and tonal range from prior outputs. Prioritize novelty over familiarity while preserving calm editorial refinement.
+Ensure the quote is philosophically substantial, properly attributed, and not overused. 
+The background must be WILDLY visually distinct and unpredictable every single time. DO NOT default to water, lakes, oceans, or stones in the water. We need extreme aesthetic diversity: wild jungles, macro leaf photography, vast desert dunes, foggy mountains, brutalist architecture, neon city rain, starry nebulas, etc. Symbolism must be subtle and indirect. Lighting natural but varied. Composition must differ drastically in perspective, spatial depth, and tonal range from prior outputs. Prioritize total visual novelty over familiarity while preserving calm editorial refinement.
 
 OUTPUT FORMAT:
 You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it in markdown blockticks.
@@ -61,9 +62,10 @@ You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it
     console.log("[Director] 📸 Phase 3-6: Requesting free AI render via Pollinations...");
 
     try {
-      // The user grid is moody and nature-focused. We append a subtle aesthetic lock.
-      const encodedPrompt = encodeURIComponent(prompt + " cinematic, deep tones, nature, minimalist, ultra high quality, 8k resolution, photorealistic");
-      const url = `https://image.pollinations.ai/prompt/${encodedPrompt}?width=1080&height=1350&nologo=true`;
+      // Force completely diverse generations by removing restrictive tags and adding a random seed
+      const encodedPrompt = encodeURIComponent(prompt + " cinematic, moody atmosphere, ultra high quality, 8k resolution, photorealistic, masterpiece");
+      const randomSeed = Math.floor(Math.random() * 1000000);
+      const url = `https://image.pollinations.ai/prompt/${encodedPrompt}?width=1080&height=1350&nologo=true&seed=${randomSeed}`;
       
       const response = await fetch(url);
       if (!response.ok) {
