@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 12,
+  "ig_total_posts": 13,
   "threads_total_posts": 10,
   "ig_history": [
+    {
+      "date": "2026-07-11",
+      "postId": "ig-publish-success",
+      "topic": "Marcus Aurelius",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-11T14:51:40.357Z"
+    },
     {
       "date": "2026-07-11",
       "postId": "ig-publish-success",
