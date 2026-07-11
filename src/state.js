@@ -76,7 +76,10 @@ export function writeState(state) {
  */
 export function hasPostedToday(state) {
   const today = getDateString();
-  return state.last_post_date === today;
+  const todayPosts = (state.history || []).filter(h => h.date === today);
+  
+  // Lock the pipeline only if we've already posted 2 times today
+  return todayPosts.length >= 2;
 }
 
 /**

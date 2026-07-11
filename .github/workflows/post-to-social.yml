@@ -2,8 +2,8 @@ name: AutoThreads-AI (Dual Engine)
 
 on:
   schedule:
-    # Runs at 16:00 UTC (9:30 PM IST) every day
-    - cron: '0 16 * * *'
+    # Runs at 2:30 UTC (8:00 AM IST) and 14:30 UTC (8:00 PM IST)
+    - cron: '30 2,14 * * *'
   workflow_dispatch:
 
 jobs:
