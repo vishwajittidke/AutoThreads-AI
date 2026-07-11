@@ -1,6 +1,6 @@
 {
-  "last_error": "[Instagram] IG: Meta API Error (Container): Error validating access token: Session has expired on Saturday, 11-Jul-26 06:00:00 PDT. The current time is Saturday, 11-Jul-26 06:02:58 PDT.",
-  "last_error_date": "2026-07-11T13:02:58.611Z",
+  "last_error": "[Instagram] IG: Meta API Error (Container): Only photo or video can be accepted as media type.",
+  "last_error_date": "2026-07-11T13:19:20.409Z",
   "token_created_at": "2026-07-11T00:56:49.000Z",
   "last_manual_commit": "2026-07-11T00:56:49.000Z",
   "keep_alive_counter": 0,
