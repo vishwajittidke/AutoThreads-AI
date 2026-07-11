@@ -13,7 +13,7 @@ export class DirectorEngine {
   /**
    * Phase 1 & 2: Quote Generation & Scene Design
    */
-  async generateQuoteAndScene() {
+  async generateQuoteAndScene(retries = 0) {
     const state = readState();
     const history = state.history || [];
     
@@ -51,6 +51,9 @@ MANDATORY AESTHETIC THEME FOR THIS POST:
 You MUST design the scene entirely around this specific visual category: "${currentCategory}".
 Do NOT deviate from this category. Ensure the imagery perfectly embodies this specific aesthetic.
 
+CRITICAL TYPOGRAPHY RULE:
+The quote MUST be extremely short and punchy. Maximum 200 characters total.
+
 Ensure the quote is philosophically substantial, properly attributed, and not overused. Symbolism must be subtle and indirect. Lighting natural but varied. Maintain calm editorial refinement and ensure strong negative space for the quote and logo.
 
 OUTPUT FORMAT:
@@ -62,26 +65,36 @@ You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it
 }
 `;
 
-    console.log("[Director] 🎬 Phase 1 & 2: Generating Quote and Scene Design...");
+    console.log(`[Director] 🎬 Phase 1 & 2: Generating Quote and Scene Design (Attempt ${retries + 1})...`);
     const rawOutput = await this.rotator.generateContent(directorPrompt);
     
     try {
       const jsonStr = rawOutput.replace(/```json/g, "").replace(/```/g, "").trim();
-      return JSON.parse(jsonStr);
+      const parsed = JSON.parse(jsonStr);
+      
+      // Milestone 3: Typography Overflow Protection
+      if (parsed.quote_text.length > 200) {
+        throw new Error(`QuoteTooLongError: Quote is ${parsed.quote_text.length} characters, exceeding the 200 character limit for safe typography rendering.`);
+      }
+      return parsed;
     } catch (err) {
-      console.error("[Director] ❌ Failed to parse Director JSON. Raw output:", rawOutput);
-      throw new Error("Invalid JSON from Director");
+      console.error(`[Director] ⚠️ Validation/Parsing failed: ${err.message}`);
+      if (retries < 3) {
+        console.log(`[Director] 🔄 Auto-retrying generation to fix formatting or length...`);
+        return this.generateQuoteAndScene(retries + 1);
+      }
+      throw new Error("Invalid JSON or Quote too long after maximum retries.");
     }
   }
 
   /**
-   * Phase 3-6: Generate Image via Imagen 3 API
+   * Phase 3-6: Generate Image via Imagen 3 API or Fallback
    */
   async generateImage(prompt) {
     console.log("[Director] 📸 Phase 3-6: Requesting free AI render via Pollinations...");
 
     try {
-      // Force completely diverse generations by removing restrictive tags and adding a random seed
+      // Primary: Pollinations AI
       const encodedPrompt = encodeURIComponent(prompt + " cinematic, moody atmosphere, ultra high quality, 8k resolution, photorealistic, masterpiece");
       const randomSeed = Math.floor(Math.random() * 1000000);
       const url = `https://image.pollinations.ai/prompt/${encodedPrompt}?width=1080&height=1350&nologo=true&seed=${randomSeed}`;
@@ -92,13 +105,40 @@ You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it
       }
 
       const arrayBuffer = await response.arrayBuffer();
-      const base64 = Buffer.from(arrayBuffer).toString("base64");
-      
-      console.log("[Director] ✅ Image rendered successfully!");
-      return base64;
+      console.log("[Director] ✅ Primary Image API (Pollinations) rendered successfully!");
+      return Buffer.from(arrayBuffer).toString("base64");
     } catch (error) {
-      console.error(`[Director] ⚠️ Image API failed: ${error.message}`);
-      throw new Error("All image generation attempts failed.");
+      console.error(`[Director] ⚠️ Primary Image API failed: ${error.message}`);
+      console.log("[Director] 🔄 Engaging Secondary Fallback API (Hugging Face)...");
+      
+      // Milestone 4: Image Generation Fallback System
+      const hfToken = process.env.HF_TOKEN;
+      if (!hfToken) {
+        throw new Error("Pollinations failed and HF_TOKEN is not configured for the fallback API.");
+      }
+      
+      try {
+        const hfUrl = "https://api-inference.huggingface.co/models/stabilityai/stable-diffusion-xl-base-1.0";
+        const hfResponse = await fetch(hfUrl, {
+          method: "POST",
+          headers: {
+            "Authorization": `Bearer ${hfToken}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ inputs: prompt }),
+        });
+        
+        if (!hfResponse.ok) {
+          throw new Error(`Hugging Face API failed: ${hfResponse.statusText}`);
+        }
+        
+        const arrayBuffer = await hfResponse.arrayBuffer();
+        console.log("[Director] ✅ Fallback Image API (Hugging Face) rendered successfully!");
+        return Buffer.from(arrayBuffer).toString("base64");
+      } catch (fallbackError) {
+        console.error(`[Director] ❌ Fallback Image API failed: ${fallbackError.message}`);
+        throw new Error("All image generation attempts (Primary & Fallback) failed.");
+      }
     }
   }
 }

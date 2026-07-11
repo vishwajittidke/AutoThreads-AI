@@ -41,100 +41,20 @@ export function getTodaysTopic() {
   };
 }
 
-/**
- * Calls the Gemini API with retry logic and exponential backoff.
- *
- * @param {string} apiKey - Gemini API key
- * @param {string} prompt - The user prompt
- * @returns {Promise<string>} The generated text response
- */
-async function callGemini(apiKey, prompt) {
-  const url = `${CONSTANTS.GEMINI_BASE_URL}?key=${apiKey}`;
-
-  const body = {
-    system_instruction: {
-      parts: [{ text: SYSTEM_PROMPT }],
-    },
-    contents: [
-      {
-        parts: [{ text: prompt }],
-      },
-    ],
-    generationConfig: {
-      temperature: 0.9,
-      maxOutputTokens: 256,
-      topP: 0.95,
-      topK: 40,
-    },
-  };
-
-  let lastError;
-
-  // Initial attempt + retry attempts with exponential backoff
-  const attempts = [0, ...CONSTANTS.RETRY_DELAYS_MS];
-
-  for (let i = 0; i < attempts.length; i++) {
-    if (attempts[i] > 0) {
-      console.log(`   ⏳ Retrying in ${attempts[i] / 1000}s... (attempt ${i + 1}/${attempts.length})`);
-      await sleep(attempts[i]);
-    }
-
-    try {
-      const response = await fetch(url, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(body),
-      });
-
-      if (!response.ok) {
-        const errorText = await response.text();
-        const statusCode = response.status;
-
-        // Fatal errors: don't retry (auth failures, bad requests)
-        if (statusCode === 400 || statusCode === 401 || statusCode === 403) {
-          throw new Error(`Gemini API fatal error (${statusCode}): ${errorText}`);
-        }
-
-        lastError = new Error(`Gemini API error (${statusCode}): ${errorText}`);
-        console.error(`   ❌ Gemini API returned ${statusCode} on attempt ${i + 1}`);
-        continue;
-      }
-
-      const data = await response.json();
-      
-      const tokens = data?.usageMetadata?.totalTokenCount || 0;
-      const { recordTokenUsage } = await import("./state.js");
-      recordTokenUsage(tokens);
-
-      const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
-      if (!text) {
-        throw new Error("Gemini returned empty content. Response: " + JSON.stringify(data).slice(0, 300));
-      }
-
-      return text;
-    } catch (error) {
-      if (error.message.includes("fatal")) {
-        throw error; // Don't retry fatal errors
-      }
-      lastError = error;
-      console.error(`   ❌ Gemini request failed on attempt ${i + 1}: ${error.message}`);
-    }
-  }
-
-  throw lastError || new Error("All Gemini API attempts exhausted.");
-}
+import { GeminiRotator } from "./gemini_rotator.js";
 
 /**
- * Generates, sanitizes, and validates content for Threads.
+ * Generates, sanitizes, and validates content for Threads using GeminiRotator.
  * If content exceeds length threshold, triggers emergency reduction.
  *
- * @param {string} apiKey - Gemini API key
+ * @param {string} apiKeysString - Comma-separated Gemini API keys
  * @returns {Promise<{ content: string, topic: string, attempts: number, warnings: string[] }>}
  */
-export async function generateContent(apiKey) {
+export async function generateContent(apiKeysString) {
   const { topic, index, dayOfYear } = getTodaysTopic();
   console.log(`\n📋 [Gemini] Topic rotation: Day ${dayOfYear} → Index ${index} → "${topic}"`);
 
+  const rotator = new GeminiRotator(apiKeysString);
   const allWarnings = [];
   let attempts = 0;
 
@@ -143,9 +63,9 @@ export async function generateContent(apiKey) {
   console.log(`   🔄 Generating content (attempt ${attempts})...`);
   let rawText;
   try {
-    rawText = await callGemini(apiKey, GENERATION_PROMPT(topic));
+    rawText = await rotator.generateContent(GENERATION_PROMPT(topic));
   } catch (err) {
-    console.error(`   ❌ Gemini failed completely: ${err.message}`);
+    console.error(`   ❌ Gemini Rotator failed completely: ${err.message}`);
     console.log(`   🆘 Using emergency fallback post...`);
     const fallbackIndex = Math.floor(Math.random() * FALLBACK_POSTS.length);
     rawText = FALLBACK_POSTS[fallbackIndex];
@@ -167,7 +87,7 @@ export async function generateContent(apiKey) {
     attempts++;
     console.log(`   🔄 Triggering emergency reduction (attempt ${attempts})...`);
 
-    rawText = await callGemini(apiKey, REDUCTION_PROMPT(cleaned));
+    rawText = await rotator.generateContent(REDUCTION_PROMPT(cleaned));
     cleaned = sanitize(rawText);
     validation = validate(cleaned);
 
@@ -198,10 +118,4 @@ export async function generateContent(apiKey) {
     attempts,
     warnings: allWarnings,
   };
-}
-
-// ─── Utility ─────────────────────────────────────────────────────────────────
-
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
 }

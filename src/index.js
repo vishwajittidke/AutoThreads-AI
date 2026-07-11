@@ -117,10 +117,8 @@ async function main() {
   if (target === "threads") {
     try {
       console.log("\\n═══ [PIPELINE] Threads Generation & Publishing ════════════\\n");
-      // We use the first key in the comma-separated list for the old Gemini system
-      const singleApiKey = apiKeys.split(",")[0].trim();
       
-      const { content, topic } = await generateContent(singleApiKey);
+      const { content, topic } = await generateContent(apiKeys);
       finalTopic = topic;
       
       await publishToThreads(threadsUserId, threadsToken, content);
@@ -153,7 +151,22 @@ async function main() {
     try {
       writeState(state);
       commitAndPush(`fix(state): record pipeline errors for ${target.toUpperCase()}`);
-    } catch (e) {}
+      
+      // Milestone 2: Silent Failure Notification System
+      const webhookUrl = process.env.DISCORD_WEBHOOK_URL;
+      if (webhookUrl) {
+        console.log("   🔔 Dispatching Discord failure notification...");
+        await fetch(webhookUrl, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            content: `🚨 **AutoThreads-AI Pipeline Error** 🚨\nTarget: **${target.toUpperCase()}**\nThe pipeline just crashed. Check the GitHub Actions logs immediately.\nError recorded in state: \`${state.last_error}\``
+          })
+        });
+      }
+    } catch (e) {
+      console.error("   ⚠️ Failed to dispatch error notifications:", e.message);
+    }
     process.exit(1);
   }
 }
