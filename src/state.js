@@ -9,11 +9,6 @@ import { CONSTANTS } from "./config.js";
 
 // ─── Default State Schema ────────────────────────────────────────────────────
 const DEFAULT_STATE = {
-  last_post_date: null,
-  last_post_id: null,
-  last_topic: null,
-  last_content_preview: null,
-  total_posts: 0,
   last_error: null,
   last_error_date: null,
   token_created_at: null,
@@ -21,7 +16,10 @@ const DEFAULT_STATE = {
   keep_alive_counter: 0,
   total_tokens: 8000,
   total_requests: 16,
-  history: [],
+  ig_total_posts: 0,
+  threads_total_posts: 0,
+  ig_history: [],
+  threads_history: [],
 };
 
 export function recordTokenUsage(tokens) {
@@ -72,14 +70,18 @@ export function writeState(state) {
  * Checks if a post has already been published today (idempotency lock).
  *
  * @param {object} state - The current state object
- * @returns {boolean} True if today's post already exists
+ * @param {string} target - The platform target ('ig' or 'threads')
+ * @returns {boolean} True if today's post limit has been reached
  */
-export function hasPostedToday(state) {
+export function hasPostedToday(state, target) {
   const today = getDateString();
-  const todayPosts = (state.history || []).filter(h => h.date === today);
+  const historyKey = target === 'ig' ? 'ig_history' : 'threads_history';
+  const limit = target === 'ig' ? 2 : 3;
   
-  // Lock the pipeline only if we've already posted 2 times today
-  return todayPosts.length >= 2;
+  const todayPosts = (state[historyKey] || []).filter(h => h.date === today);
+  
+  // Lock the pipeline only if we've reached the platform's limit
+  return todayPosts.length >= limit;
 }
 
 /**
@@ -90,30 +92,30 @@ export function hasPostedToday(state) {
  * @param {string} postData.postId - The Meta post ID
  * @param {string} postData.topic - The topic used
  * @param {string} postData.content - The published content
+ * @param {string} postData.target - The platform target ('ig' or 'threads')
  * @returns {object} Updated state object
  */
-export function recordSuccessfulPost(state, { postId, topic, content }) {
+export function recordSuccessfulPost(state, { postId, topic, content, target }) {
   const now = new Date().toISOString();
   const today = getDateString();
 
-  state.last_post_date = today;
-  state.last_post_id = postId;
-  state.last_topic = topic;
-  state.last_content_preview = content.slice(0, 100);
-  state.total_posts = (state.total_posts || 0) + 1;
+  const countKey = target === 'ig' ? 'ig_total_posts' : 'threads_total_posts';
+  const historyKey = target === 'ig' ? 'ig_history' : 'threads_history';
+
+  state[countKey] = (state[countKey] || 0) + 1;
   state.last_error = null;
   state.last_error_date = null;
 
   // Append to history (keep last 30 entries)
-  state.history = state.history || [];
-  state.history.unshift({
+  state[historyKey] = state[historyKey] || [];
+  state[historyKey].unshift({
     date: today,
     postId,
     topic,
     contentPreview: content.slice(0, 80),
     timestamp: now,
   });
-  state.history = state.history.slice(0, 30);
+  state[historyKey] = state[historyKey].slice(0, 30);
 
   return state;
 }
@@ -220,28 +222,48 @@ export function performKeepAlive(state) {
  * @param {string} commitMessage - The commit message
  */
 export function commitAndPush(commitMessage) {
-  try {
-    console.log(`\n📤 [Git] Committing state changes...`);
+  let attempts = 0;
+  const maxAttempts = 3;
 
-    // Configure git user for automated commits
-    execSync('git config user.name "AutoThreads-AI Bot"', { stdio: "pipe" });
-    execSync('git config user.email "autothreads-bot@automated.dev"', { stdio: "pipe" });
+  while (attempts < maxAttempts) {
+    attempts++;
+    try {
+      console.log(`\n📤 [Git] Committing state changes (Attempt ${attempts}/${maxAttempts})...`);
 
-    // Stage, commit, and push
-    execSync(`git add ${CONSTANTS.STATE_FILE}`, { stdio: "pipe" });
-    execSync(`git commit -m "${commitMessage}"`, { stdio: "pipe" });
-    execSync("git push", { stdio: "pipe" });
+      // Configure git user for automated commits
+      execSync('git config user.name "AutoThreads-AI Bot"', { stdio: "pipe" });
+      execSync('git config user.email "autothreads-bot@automated.dev"', { stdio: "pipe" });
 
-    console.log(`   ✅ State committed and pushed: "${commitMessage}"`);
-  } catch (error) {
-    // If there's nothing to commit, that's fine
-    const out = error.stdout ? error.stdout.toString() : "";
-    if (error.message.includes("nothing to commit") || out.includes("nothing to commit")) {
-      console.log("   ℹ️  No state changes to commit.");
+      // Stage, commit, and push
+      execSync(`git add ${CONSTANTS.STATE_FILE}`, { stdio: "pipe" });
+      execSync(`git commit -m "${commitMessage}"`, { stdio: "pipe" });
+      execSync("git push", { stdio: "pipe" });
+
+      console.log(`   ✅ State committed and pushed: "${commitMessage}"`);
       return;
+    } catch (error) {
+      const out = error.stdout ? error.stdout.toString() : "";
+      
+      // If there's nothing to commit, that's fine
+      if (error.message.includes("nothing to commit") || out.includes("nothing to commit")) {
+        console.log("   ℹ️  No state changes to commit.");
+        return;
+      }
+
+      console.error(`   ⚠️ Git push failed on attempt ${attempts}.`);
+      if (attempts < maxAttempts) {
+        console.log("   🔄 Attempting git pull --rebase to resolve potential conflicts...");
+        try {
+          execSync("git pull --rebase", { stdio: "pipe" });
+        } catch (pullError) {
+          console.error("   ❌ Failed to pull/rebase. Stopping retry loop.", pullError.message);
+          throw pullError;
+        }
+      } else {
+        console.error(`   ❌ Git commit/push failed permanently: ${error.message} \n ${out}`);
+        throw error;
+      }
     }
-    console.error(`   ❌ Git commit/push failed: ${error.message} \n ${out}`);
-    throw error;
   }
 }
 
