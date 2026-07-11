@@ -76,7 +76,7 @@ export function writeState(state) {
 export function hasPostedToday(state, target) {
   const today = getDateString();
   const historyKey = target === 'ig' ? 'ig_history' : 'threads_history';
-  const limit = target === 'ig' ? 2 : 3;
+  const limit = 9999; // Removed limitations of posts per day
   
   const todayPosts = (state[historyKey] || []).filter(h => h.date === today);
   
