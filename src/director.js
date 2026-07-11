@@ -38,7 +38,7 @@ export class DirectorEngine {
     ];
     
     // Mathematically rotate through categories so it never repeats the same theme
-    const postCount = state.total_posts || 0;
+    const postCount = state.ig_total_posts || 0;
     const currentCategory = categories[postCount % categories.length];
 
     const directorPrompt = `
