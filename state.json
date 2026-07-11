@@ -201,8 +201,15 @@
       "timestamp": "2026-07-10T19:37:04.509Z"
     }
   ],
-  "ig_total_posts_life_quotes": 2,
+  "ig_total_posts_life_quotes": 3,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-07-11",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Ram Dass",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-11T18:18:45.293Z"
+    },
     {
       "date": "2026-07-11",
       "postId": "ig-publish-success",
