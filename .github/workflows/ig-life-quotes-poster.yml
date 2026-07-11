@@ -2,7 +2,7 @@ name: AutoThreads-AI (Life Quotes Poster)
 
 on:
   schedule:
-    - cron: '0 8 * * *'
+    - cron: '30 4,14 * * *'  # Runs at 10:00 AM and 8:00 PM IST
   workflow_dispatch:
 
 permissions:
