@@ -1,8 +1,8 @@
 {
   "last_error": null,
   "last_error_date": null,
-  "token_created_at": "2026-07-11T00:56:49.000Z",
-  "last_manual_commit": "2026-07-11T00:56:49.000Z",
+  "token_created_at": "2026-07-10T00:56:49.000Z",
+  "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
@@ -10,153 +10,153 @@
   "threads_total_posts": 12,
   "ig_history": [
     {
-      "date": "2026-07-11",
+      "date": "2026-07-10",
       "postId": "ig-publish-success",
       "topic": "Antoine de Saint-Exupéry",
       "contentPreview": "Published to platform",
-      "timestamp": "2026-07-11T15:45:31.183Z"
+      "timestamp": "2026-07-10T15:45:31.183Z"
     },
     {
-      "date": "2026-07-11",
+      "date": "2026-07-10",
       "postId": "ig-publish-success",
       "topic": "Hans Margolius",
       "contentPreview": "Published to platform",
-      "timestamp": "2026-07-11T15:44:10.459Z"
+      "timestamp": "2026-07-10T15:44:10.459Z"
     },
     {
       "date": "2026-07-10",
       "postId": "ig-publish-success",
       "topic": "Marcus Aurelius",
       "contentPreview": "Published to platform",
-      "timestamp": "2026-07-11T14:51:40.357Z"
+      "timestamp": "2026-07-10T14:51:40.357Z"
     },
     {
       "date": "2026-07-10",
       "postId": "ig-publish-success",
       "topic": "Thich Nhat Hanh",
       "contentPreview": "Published to platform",
-      "timestamp": "2026-07-11T14:49:38.254Z"
+      "timestamp": "2026-07-10T14:49:38.254Z"
     },
     {
       "date": "2026-07-10",
       "postId": "ig-publish-success",
       "topic": "Rainer Maria Rilke",
       "contentPreview": "Published to platform",
-      "timestamp": "2026-07-11T13:55:16.257Z"
+      "timestamp": "2026-07-10T13:55:16.257Z"
     },
     {
       "date": "2026-07-10",
       "postId": "ig-publish-success",
       "topic": "Alan Watts",
       "contentPreview": "Published to platform",
-      "timestamp": "2026-07-11T11:42:25.917Z"
+      "timestamp": "2026-07-10T11:42:25.917Z"
     },
     {
       "date": "2026-07-10",
       "postId": "dual-publish-success",
       "topic": "IG: Ralph Waldo Emerson",
       "contentPreview": "Published to both platforms",
-      "timestamp": "2026-07-11T10:24:51.696Z"
+      "timestamp": "2026-07-10T10:24:51.696Z"
     },
     {
       "date": "2026-07-10",
       "postId": "dual-publish-success",
       "topic": "IG: Octavia E. Butler",
       "contentPreview": "Published to both platforms",
-      "timestamp": "2026-07-11T10:12:47.342Z"
+      "timestamp": "2026-07-10T10:12:47.342Z"
     },
     {
       "date": "2026-07-10",
       "postId": "dual-publish-success",
       "topic": "IG: Carl Jung",
       "contentPreview": "Published to both platforms",
-      "timestamp": "2026-07-11T10:00:42.481Z"
+      "timestamp": "2026-07-10T10:00:42.481Z"
     },
     {
       "date": "2026-07-10",
       "postId": "dual-publish-success",
       "topic": "IG: Annie Dillard",
       "contentPreview": "Published to both platforms",
-      "timestamp": "2026-07-11T09:43:48.232Z"
+      "timestamp": "2026-07-10T09:43:48.232Z"
     },
     {
       "date": "2026-07-10",
       "postId": "dual-publish-success",
       "topic": "IG: Anaïs Nin",
       "contentPreview": "Published to both platforms",
-      "timestamp": "2026-07-11T09:17:37.702Z"
+      "timestamp": "2026-07-10T09:17:37.702Z"
     },
     {
       "date": "2026-07-10",
       "postId": "dual-publish-success",
       "topic": "IG: Ram Dass",
       "contentPreview": "Published to both platforms",
-      "timestamp": "2026-07-11T07:46:39.596Z"
+      "timestamp": "2026-07-10T07:46:39.596Z"
     }
   ],
   "threads_history": [
     {
-      "date": "2026-07-11",
+      "date": "2026-07-10",
       "postId": "threads-publish-success",
       "topic": "The most overrated AI trend right now",
       "contentPreview": "Published to platform",
-      "timestamp": "2026-07-11T15:47:14.329Z"
+      "timestamp": "2026-07-10T15:47:14.329Z"
     },
     {
-      "date": "2026-07-11",
+      "date": "2026-07-10",
       "postId": "threads-publish-success",
       "topic": "Why tech debt is accelerating faster than ever with AI tools",
       "contentPreview": "Published to platform",
-      "timestamp": "2026-07-11T15:29:53.060Z"
+      "timestamp": "2026-07-10T15:29:53.060Z"
     },
     {
       "date": "2026-07-10",
       "postId": "threads-publish-success",
       "topic": "Why natural language is actually a terrible programming language",
       "contentPreview": "Published to platform",
-      "timestamp": "2026-07-11T11:45:43.334Z"
+      "timestamp": "2026-07-10T11:45:43.334Z"
     },
     {
       "date": "2026-07-10",
       "postId": "dual-publish-success",
       "topic": "The real bottleneck in AI development isn't compute, it's data quality",
       "contentPreview": "Published to both platforms",
-      "timestamp": "2026-07-11T10:24:51.696Z"
+      "timestamp": "2026-07-10T10:24:51.696Z"
     },
     {
       "date": "2026-07-10",
       "postId": "dual-publish-success",
       "topic": "The real bottleneck in AI development isn't compute, it's data quality",
       "contentPreview": "Published to both platforms",
-      "timestamp": "2026-07-11T10:12:47.342Z"
+      "timestamp": "2026-07-10T10:12:47.342Z"
     },
     {
       "date": "2026-07-10",
       "postId": "dual-publish-success",
       "topic": "Why most AI wrappers will fail in the next 12 months",
       "contentPreview": "Published to both platforms",
-      "timestamp": "2026-07-11T10:00:42.481Z"
+      "timestamp": "2026-07-10T10:00:42.481Z"
     },
     {
       "date": "2026-07-10",
       "postId": "dual-publish-success",
       "topic": "The uncomfortable truth about Prompt Engineering as a career",
       "contentPreview": "Published to both platforms",
-      "timestamp": "2026-07-11T09:43:48.232Z"
+      "timestamp": "2026-07-10T09:43:48.232Z"
     },
     {
       "date": "2026-07-10",
       "postId": "dual-publish-success",
       "topic": "Why junior developers shouldn't rely entirely on AI coding assistants",
       "contentPreview": "Published to both platforms",
-      "timestamp": "2026-07-11T09:17:37.702Z"
+      "timestamp": "2026-07-10T09:17:37.702Z"
     },
     {
       "date": "2026-07-10",
       "postId": "dual-publish-success",
       "topic": "Why junior developers shouldn't rely entirely on AI coding assistants",
       "contentPreview": "Published to both platforms",
-      "timestamp": "2026-07-11T07:46:39.596Z"
+      "timestamp": "2026-07-10T07:46:39.596Z"
     },
     {
       "date": "2026-07-10",
