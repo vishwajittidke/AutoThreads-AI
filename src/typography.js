@@ -54,7 +54,7 @@ export async function overlayTypography(imageBase64, quoteText, authorName) {
 
   console.log("[Typography] ✅ Typography perfectly integrated.");
 
-  // Export back to buffer
-  const finalBuffer = await image.getBufferAsync(Jimp.MIME_JPEG);
+  // Export back to buffer (Jimp v1.x API)
+  const finalBuffer = await image.getBuffer("image/jpeg");
   return finalBuffer;
 }
