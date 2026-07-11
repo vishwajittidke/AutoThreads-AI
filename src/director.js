@@ -45,7 +45,8 @@ You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it
     console.log("[Director] 📸 Phase 3-6: Requesting free AI render via Pollinations...");
 
     try {
-      const encodedPrompt = encodeURIComponent(prompt + " dark moody aesthetic, minimal, high quality");
+      // The user grid is moody and nature-focused. We append a subtle aesthetic lock.
+      const encodedPrompt = encodeURIComponent(prompt + " cinematic, deep tones, nature, minimalist, ultra high quality, 8k resolution, photorealistic");
       const url = `https://image.pollinations.ai/prompt/${encodedPrompt}?width=1080&height=1350&nologo=true`;
       
       const response = await fetch(url);

@@ -19,6 +19,7 @@
   "license": "MIT",
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
+    "canvas": "^3.2.3",
     "jimp": "^1.6.1"
   }
 }

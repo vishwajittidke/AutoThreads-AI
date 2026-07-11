@@ -1,60 +1,89 @@
-import { Jimp, loadFont, HorizontalAlign, VerticalAlign } from "jimp";
-import { SANS_64_WHITE, SANS_32_WHITE } from "jimp/fonts";
+import { createCanvas, loadImage } from "canvas";
 
 /**
  * AutoThreads-AI: Phase 7 - Typography Integration
- * Overlays perfectly-kerned text onto the base image.
+ * Overlays high-end editorial canvas typography matching @the.ace___ aesthetic.
  */
 export async function overlayTypography(imageBase64, quoteText, authorName) {
-  console.log("[Typography] 🔠 Phase 7: Overlaying cinematic typography...");
+  console.log("[Typography] 🔠 Phase 7: Overlaying high-end canvas typography...");
   
-  // 1. Decode base64 to buffer and load into Jimp
+  // Clean quote: Strip surrounding quotes, markdown asterisks, and convert to lowercase
+  const cleanQuote = quoteText.replace(/^["']|["']$/g, '').replace(/\*/g, '').toLowerCase().trim();
+  
   const imageBuffer = Buffer.from(imageBase64, "base64");
-  const image = await Jimp.read(imageBuffer);
-
-  // 2. Load built-in Jimp fonts (using large white font for quote, smaller for author)
-  // In a production setup, we would load custom TTF/BMFont files for ultra-luxury typography
-  // For now we use the largest available built-in font
-  const fontQuote = await loadFont(SANS_64_WHITE);
-  const fontAuthor = await loadFont(SANS_32_WHITE);
-
-  // 3. Calculate text placement
-  // Instagram 1:1 format is usually 1024x1024 from Imagen 3.
-  const maxWidth = image.bitmap.width - 160; // 80px padding on each side
-  const startX = 80;
+  const img = await loadImage(imageBuffer);
   
-  // Add a slight darkening gradient or overlay to ensure text readability?
-  // We will trust the Director's image prompt to create "negative space".
+  const width = img.width;
+  const height = img.height;
+  
+  const canvas = createCanvas(width, height);
+  const ctx = canvas.getContext('2d');
+  
+  // 1. Draw base image
+  ctx.drawImage(img, 0, 0, width, height);
+  
+  // 2. Add subtle cinematic dark gradient overlay for text legibility
+  // Darker at center and bottom where text is
+  const gradient = ctx.createLinearGradient(0, 0, 0, height);
+  gradient.addColorStop(0, 'rgba(0,0,0,0.1)');
+  gradient.addColorStop(0.4, 'rgba(0,0,0,0.5)');
+  gradient.addColorStop(0.6, 'rgba(0,0,0,0.6)');
+  gradient.addColorStop(1, 'rgba(0,0,0,0.8)');
+  ctx.fillStyle = gradient;
+  ctx.fillRect(0, 0, width, height);
+  
+  // 3. Configure typography context
+  ctx.textAlign = 'center';
+  ctx.textBaseline = 'middle';
+  
+  // Utility to wrap text beautifully
+  const wrapText = (context, text, x, y, maxWidth, lineHeight) => {
+    const words = text.split(' ');
+    let line = '';
+    const lines = [];
 
-  // Print Quote (centered or left aligned)
-  image.print({
-    font: fontQuote,
-    x: startX,
-    y: image.bitmap.height / 2 - 100, // Centered vertically roughly
-    text: {
-      text: `"${quoteText}"`,
-      alignmentX: HorizontalAlign.CENTER,
-      alignmentY: VerticalAlign.MIDDLE
-    },
-    maxWidth: maxWidth
-  });
+    for(let n = 0; n < words.length; n++) {
+      const testLine = line + words[n] + ' ';
+      const metrics = context.measureText(testLine);
+      const testWidth = metrics.width;
+      if (testWidth > maxWidth && n > 0) {
+        lines.push(line.trim());
+        line = words[n] + ' ';
+      } else {
+        line = testLine;
+      }
+    }
+    lines.push(line.trim());
+    
+    // Draw lines centered vertically
+    const totalHeight = lines.length * lineHeight;
+    let startY = y - (totalHeight / 2) + (lineHeight / 2);
+    
+    for(let i = 0; i < lines.length; i++) {
+      context.fillText(lines[i], x, startY + (i * lineHeight));
+    }
+  };
 
-  // Print Author
-  image.print({
-    font: fontAuthor,
-    x: startX,
-    y: image.bitmap.height - 200, 
-    text: {
-      text: `— ${authorName}`,
-      alignmentX: HorizontalAlign.CENTER,
-      alignmentY: VerticalAlign.MIDDLE
-    },
-    maxWidth: maxWidth
-  });
-
+  // 4. Draw Quote (Elegant Lowercase Serif)
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.95)';
+  // Using standard system serif fonts that look elegant
+  ctx.font = 'italic 34px "Georgia", "Times New Roman", serif';
+  
+  // Max width with luxurious padding
+  const maxTextWidth = width - 240; 
+  
+  // Center slightly above exact middle for visual balance
+  wrapText(ctx, cleanQuote, width / 2, height / 2 - 40, maxTextWidth, 54);
+  
+  // 5. Draw Signature (Cursive 'Ace')
+  ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+  ctx.font = 'italic 42px "Brush Script MT", "Great Vibes", "Snell Roundhand", cursive';
+  
+  // Print "Ace" logo at the bottom, just like the grid
+  ctx.fillText("Ace", width / 2, height - 160);
+  
   console.log("[Typography] ✅ Typography perfectly integrated.");
 
-  // Export back to buffer (Jimp v1.x API)
-  const finalBuffer = await image.getBuffer("image/jpeg");
-  return finalBuffer;
+  // Export to buffer
+  return canvas.toBuffer('image/jpeg', { quality: 0.95 });
 }
