@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 16,
+  "ig_total_posts": 17,
   "threads_total_posts": 12,
   "ig_history": [
+    {
+      "date": "2026-07-11",
+      "postId": "ig-publish-success",
+      "topic": "Johann Wolfgang von Goethe",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-11T16:42:22.448Z"
+    },
     {
       "date": "2026-07-11",
       "postId": "ig-publish-success",
