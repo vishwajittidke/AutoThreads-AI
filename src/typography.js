@@ -64,10 +64,10 @@ export async function overlayTypography(imageBase64, quoteText, authorName) {
     }
   };
 
-  // 4. Draw Quote (Elegant Lowercase Serif)
+  // 4. Draw Quote (Elegant Lowercase Upright Serif)
   ctx.fillStyle = 'rgba(255, 255, 255, 0.95)';
-  // Using standard system serif fonts that look elegant
-  ctx.font = 'italic 34px "Georgia", "Times New Roman", serif';
+  // The grid uses a classic, upright serif (like Times New Roman or Garamond), NOT italic.
+  ctx.font = '34px "Times New Roman", "Garamond", "Georgia", serif';
   
   // Max width with luxurious padding
   const maxTextWidth = width - 240; 
