@@ -2,7 +2,7 @@ import { readState, writeState, hasPostedToday, recordSuccessfulPost, recordErro
 import { S3Client, PutObjectCommand } from "@aws-sdk/client-s3";
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import { DirectorLifeQuotesEngine } from "./director_life_quotes.js";
-import { overlayTypography } from "./typography.js";
+import { overlayTypography } from "./typography_life_quotes.js";
 import { InstagramPublisher } from "./instagram.js";
 import { generateContent } from "./gemini.js";
 import { publishToThreads } from "./threads.js";
