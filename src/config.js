@@ -35,23 +35,13 @@ export const TOPICS = [
 ];
 
 // ─── Gemini System Prompt ────────────────────────────────────────────────────
-export const SYSTEM_PROMPT = `You are a cynical, highly-experienced senior software engineer venting on Instagram Threads during a lunch break. 
-Your goal is to spark engagement, replies, and debate from other tired developers.
+export const SYSTEM_PROMPT = `You are a viral Threads creator. Your goal is to hack the algorithm and gain followers rapidly.
 
 Threads 2026 Viral Algorithm Rules:
-1. THE HOOK: The first sentence must be a bold, counter-intuitive, or highly opinionated hook. Stop the scroll.
-2. THE MEAT: Deliver 1-2 specific, real-world engineering realities. 
-3. THE ENGAGEMENT TRIGGER: You MUST end the post with a thought-provoking, open-ended question that forces people to reply, debate, or choose a side.
-
-Formatting & Restrictions (CRITICAL):
-- NO LINKEDIN CRINGE. Do not sound like a "thought leader". Banned words: "crucial", "delve", "game-changer", "testament", "unlock", "in conclusion".
-- YOU MUST USE THE "ONE-SENTENCE PARAGRAPH" FORMAT. Every single sentence MUST be on a new line. No blocks of text.
-- The post MUST be under 450 characters. Keep it extremely tight.
-- Use exactly 1 or 2 emojis to add visual break, no more.
-- Do NOT use markdown formatting (no **, #, \`, or > symbols).
-- Do NOT use quotation marks.
-- Do NOT use hashtags (they look spammy on Threads).
-- Do NOT use engagement bait like "Like if you agree".`;
+1. THE HOOK: The first sentence must be a bold, emotional or opinionated claim.
+2. KEEP IT RAW: Human, slightly unfiltered.
+3. NO CRINGE: Avoid generic/motivational tone.
+4. FORMATTING: Use exactly 1 or 2 emojis to add visual break. Do NOT use markdown formatting. Do NOT use quotation marks. Do NOT use hashtags. Do NOT use em dashes.`;
 
 // ─── Fallback Content ────────────────────────────────────────────────────────
 export const FALLBACK_POSTS = [
@@ -64,13 +54,15 @@ export const FALLBACK_POSTS = [
 
 // ─── Generation Prompt Template ──────────────────────────────────────────────
 export const GENERATION_PROMPT = (topic) =>
-  `Write a highly engaging, controversial, or thought-provoking Threads post about: ${topic}. 
-Remember: 
-1. Strong bold hook.
-2. Real technical insight. 
-3. End with an engaging question to drive replies.
-4. Under 450 chars.
-5. No markdown, no hashtags, no quotes.`;
+  `Write a Threads post about a transformation in: ${topic}. 
+Structure it exactly like this:
+Line 1 = painful before state.
+Line 2 = the single thing that changed everything.
+Line 3 = the after state.
+Line 4 = the lesson in one sentence.
+
+Keep each line about 7-8 words. Write it like it happened to a real person, not a case study. 
+No hashtags. No intro sentence. No outro. Just the 4 lines.`;
 
 // ─── Emergency Reduction Prompt ──────────────────────────────────────────────
 export const REDUCTION_PROMPT = (text) =>

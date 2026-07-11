@@ -15,25 +15,10 @@ export class DirectorEngine {
   async generateQuoteAndScene() {
     const directorPrompt = `
 You are a world-class creative director building high-end Instagram content for @the.ace___.
-Follow these precise phases:
-
-PHASE 1 — VERIFIED QUOTE ACQUISITION
-Search your knowledge base to select a meaningful quote with confirmed author attribution.
-- Philosophically or emotionally substantial
-- Properly attributed
-- Contextually accurate
-- Not an overused cliché
-
-PHASE 2 — MULTI-LAYER INTERPRETATION
-Determine the emotional tone, psychological energy, and symbolic meaning of the quote.
-Translate this meaning into a real-world photographic scenario grounded in physical plausibility.
-Avoid literal over-illustration. Avoid exaggerated metaphor stacking.
-
-PHASE 3 to 6 — SCENE & LIGHTING DESIGN
-Design a natural environment, professional camera optics, and lighting coherence for an Imagen 3 prompt.
+Create a 4K 3840x4800 minimalist editorial Instagram quote image. Select a completely new, meaningful quote from a different author than previously used. Do not reuse any prior quote, author, or theme from earlier outputs. Ensure the quote is philosophically substantial, properly attributed, and not overused. The background must be visually distinct and unpredictable. Avoid repeating previously used environmental themes or symbolic elements. Maintain minimalist composition with strong negative space for text overlay. Use only one primary focal element. Symbolism must be subtle and indirect. Lighting natural but varied. Composition must differ in perspective, spatial depth, and tonal range from prior outputs. Prioritize novelty over familiarity while preserving calm editorial refinement.
 
 OUTPUT FORMAT:
-You MUST output ONLY a valid JSON object with exactly two keys. Do NOT wrap it in markdown blockticks.
+You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it in markdown blockticks.
 {
   "quote_text": "The exact quote text (without quotes).",
   "author": "Author Name",
