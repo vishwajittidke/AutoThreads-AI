@@ -6,18 +6,11 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 12,
-  "threads_total_posts": 11,
+  "ig_total_posts": 11,
+  "threads_total_posts": 10,
   "ig_history": [
     {
       "date": "2026-07-10",
-      "postId": "ig-publish-success",
-      "topic": "Henry David Thoreau",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-11T14:23:57.866Z"
-    },
-    {
-      "date": "2026-07-11",
       "postId": "ig-publish-success",
       "topic": "Rainer Maria Rilke",
       "contentPreview": "Published to platform",
@@ -74,13 +67,6 @@
     }
   ],
   "threads_history": [
-    {
-      "date": "2026-07-11",
-      "postId": "threads-publish-success",
-      "topic": "The truth about how much OpenAI/Anthropic APIs actually cost at scale",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-11T14:24:58.308Z"
-    },
     {
       "date": "2026-07-10",
       "postId": "threads-publish-success",
