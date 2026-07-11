@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 14,
+  "ig_total_posts": 15,
   "threads_total_posts": 11,
   "ig_history": [
+    {
+      "date": "2026-07-11",
+      "postId": "ig-publish-success",
+      "topic": "Antoine de Saint-Exupéry",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-11T15:45:31.183Z"
+    },
     {
       "date": "2026-07-11",
       "postId": "ig-publish-success",
