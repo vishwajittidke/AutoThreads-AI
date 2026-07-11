@@ -25,14 +25,33 @@ export class DirectorEngine {
       .filter(a => a)
       .join(", ");
 
+    const categories = [
+      "Ethereal Cloudscapes (sunset, dawn, or deep blue skies with distinct fluffy clouds)",
+      "Northern Lights & Aurora (vibrant green/blue aurora borealis in a dark night sky)",
+      "Minimalist Botanicals (close-up single flowers, daisies, or macro leaves on very dark backgrounds)",
+      "Moody Architecture (lit towers, city silhouettes, or dark structures glowing at night)",
+      "Atmospheric Water (ocean waves crashing, boat wakes, or deep calm water)",
+      "Warm Light & Shadows (candlelight, bokeh, abstract warm glowing light in dark spaces)",
+      "Mountain Silhouettes (dark jagged peaks against moody starry or foggy skies)",
+      "Aviation & Sky Lines (airplane contrails, high altitude majestic views)",
+      "Deep Texture (plain dark atmospheric textures, minimal distractions, golden hour silhouettes)"
+    ];
+    
+    // Mathematically rotate through categories so it never repeats the same theme
+    const postCount = state.total_posts || 0;
+    const currentCategory = categories[postCount % categories.length];
+
     const directorPrompt = `
 You are a world-class creative director building high-end Instagram content for @the.ace___.
 Create a 4K 3840x4800 minimalist editorial Instagram quote image. Select a completely new, meaningful quote from a different author than previously used. 
 
 CRITICAL: DO NOT use quotes from any of these previously used authors: ${usedAuthors || 'None yet'}.
 
-Ensure the quote is philosophically substantial, properly attributed, and not overused. 
-The background must be WILDLY visually distinct and unpredictable every single time. DO NOT default to water, lakes, oceans, or stones in the water. We need extreme aesthetic diversity: wild jungles, macro leaf photography, vast desert dunes, foggy mountains, brutalist architecture, neon city rain, starry nebulas, etc. Symbolism must be subtle and indirect. Lighting natural but varied. Composition must differ drastically in perspective, spatial depth, and tonal range from prior outputs. Prioritize total visual novelty over familiarity while preserving calm editorial refinement.
+MANDATORY AESTHETIC THEME FOR THIS POST:
+You MUST design the scene entirely around this specific visual category: "${currentCategory}".
+Do NOT deviate from this category. Ensure the imagery perfectly embodies this specific aesthetic.
+
+Ensure the quote is philosophically substantial, properly attributed, and not overused. Symbolism must be subtle and indirect. Lighting natural but varied. Maintain calm editorial refinement and ensure strong negative space for the quote and logo.
 
 OUTPUT FORMAT:
 You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it in markdown blockticks.
