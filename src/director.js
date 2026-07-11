@@ -1,4 +1,5 @@
 import { GeminiRotator } from "./gemini_rotator.js";
+import { readState } from "./state.js";
 
 /**
  * AutoThreads-AI: The Director Engine
@@ -13,9 +14,24 @@ export class DirectorEngine {
    * Phase 1 & 2: Quote Generation & Scene Design
    */
   async generateQuoteAndScene() {
+    const state = readState();
+    const history = state.history || [];
+    
+    // Extract previously used authors from history to prevent repetition
+    const usedAuthors = history
+      .map(h => h.topic)
+      .filter(t => t && t.startsWith("IG:"))
+      .map(t => t.split("|")[0].replace("IG:", "").trim())
+      .filter(a => a)
+      .join(", ");
+
     const directorPrompt = `
 You are a world-class creative director building high-end Instagram content for @the.ace___.
-Create a 4K 3840x4800 minimalist editorial Instagram quote image. Select a completely new, meaningful quote from a different author than previously used. Do not reuse any prior quote, author, or theme from earlier outputs. Ensure the quote is philosophically substantial, properly attributed, and not overused. The background must be visually distinct and unpredictable. Avoid repeating previously used environmental themes or symbolic elements. Maintain minimalist composition with strong negative space for text overlay. Use only one primary focal element. Symbolism must be subtle and indirect. Lighting natural but varied. Composition must differ in perspective, spatial depth, and tonal range from prior outputs. Prioritize novelty over familiarity while preserving calm editorial refinement.
+Create a 4K 3840x4800 minimalist editorial Instagram quote image. Select a completely new, meaningful quote from a different author than previously used. 
+
+CRITICAL: DO NOT use quotes from any of these previously used authors: ${usedAuthors || 'None yet'}.
+
+Ensure the quote is philosophically substantial, properly attributed, and not overused. The background must be visually distinct and unpredictable. Avoid repeating previously used environmental themes or symbolic elements. Maintain minimalist composition with strong negative space for text overlay. Use only one primary focal element. Symbolism must be subtle and indirect. Lighting natural but varied. Composition must differ in perspective, spatial depth, and tonal range from prior outputs. Prioritize novelty over familiarity while preserving calm editorial refinement.
 
 OUTPUT FORMAT:
 You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it in markdown blockticks.
