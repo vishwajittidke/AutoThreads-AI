@@ -75,7 +75,7 @@ export function writeState(state) {
  */
 export function hasPostedToday(state, target) {
   const today = getDateString();
-  const historyKey = target === 'ig' ? 'ig_history' : 'threads_history';
+  const historyKey = target === 'ig' ? 'ig_history' : (target === 'life_quotes' ? 'ig_history_life_quotes' : 'threads_history');
   const limit = 9999; // Removed limitations of posts per day
   
   const todayPosts = (state[historyKey] || []).filter(h => h.date === today);
@@ -92,15 +92,15 @@ export function hasPostedToday(state, target) {
  * @param {string} postData.postId - The Meta post ID
  * @param {string} postData.topic - The topic used
  * @param {string} postData.content - The published content
- * @param {string} postData.target - The platform target ('ig' or 'threads')
+ * @param {string} postData.target - The platform target ('ig', 'life_quotes' or 'threads')
  * @returns {object} Updated state object
  */
 export function recordSuccessfulPost(state, { postId, topic, content, target }) {
   const now = new Date().toISOString();
   const today = getDateString();
 
-  const countKey = target === 'ig' ? 'ig_total_posts' : 'threads_total_posts';
-  const historyKey = target === 'ig' ? 'ig_history' : 'threads_history';
+  const countKey = target === 'ig' ? 'ig_total_posts' : (target === 'life_quotes' ? 'ig_total_posts_life_quotes' : 'threads_total_posts');
+  const historyKey = target === 'ig' ? 'ig_history' : (target === 'life_quotes' ? 'ig_history_life_quotes' : 'threads_history');
 
   state[countKey] = (state[countKey] || 0) + 1;
   state.last_error = null;
