@@ -75,11 +75,6 @@ export async function overlayTypography(imageBase64, quoteText, authorName) {
   // Center slightly above exact middle for visual balance
   wrapText(ctx, cleanQuote, width / 2, height / 2 - 40, maxTextWidth, 54);
   
-  // 5. Draw Author Name and Instagram Handle
-  ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
-  ctx.font = '24px "Times New Roman", "Garamond", "Georgia", serif';
-  ctx.fillText(`— ${authorName} —`, width / 2, height / 2 + 100);
-  
   // Tiny handle at the very bottom
   ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
   ctx.font = '16px "Arial", sans-serif';
