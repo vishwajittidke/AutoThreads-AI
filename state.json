@@ -1,14 +1,21 @@
 {
-  "last_error": "[Instagram] IG: Meta API Error (Publishing): Media ID is not available",
-  "last_error_date": "2026-07-11T16:08:14.787Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 15,
+  "ig_total_posts": 16,
   "threads_total_posts": 12,
   "ig_history": [
+    {
+      "date": "2026-07-11",
+      "postId": "ig-publish-success",
+      "topic": "Henri Bergson",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-11T16:09:45.877Z"
+    },
     {
       "date": "2026-07-10",
       "postId": "ig-publish-success",
