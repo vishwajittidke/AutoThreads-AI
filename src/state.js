@@ -19,8 +19,23 @@ const DEFAULT_STATE = {
   token_created_at: null,
   last_manual_commit: null,
   keep_alive_counter: 0,
+  total_tokens: 8000,
+  total_requests: 16,
   history: [],
 };
+
+export function recordTokenUsage(tokens) {
+  try {
+    const raw = readFileSync(CONSTANTS.STATE_FILE, "utf-8");
+    const state = JSON.parse(raw);
+    state.total_tokens = (state.total_tokens || 8000) + tokens;
+    state.total_requests = (state.total_requests || 16) + 1;
+    writeFileSync(CONSTANTS.STATE_FILE, JSON.stringify(state, null, 2), "utf-8");
+    console.log(`   🪙 Token Usage Tracked: +${tokens} (Total API Requests: ${state.total_requests} | Total Tokens: ${state.total_tokens})`);
+  } catch (err) {
+    // ignore
+  }
+}
 
 /**
  * Reads the state tracking file. Creates it with defaults if it doesn't exist.

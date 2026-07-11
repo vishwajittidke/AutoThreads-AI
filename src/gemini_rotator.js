@@ -50,6 +50,10 @@ export class GeminiRotator {
       const result = await model.generateContent(prompt);
       const response = await result.response;
       
+      const tokens = response.usageMetadata?.totalTokenCount || 0;
+      const { recordTokenUsage } = await import("./state.js");
+      recordTokenUsage(tokens);
+      
       // Reset attempts on success
       this.attemptsOnCurrentKey = 0;
       return response.text();

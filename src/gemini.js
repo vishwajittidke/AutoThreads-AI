@@ -101,6 +101,10 @@ async function callGemini(apiKey, prompt) {
       }
 
       const data = await response.json();
+      
+      const tokens = data?.usageMetadata?.totalTokenCount || 0;
+      const { recordTokenUsage } = await import("./state.js");
+      recordTokenUsage(tokens);
 
       const text = data?.candidates?.[0]?.content?.parts?.[0]?.text;
       if (!text) {
