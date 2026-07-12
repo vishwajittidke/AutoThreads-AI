@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 18,
+  "ig_total_posts": 19,
   "threads_total_posts": 16,
   "ig_history": [
+    {
+      "date": "2026-07-12",
+      "postId": "ig-publish-success",
+      "topic": "Mary Oliver",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-12T15:34:07.723Z"
+    },
     {
       "date": "2026-07-11",
       "postId": "ig-publish-success",
