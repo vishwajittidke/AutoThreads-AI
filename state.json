@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 18,
-  "threads_total_posts": 15,
+  "threads_total_posts": 16,
   "ig_history": [
     {
       "date": "2026-07-11",
@@ -116,6 +116,13 @@
     }
   ],
   "threads_history": [
+    {
+      "date": "2026-07-12",
+      "postId": "threads-publish-success",
+      "topic": "The uncomfortable truth about Prompt Engineering as a career",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-12T15:32:59.683Z"
+    },
     {
       "date": "2026-07-12",
       "postId": "threads-publish-success",
