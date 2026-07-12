@@ -208,8 +208,15 @@
       "timestamp": "2026-07-10T19:37:04.509Z"
     }
   ],
-  "ig_total_posts_life_quotes": 3,
+  "ig_total_posts_life_quotes": 4,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-07-12",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Thich Nhat Hanh",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-12T06:56:47.362Z"
+    },
     {
       "date": "2026-07-11",
       "postId": "ig-publish-success",
