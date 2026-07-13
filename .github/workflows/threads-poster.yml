@@ -2,8 +2,8 @@ name: AutoThreads-AI (Threads Poster)
 
 on:
   schedule:
-    # Runs at 2:30 UTC (8:00 AM IST), 7:00 UTC (12:30 PM IST), and 14:30 UTC (8:00 PM IST)
-    - cron: '30 2,7,14 * * *'
+    # Runs at 2:17 UTC (7:47 AM IST), 7:17 UTC (12:47 PM IST), and 14:17 UTC (7:47 PM IST)
+    - cron: '17 2,7,14 * * *'
   workflow_dispatch:
 
 jobs:
