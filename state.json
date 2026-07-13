@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 20,
-  "threads_total_posts": 17,
+  "threads_total_posts": 18,
   "ig_history": [
     {
       "date": "2026-07-13",
@@ -130,6 +130,13 @@
     }
   ],
   "threads_history": [
+    {
+      "date": "2026-07-13",
+      "postId": "threads-publish-success",
+      "topic": "Why Small Language Models (SLMs) will beat giant models in production",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-13T16:27:57.221Z"
+    },
     {
       "date": "2026-07-13",
       "postId": "threads-publish-success",
