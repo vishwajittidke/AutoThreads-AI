@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 20,
-  "threads_total_posts": 16,
+  "threads_total_posts": 17,
   "ig_history": [
     {
       "date": "2026-07-13",
@@ -130,6 +130,13 @@
     }
   ],
   "threads_history": [
+    {
+      "date": "2026-07-13",
+      "postId": "threads-publish-success",
+      "topic": "Why vector databases aren't always the answer",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-13T10:36:32.280Z"
+    },
     {
       "date": "2026-07-12",
       "postId": "threads-publish-success",
