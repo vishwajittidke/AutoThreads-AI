@@ -278,8 +278,15 @@
       "timestamp": "2026-07-10T19:37:04.509Z"
     }
   ],
-  "ig_total_posts_life_quotes": 6,
+  "ig_total_posts_life_quotes": 7,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-07-14",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Émile Zola",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-14T06:24:32.094Z"
+    },
     {
       "date": "2026-07-14",
       "postId": "ig-publish-success",
