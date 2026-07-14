@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 21,
-  "threads_total_posts": 18,
+  "threads_total_posts": 19,
   "ig_history": [
     {
       "date": "2026-07-14",
@@ -137,6 +137,13 @@
     }
   ],
   "threads_history": [
+    {
+      "date": "2026-07-14",
+      "postId": "threads-publish-success",
+      "topic": "Why local AI running on your laptop is the next big shift",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-14T04:23:29.606Z"
+    },
     {
       "date": "2026-07-13",
       "postId": "threads-publish-success",
