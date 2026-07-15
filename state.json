@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 23,
-  "threads_total_posts": 23,
+  "threads_total_posts": 24,
   "ig_history": [
     {
       "date": "2026-07-15",
@@ -151,6 +151,13 @@
     }
   ],
   "threads_history": [
+    {
+      "date": "2026-07-15",
+      "postId": "threads-publish-success",
+      "topic": "The real bottleneck in AI development isn't compute, it's data quality",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-15T09:23:26.320Z"
+    },
     {
       "date": "2026-07-15",
       "postId": "threads-publish-success",
