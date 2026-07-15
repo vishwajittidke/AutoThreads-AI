@@ -1,13 +1,13 @@
 {
-  "last_error": "[Instagram] IG: All Gemini API keys failed after maximum retries.",
-  "last_error_date": "2026-07-15T15:51:52.545Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 23,
-  "threads_total_posts": 24,
+  "threads_total_posts": 25,
   "ig_history": [
     {
       "date": "2026-07-15",
@@ -151,6 +151,13 @@
     }
   ],
   "threads_history": [
+    {
+      "date": "2026-07-15",
+      "postId": "threads-publish-success",
+      "topic": "The security nightmare of giving AI agents write-access",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-15T16:01:59.854Z"
+    },
     {
       "date": "2026-07-15",
       "postId": "threads-publish-success",
