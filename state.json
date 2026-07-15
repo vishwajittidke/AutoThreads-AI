@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 22,
+  "ig_total_posts": 23,
   "threads_total_posts": 22,
   "ig_history": [
+    {
+      "date": "2026-07-15",
+      "postId": "ig-publish-success",
+      "topic": "Anne Morrow Lindbergh",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-15T05:10:29.277Z"
+    },
     {
       "date": "2026-07-14",
       "postId": "ig-publish-success",
