@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 23,
+  "ig_total_posts": 24,
   "threads_total_posts": 25,
   "ig_history": [
+    {
+      "date": "2026-07-16",
+      "postId": "ig-publish-success",
+      "topic": "Theodore Roethke",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-15T20:23:07.011Z"
+    },
     {
       "date": "2026-07-15",
       "postId": "ig-publish-success",
