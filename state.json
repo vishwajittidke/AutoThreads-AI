@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 26,
-  "threads_total_posts": 28,
+  "threads_total_posts": 29,
   "ig_history": [
     {
       "date": "2026-07-16",
@@ -172,6 +172,13 @@
     }
   ],
   "threads_history": [
+    {
+      "date": "2026-07-16",
+      "postId": "threads-publish-success",
+      "topic": "The biggest misconception non-technical founders have about AI",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-16T15:50:43.471Z"
+    },
     {
       "date": "2026-07-16",
       "postId": "threads-publish-success",
