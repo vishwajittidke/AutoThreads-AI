@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 25,
+  "ig_total_posts": 26,
   "threads_total_posts": 25,
   "ig_history": [
+    {
+      "date": "2026-07-16",
+      "postId": "ig-publish-success",
+      "topic": "Amelia Earhart",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-16T05:21:06.782Z"
+    },
     {
       "date": "2026-07-16",
       "postId": "ig-publish-success",
