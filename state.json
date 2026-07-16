@@ -369,8 +369,15 @@
       "timestamp": "2026-07-10T19:37:04.509Z"
     }
   ],
-  "ig_total_posts_life_quotes": 9,
+  "ig_total_posts_life_quotes": 10,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-07-16",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Theodore Roethke",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-16T15:47:07.619Z"
+    },
     {
       "date": "2026-07-16",
       "postId": "ig-publish-success",
