@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 26,
-  "threads_total_posts": 26,
+  "threads_total_posts": 27,
   "ig_history": [
     {
       "date": "2026-07-16",
@@ -172,6 +172,13 @@
     }
   ],
   "threads_history": [
+    {
+      "date": "2026-07-16",
+      "postId": "threads-publish-success",
+      "topic": "The hidden infrastructure cost of Retrieval-Augmented Generation (RAG)",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-16T07:03:59.847Z"
+    },
     {
       "date": "2026-07-16",
       "postId": "threads-publish-success",
