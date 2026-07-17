@@ -390,8 +390,15 @@
       "timestamp": "2026-07-10T19:37:04.509Z"
     }
   ],
-  "ig_total_posts_life_quotes": 10,
+  "ig_total_posts_life_quotes": 11,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-07-17",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Confucius",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-17T06:27:06.070Z"
+    },
     {
       "date": "2026-07-16",
       "postId": "ig-publish-success",
