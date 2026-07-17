@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 27,
-  "threads_total_posts": 29,
+  "threads_total_posts": 30,
   "ig_history": [
     {
       "date": "2026-07-17",
@@ -179,6 +179,13 @@
     }
   ],
   "threads_history": [
+    {
+      "date": "2026-07-17",
+      "postId": "threads-publish-success",
+      "topic": "The harsh reality of scaling AI products to thousands of users",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-17T05:24:08.486Z"
+    },
     {
       "date": "2026-07-16",
       "postId": "threads-publish-success",
