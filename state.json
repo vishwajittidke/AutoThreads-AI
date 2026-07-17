@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 26,
+  "ig_total_posts": 27,
   "threads_total_posts": 29,
   "ig_history": [
+    {
+      "date": "2026-07-17",
+      "postId": "ig-publish-success",
+      "topic": "Marguerite Yourcenar",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-17T05:23:30.044Z"
+    },
     {
       "date": "2026-07-16",
       "postId": "ig-publish-success",
