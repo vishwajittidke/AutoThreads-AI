@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 27,
-  "threads_total_posts": 31,
+  "threads_total_posts": 32,
   "ig_history": [
     {
       "date": "2026-07-17",
@@ -179,6 +179,13 @@
     }
   ],
   "threads_history": [
+    {
+      "date": "2026-07-17",
+      "postId": "threads-publish-success",
+      "topic": "Why most AI wrappers will fail in the next 12 months",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-17T15:32:22.075Z"
+    },
     {
       "date": "2026-07-17",
       "postId": "threads-publish-success",
@@ -381,13 +388,6 @@
       "topic": "Why everyone is pivoting to AI agents but no one has cracked it",
       "contentPreview": "Your AI agent wrapper is just a",
       "timestamp": "2026-07-10T20:05:18.409Z"
-    },
-    {
-      "date": "2026-07-10",
-      "postId": "18042151052607935",
-      "topic": "The most overrated AI trend right now",
-      "contentPreview": "Ideas: AI Agents doing everything,",
-      "timestamp": "2026-07-10T19:44:56.608Z"
     }
   ],
   "ig_total_posts_life_quotes": 11,
