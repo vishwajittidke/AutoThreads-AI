@@ -397,8 +397,15 @@
       "timestamp": "2026-07-10T09:17:37.702Z"
     }
   ],
-  "ig_total_posts_life_quotes": 11,
+  "ig_total_posts_life_quotes": 12,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-07-18",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Vincent van Gogh",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-18T06:17:37.733Z"
+    },
     {
       "date": "2026-07-17",
       "postId": "ig-publish-success",
