@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 27,
+  "ig_total_posts": 28,
   "threads_total_posts": 33,
   "ig_history": [
+    {
+      "date": "2026-07-18",
+      "postId": "ig-publish-success",
+      "topic": "Gaston Bachelard",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-18T05:05:45.285Z"
+    },
     {
       "date": "2026-07-17",
       "postId": "ig-publish-success",
