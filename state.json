@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 28,
+  "ig_total_posts": 29,
   "threads_total_posts": 35,
   "ig_history": [
+    {
+      "date": "2026-07-18",
+      "postId": "ig-publish-success",
+      "topic": "Vincent van Gogh",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-18T15:12:10.532Z"
+    },
     {
       "date": "2026-07-18",
       "postId": "ig-publish-success",
