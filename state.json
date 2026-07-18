@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 28,
-  "threads_total_posts": 34,
+  "threads_total_posts": 35,
   "ig_history": [
     {
       "date": "2026-07-18",
@@ -186,6 +186,13 @@
     }
   ],
   "threads_history": [
+    {
+      "date": "2026-07-18",
+      "postId": "threads-publish-success",
+      "topic": "The security nightmare of giving AI agents write-access",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-18T09:00:35.573Z"
+    },
     {
       "date": "2026-07-18",
       "postId": "threads-publish-success",
@@ -388,13 +395,6 @@
       "topic": "The uncomfortable truth about Prompt Engineering as a career",
       "contentPreview": "Published to both platforms",
       "timestamp": "2026-07-10T09:43:48.232Z"
-    },
-    {
-      "date": "2026-07-10",
-      "postId": "dual-publish-success",
-      "topic": "Why junior developers shouldn't rely entirely on AI coding assistants",
-      "contentPreview": "Published to both platforms",
-      "timestamp": "2026-07-10T09:17:37.702Z"
     }
   ],
   "ig_total_posts_life_quotes": 12,
