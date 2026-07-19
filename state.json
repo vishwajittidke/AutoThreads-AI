@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 31,
-  "threads_total_posts": 38,
+  "threads_total_posts": 39,
   "ig_history": [
     {
       "date": "2026-07-19",
@@ -210,6 +210,13 @@
     {
       "date": "2026-07-19",
       "postId": "threads-publish-success",
+      "topic": "Why junior developers shouldn't rely entirely on AI coding assistants",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-19T15:17:03.988Z"
+    },
+    {
+      "date": "2026-07-19",
+      "postId": "threads-publish-success",
       "topic": "Why open-source AI is terrifying proprietary tech giants",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-19T09:19:28.837Z"
@@ -409,13 +416,6 @@
       "topic": "Why natural language is actually a terrible programming language",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-10T11:45:43.334Z"
-    },
-    {
-      "date": "2026-07-10",
-      "postId": "dual-publish-success",
-      "topic": "The real bottleneck in AI development isn't compute, it's data quality",
-      "contentPreview": "Published to both platforms",
-      "timestamp": "2026-07-10T10:24:51.696Z"
     }
   ],
   "ig_total_posts_life_quotes": 14,
