@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 30,
+  "ig_total_posts": 31,
   "threads_total_posts": 38,
   "ig_history": [
+    {
+      "date": "2026-07-19",
+      "postId": "ig-publish-success",
+      "topic": "Tadao Ando",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-19T13:00:23.219Z"
+    },
     {
       "date": "2026-07-18",
       "postId": "ig-publish-success",
