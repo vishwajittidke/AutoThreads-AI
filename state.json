@@ -1,13 +1,13 @@
 {
-  "last_error": "[Instagram] IG Life Quotes: Pollinations failed and HF_TOKEN is not configured for the fallback API.",
-  "last_error_date": "2026-07-19T06:42:16.211Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 30,
-  "threads_total_posts": 37,
+  "threads_total_posts": 38,
   "ig_history": [
     {
       "date": "2026-07-18",
@@ -200,6 +200,13 @@
     }
   ],
   "threads_history": [
+    {
+      "date": "2026-07-19",
+      "postId": "threads-publish-success",
+      "topic": "Why open-source AI is terrifying proprietary tech giants",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-19T09:19:28.837Z"
+    },
     {
       "date": "2026-07-19",
       "postId": "threads-publish-success",
@@ -402,13 +409,6 @@
       "topic": "The real bottleneck in AI development isn't compute, it's data quality",
       "contentPreview": "Published to both platforms",
       "timestamp": "2026-07-10T10:24:51.696Z"
-    },
-    {
-      "date": "2026-07-10",
-      "postId": "dual-publish-success",
-      "topic": "The real bottleneck in AI development isn't compute, it's data quality",
-      "contentPreview": "Published to both platforms",
-      "timestamp": "2026-07-10T10:12:47.342Z"
     }
   ],
   "ig_total_posts_life_quotes": 13,
