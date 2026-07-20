@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 34,
+  "ig_total_posts": 35,
   "threads_total_posts": 42,
   "ig_history": [
+    {
+      "date": "2026-07-20",
+      "postId": "ig-publish-success",
+      "topic": "James Salter",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-20T16:03:53.699Z"
+    },
     {
       "date": "2026-07-20",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "IG: Annie Dillard",
       "contentPreview": "Published to both platforms",
       "timestamp": "2026-07-10T09:43:48.232Z"
-    },
-    {
-      "date": "2026-07-10",
-      "postId": "dual-publish-success",
-      "topic": "IG: Anaïs Nin",
-      "contentPreview": "Published to both platforms",
-      "timestamp": "2026-07-10T09:17:37.702Z"
     }
   ],
   "threads_history": [
