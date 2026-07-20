@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 33,
-  "threads_total_posts": 41,
+  "threads_total_posts": 42,
   "ig_history": [
     {
       "date": "2026-07-20",
@@ -224,6 +224,13 @@
     {
       "date": "2026-07-20",
       "postId": "threads-publish-success",
+      "topic": "Why we need to stop romanticizing Artificial General Intelligence (AGI)",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-20T13:13:42.296Z"
+    },
+    {
+      "date": "2026-07-20",
+      "postId": "threads-publish-success",
       "topic": "The most overrated AI trend right now",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-20T10:21:27.017Z"
@@ -423,13 +430,6 @@
       "topic": "Why UX is suddenly the most important part of AI development",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-12T05:41:53.704Z"
-    },
-    {
-      "date": "2026-07-10",
-      "postId": "threads-publish-success",
-      "topic": "The most overrated AI trend right now",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-10T15:47:14.329Z"
     }
   ],
   "ig_total_posts_life_quotes": 15,
