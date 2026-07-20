@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 32,
+  "ig_total_posts": 33,
   "threads_total_posts": 39,
   "ig_history": [
+    {
+      "date": "2026-07-20",
+      "postId": "ig-publish-success",
+      "topic": "Jun'ichirō Tanizaki",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-20T05:49:51.463Z"
+    },
     {
       "date": "2026-07-20",
       "postId": "ig-publish-success",
