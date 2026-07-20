@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 33,
-  "threads_total_posts": 40,
+  "threads_total_posts": 41,
   "ig_history": [
     {
       "date": "2026-07-20",
@@ -224,6 +224,13 @@
     {
       "date": "2026-07-20",
       "postId": "threads-publish-success",
+      "topic": "The most overrated AI trend right now",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-20T10:21:27.017Z"
+    },
+    {
+      "date": "2026-07-20",
+      "postId": "threads-publish-success",
       "topic": "Why vector databases aren't always the answer",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-20T05:50:43.142Z"
@@ -423,13 +430,6 @@
       "topic": "The most overrated AI trend right now",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-10T15:47:14.329Z"
-    },
-    {
-      "date": "2026-07-10",
-      "postId": "threads-publish-success",
-      "topic": "Why tech debt is accelerating faster than ever with AI tools",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-10T15:29:53.060Z"
     }
   ],
   "ig_total_posts_life_quotes": 15,
