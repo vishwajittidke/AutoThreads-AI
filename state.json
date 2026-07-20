@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 31,
+  "ig_total_posts": 32,
   "threads_total_posts": 39,
   "ig_history": [
+    {
+      "date": "2026-07-20",
+      "postId": "ig-publish-success",
+      "topic": "Alan Watts",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-20T05:10:13.410Z"
+    },
     {
       "date": "2026-07-19",
       "postId": "ig-publish-success",
