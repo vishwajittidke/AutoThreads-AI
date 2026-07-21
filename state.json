@@ -432,8 +432,15 @@
       "timestamp": "2026-07-12T07:36:39.993Z"
     }
   ],
-  "ig_total_posts_life_quotes": 15,
+  "ig_total_posts_life_quotes": 16,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-07-21",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Ralph Waldo Emerson",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-21T06:40:47.773Z"
+    },
     {
       "date": "2026-07-20",
       "postId": "ig-publish-success",
