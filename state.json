@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 35,
+  "ig_total_posts": 36,
   "threads_total_posts": 42,
   "ig_history": [
+    {
+      "date": "2026-07-21",
+      "postId": "ig-publish-success",
+      "topic": "Jun'ichirō Tanizaki",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-21T05:30:31.694Z"
+    },
     {
       "date": "2026-07-20",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "IG: Carl Jung",
       "contentPreview": "Published to both platforms",
       "timestamp": "2026-07-10T10:00:42.481Z"
-    },
-    {
-      "date": "2026-07-10",
-      "postId": "dual-publish-success",
-      "topic": "IG: Annie Dillard",
-      "contentPreview": "Published to both platforms",
-      "timestamp": "2026-07-10T09:43:48.232Z"
     }
   ],
   "threads_history": [
