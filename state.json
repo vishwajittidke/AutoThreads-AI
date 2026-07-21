@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 36,
-  "threads_total_posts": 43,
+  "threads_total_posts": 44,
   "ig_history": [
     {
       "date": "2026-07-21",
@@ -224,6 +224,13 @@
     {
       "date": "2026-07-21",
       "postId": "threads-publish-success",
+      "topic": "The unspoken challenge of testing and evaluating LLM outputs",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-21T09:41:57.602Z"
+    },
+    {
+      "date": "2026-07-21",
+      "postId": "threads-publish-success",
       "topic": "Why junior developers shouldn't rely entirely on AI coding assistants",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-21T05:31:10.403Z"
@@ -423,13 +430,6 @@
       "topic": "Why tech debt is accelerating faster than ever with AI tools",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-12T09:26:24.997Z"
-    },
-    {
-      "date": "2026-07-12",
-      "postId": "threads-publish-success",
-      "topic": "Why vector databases aren't always the answer",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-12T07:36:39.993Z"
     }
   ],
   "ig_total_posts_life_quotes": 16,
