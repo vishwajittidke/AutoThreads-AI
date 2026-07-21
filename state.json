@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 36,
-  "threads_total_posts": 42,
+  "threads_total_posts": 43,
   "ig_history": [
     {
       "date": "2026-07-21",
@@ -222,6 +222,13 @@
   ],
   "threads_history": [
     {
+      "date": "2026-07-21",
+      "postId": "threads-publish-success",
+      "topic": "Why junior developers shouldn't rely entirely on AI coding assistants",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-21T05:31:10.403Z"
+    },
+    {
       "date": "2026-07-20",
       "postId": "threads-publish-success",
       "topic": "Why we need to stop romanticizing Artificial General Intelligence (AGI)",
@@ -423,13 +430,6 @@
       "topic": "Why vector databases aren't always the answer",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-12T07:36:39.993Z"
-    },
-    {
-      "date": "2026-07-12",
-      "postId": "threads-publish-success",
-      "topic": "Why UX is suddenly the most important part of AI development",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-12T05:41:53.704Z"
     }
   ],
   "ig_total_posts_life_quotes": 15,
