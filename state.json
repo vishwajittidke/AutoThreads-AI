@@ -432,8 +432,15 @@
       "timestamp": "2026-07-12T15:32:59.683Z"
     }
   ],
-  "ig_total_posts_life_quotes": 17,
+  "ig_total_posts_life_quotes": 18,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-07-22",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Hans Margolius",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-22T06:41:51.178Z"
+    },
     {
       "date": "2026-07-21",
       "postId": "ig-publish-success",
