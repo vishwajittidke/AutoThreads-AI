@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 37,
-  "threads_total_posts": 44,
+  "threads_total_posts": 45,
   "ig_history": [
     {
       "date": "2026-07-22",
@@ -222,6 +222,13 @@
   ],
   "threads_history": [
     {
+      "date": "2026-07-22",
+      "postId": "threads-publish-success",
+      "topic": "Why fine-tuning is rarely the first step you should take",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-22T05:30:31.103Z"
+    },
+    {
       "date": "2026-07-21",
       "postId": "threads-publish-success",
       "topic": "The unspoken challenge of testing and evaluating LLM outputs",
@@ -423,13 +430,6 @@
       "topic": "The uncomfortable truth about Prompt Engineering as a career",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-12T15:32:59.683Z"
-    },
-    {
-      "date": "2026-07-12",
-      "postId": "threads-publish-success",
-      "topic": "Why tech debt is accelerating faster than ever with AI tools",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-12T09:26:24.997Z"
     }
   ],
   "ig_total_posts_life_quotes": 17,
