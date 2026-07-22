@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 37,
-  "threads_total_posts": 45,
+  "threads_total_posts": 46,
   "ig_history": [
     {
       "date": "2026-07-22",
@@ -224,6 +224,13 @@
     {
       "date": "2026-07-22",
       "postId": "threads-publish-success",
+      "topic": "Why open-source AI is terrifying proprietary tech giants",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-22T09:36:50.519Z"
+    },
+    {
+      "date": "2026-07-22",
+      "postId": "threads-publish-success",
       "topic": "Why fine-tuning is rarely the first step you should take",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-22T05:30:31.103Z"
@@ -423,13 +430,6 @@
       "topic": "Why vector databases aren't always the answer",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-13T10:36:32.280Z"
-    },
-    {
-      "date": "2026-07-12",
-      "postId": "threads-publish-success",
-      "topic": "The uncomfortable truth about Prompt Engineering as a career",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-12T15:32:59.683Z"
     }
   ],
   "ig_total_posts_life_quotes": 18,
