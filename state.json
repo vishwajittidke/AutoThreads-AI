@@ -432,8 +432,15 @@
       "timestamp": "2026-07-14T09:19:19.916Z"
     }
   ],
-  "ig_total_posts_life_quotes": 23,
+  "ig_total_posts_life_quotes": 24,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-07-23",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: T.S. Eliot",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-23T11:58:34.296Z"
+    },
     {
       "date": "2026-07-23",
       "postId": "ig-publish-success",
