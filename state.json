@@ -432,8 +432,15 @@
       "timestamp": "2026-07-14T09:19:19.916Z"
     }
   ],
-  "ig_total_posts_life_quotes": 27,
+  "ig_total_posts_life_quotes": 28,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-07-23",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: May Sarton",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-23T12:32:56.072Z"
+    },
     {
       "date": "2026-07-23",
       "postId": "ig-publish-success",
