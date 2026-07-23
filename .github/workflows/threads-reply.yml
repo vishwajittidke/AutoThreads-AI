@@ -1,0 +1,36 @@
+name: AutoThreads-AI (Threads Auto-Reply)
+
+on:
+  schedule:
+    # Runs at minute 30 of every hour to check for new comments
+    - cron: '30 * * * *'
+  workflow_dispatch:
+
+jobs:
+  reply:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          
+      - name: Install Dependencies
+        run: npm install
+        
+      - name: Execute Threads Auto-Reply Engine
+        env:
+          GEMINI_API_KEYS: ${{ secrets.GEMINI_API_KEYS }}
+          INSTAGRAM_ACCESS_TOKEN: ${{ secrets.INSTAGRAM_ACCESS_TOKEN }}
+          THREADS_ACCESS_TOKEN: ${{ secrets.THREADS_ACCESS_TOKEN }}
+          INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
+          THREADS_USER_ID: ${{ secrets.THREADS_USER_ID }}
+        run: node src/index.js --target threads-reply
