@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 41,
-  "threads_total_posts": 50,
+  "threads_total_posts": 51,
   "ig_history": [
     {
       "date": "2026-07-23",
@@ -222,6 +222,13 @@
   ],
   "threads_history": [
     {
+      "date": "2026-07-24",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-23T18:53:52.043Z"
+    },
+    {
       "date": "2026-07-23",
       "postId": "threads-publish-success",
       "topic": "The most overrated AI trend right now",
@@ -423,13 +430,6 @@
       "topic": "The uncomfortable truth about Prompt Engineering as a career",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-15T04:41:26.664Z"
-    },
-    {
-      "date": "2026-07-14",
-      "postId": "threads-publish-success",
-      "topic": "The hidden infrastructure cost of Retrieval-Augmented Generation (RAG)",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-14T15:48:55.542Z"
     }
   ],
   "ig_total_posts_life_quotes": 28,
@@ -630,5 +630,6 @@
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-11T18:05:57.318Z"
     }
-  ]
+  ],
+  "replied_comment_ids": []
 }
