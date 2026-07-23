@@ -22,13 +22,12 @@ export async function overlayTypography(imageBase64, quoteText, authorName) {
   // 1. Draw base image
   ctx.drawImage(img, 0, 0, width, height);
   
-  // 2. Add subtle cinematic dark gradient overlay for text legibility
-  // Darker at center and bottom where text is
+  // 2. Add ultra-subtle cinematic dark gradient overlay (only at the very bottom for the handle)
+  // The AI prompt already enforces dark centers, so we don't need a heavy black mask.
   const gradient = ctx.createLinearGradient(0, 0, 0, height);
-  gradient.addColorStop(0, 'rgba(0,0,0,0.1)');
-  gradient.addColorStop(0.4, 'rgba(0,0,0,0.5)');
-  gradient.addColorStop(0.6, 'rgba(0,0,0,0.6)');
-  gradient.addColorStop(1, 'rgba(0,0,0,0.8)');
+  gradient.addColorStop(0, 'rgba(0,0,0,0)');
+  gradient.addColorStop(0.7, 'rgba(0,0,0,0)');
+  gradient.addColorStop(1, 'rgba(0,0,0,0.5)');
   ctx.fillStyle = gradient;
   ctx.fillRect(0, 0, width, height);
   
