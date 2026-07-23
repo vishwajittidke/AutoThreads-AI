@@ -45,7 +45,7 @@ CRITICAL: DO NOT use quotes from any of these previously used authors: ${usedAut
 
 MANDATORY AESTHETIC THEME FOR THIS POST:
 You MUST design the scene entirely around this specific visual category: "${currentCategory}".
-Do NOT deviate from this category, BUT you MUST invent a wildly unique, highly specific composition. Never describe the exact same scene twice. Change the camera angle, the weather, the time of day, and the specific subject. Ensure the imagery perfectly embodies this specific aesthetic in a completely new way.
+Do NOT deviate from this category, BUT you MUST invent a wildly unique, highly specific composition. Never describe the exact same scene twice. Change the core subject completely (e.g. if the category is Architecture, don't use a cabin again, use a lighthouse or a glass pavilion). Ensure the imagery perfectly embodies this specific aesthetic in a completely new way.
 
 CRITICAL TYPOGRAPHY & COMPOSITION RULE:
 The quote MUST be extremely short and punchy. Maximum 200 characters total.
@@ -93,8 +93,8 @@ You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it
     try {
       // Primary: Pollinations AI
       const randomSeed = Math.floor(Math.random() * 999999999);
-      // Inject strict universal constraints and embed the seed at the VERY BEGINNING of the prompt to prevent truncation and completely bust the cache
-      const strictModifiers = `[Style Seed: ${randomSeed}] Shot with low-key lighting, intentionally underexposed, heavily muted desaturated colors, massive dark empty negative space in the exact center, minimalist composition, no text, no watermarks, no letters, cinematic, ultra high quality, 8k resolution, masterpiece. Scene description: `;
+      // Inject strict universal constraints using natural language (Pollinations strips brackets) to perfectly bust the cache
+      const strictModifiers = `Unique photographic variant ${randomSeed}. Shot with low-key lighting, intentionally underexposed, heavily muted desaturated colors, massive dark empty negative space in the exact center, minimalist composition, no text, no watermarks, no letters, cinematic, ultra high quality, 8k resolution, masterpiece. Scene description: `;
       const encodedPrompt = encodeURIComponent(strictModifiers + prompt);
       const url = `https://image.pollinations.ai/prompt/${encodedPrompt}?width=1080&height=1350&nologo=true&seed=${randomSeed}`;
       
