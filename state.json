@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 41,
-  "threads_total_posts": 53,
+  "threads_total_posts": 54,
   "ig_history": [
     {
       "date": "2026-07-23",
@@ -226,6 +226,13 @@
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
+      "timestamp": "2026-07-23T19:09:30.563Z"
+    },
+    {
+      "date": "2026-07-24",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
       "timestamp": "2026-07-23T19:06:41.911Z"
     },
     {
@@ -423,13 +430,6 @@
       "topic": "The security nightmare of giving AI agents write-access",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-15T16:01:59.854Z"
-    },
-    {
-      "date": "2026-07-15",
-      "postId": "threads-publish-success",
-      "topic": "The real bottleneck in AI development isn't compute, it's data quality",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-15T09:23:26.320Z"
     }
   ],
   "ig_total_posts_life_quotes": 28,
