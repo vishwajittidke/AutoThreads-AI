@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 41,
-  "threads_total_posts": 55,
+  "threads_total_posts": 56,
   "ig_history": [
     {
       "date": "2026-07-23",
@@ -224,6 +224,13 @@
     {
       "date": "2026-07-24",
       "postId": "threads-reply-publish-success",
+      "topic": "Replied to 8 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-23T19:40:37.810Z"
+    },
+    {
+      "date": "2026-07-24",
+      "postId": "threads-reply-publish-success",
       "topic": "Replied to 3 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-23T19:20:01.854Z"
@@ -423,13 +430,6 @@
       "topic": "The hidden infrastructure cost of Retrieval-Augmented Generation (RAG)",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-16T07:03:59.847Z"
-    },
-    {
-      "date": "2026-07-16",
-      "postId": "threads-publish-success",
-      "topic": "The uncomfortable truth about Prompt Engineering as a career",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-16T05:22:24.160Z"
     }
   ],
   "ig_total_posts_life_quotes": 28,
@@ -634,6 +634,14 @@
   "replied_comment_ids": [
     "18123240607813221",
     "17893120914573075",
-    "18114028342820836"
+    "18114028342820836",
+    "18119719462830151",
+    "18058710872732481",
+    "17957329631981332",
+    "17948868642198270",
+    "18107877722012891",
+    "18181468876400329",
+    "17997364784973608",
+    "17973624171067947"
   ]
 }
