@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 40,
+  "ig_total_posts": 41,
   "threads_total_posts": 49,
   "ig_history": [
+    {
+      "date": "2026-07-23",
+      "postId": "ig-publish-success",
+      "topic": "William James",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-23T13:44:58.610Z"
+    },
     {
       "date": "2026-07-23",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Thich Nhat Hanh",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-10T14:49:38.254Z"
-    },
-    {
-      "date": "2026-07-10",
-      "postId": "ig-publish-success",
-      "topic": "Rainer Maria Rilke",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-10T13:55:16.257Z"
     }
   ],
   "threads_history": [
