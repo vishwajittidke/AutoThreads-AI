@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 39,
-  "threads_total_posts": 47,
+  "threads_total_posts": 48,
   "ig_history": [
     {
       "date": "2026-07-23",
@@ -222,6 +222,13 @@
   ],
   "threads_history": [
     {
+      "date": "2026-07-23",
+      "postId": "threads-publish-success",
+      "topic": "Why UX is suddenly the most important part of AI development",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-23T05:35:34.989Z"
+    },
+    {
       "date": "2026-07-22",
       "postId": "threads-publish-success",
       "topic": "Why we need to stop romanticizing Artificial General Intelligence (AGI)",
@@ -423,13 +430,6 @@
       "topic": "Why local AI running on your laptop is the next big shift",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-14T04:23:29.606Z"
-    },
-    {
-      "date": "2026-07-13",
-      "postId": "threads-publish-success",
-      "topic": "Why Small Language Models (SLMs) will beat giant models in production",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-13T16:27:57.221Z"
     }
   ],
   "ig_total_posts_life_quotes": 18,
