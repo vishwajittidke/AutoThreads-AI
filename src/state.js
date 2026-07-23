@@ -252,9 +252,9 @@ export function commitAndPush(commitMessage) {
 
       console.error(`   ⚠️ Git push failed on attempt ${attempts}.`);
       if (attempts < maxAttempts) {
-        console.log("   🔄 Attempting git pull --rebase to resolve potential conflicts...");
+        console.log("   🔄 Attempting git pull --rebase --autostash to resolve potential conflicts...");
         try {
-          execSync("git pull --rebase", { stdio: "pipe" });
+          execSync("git pull origin main --rebase --autostash", { stdio: "pipe" });
         } catch (pullError) {
           console.error("   ❌ Failed to pull/rebase. Stopping retry loop.", pullError.message);
           throw pullError;
