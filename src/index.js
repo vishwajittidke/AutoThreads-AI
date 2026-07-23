@@ -141,7 +141,7 @@ async function main() {
     try {
       console.log("\\n═══ [PIPELINE] Threads Auto-Reply Engine ══════════════════\\n");
       
-      const recentPosts = await fetchRecentThreads(threadsUserId, threadsToken, 3);
+      const recentPosts = await fetchRecentThreads(threadsUserId, threadsToken, 10);
       console.log(`   📥 Fetched ${recentPosts.length} recent posts.`);
 
       state.replied_comment_ids = state.replied_comment_ids || [];
