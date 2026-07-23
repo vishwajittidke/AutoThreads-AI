@@ -1,4 +1,4 @@
-import { GoogleGenerativeAI } from "@google/generative-ai";
+import { GoogleGenerativeAI, HarmCategory, HarmBlockThreshold } from "@google/generative-ai";
 
 /**
  * AutoThreads-AI: Gemini API Key Rotator & Image Generation Engine
@@ -43,8 +43,16 @@ export class GeminiRotator {
       const apiKey = this.getCurrentKey();
       const genAI = new GoogleGenerativeAI(apiKey);
       
-      // Use gemini-3.5-flash
-      const model = genAI.getGenerativeModel({ model: "gemini-3.5-flash" });
+      // Use gemini-2.5-flash to avoid strict limits and disable safety filters to prevent innocent text from being blocked
+      const model = genAI.getGenerativeModel({ 
+        model: "gemini-2.5-flash",
+        safetySettings: [
+          { category: HarmCategory.HARM_CATEGORY_HARASSMENT, threshold: HarmBlockThreshold.BLOCK_NONE },
+          { category: HarmCategory.HARM_CATEGORY_HATE_SPEECH, threshold: HarmBlockThreshold.BLOCK_NONE },
+          { category: HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT, threshold: HarmBlockThreshold.BLOCK_NONE },
+          { category: HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT, threshold: HarmBlockThreshold.BLOCK_NONE }
+        ]
+      });
       
       console.log(`[Gemini Rotator] 🧠 Generating content using Key Index ${this.currentKeyIndex} (Attempt ${this.attemptsOnCurrentKey}/3)`);
       const result = await model.generateContent(prompt);
