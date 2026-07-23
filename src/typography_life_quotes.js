@@ -68,11 +68,21 @@ export async function overlayTypography(imageBase64, quoteText, authorName) {
   // The grid uses a classic, upright serif (like Times New Roman or Garamond), NOT italic.
   ctx.font = '34px "Times New Roman", "Garamond", "Georgia", serif';
   
+  // Add a soft elegant drop shadow to guarantee legibility against any background
+  ctx.shadowColor = 'rgba(0, 0, 0, 0.8)';
+  ctx.shadowBlur = 12;
+  ctx.shadowOffsetX = 0;
+  ctx.shadowOffsetY = 4;
+  
   // Max width with luxurious padding
   const maxTextWidth = width - 240; 
   
   // Center slightly above exact middle for visual balance
   wrapText(ctx, cleanQuote, width / 2, height / 2 - 40, maxTextWidth, 54);
+  
+  // Disable shadow for the handle
+  ctx.shadowColor = 'transparent';
+  ctx.shadowBlur = 0;
   
   // Tiny handle at the very bottom
   ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
