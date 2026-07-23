@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 41,
-  "threads_total_posts": 54,
+  "threads_total_posts": 55,
   "ig_history": [
     {
       "date": "2026-07-23",
@@ -224,6 +224,13 @@
     {
       "date": "2026-07-24",
       "postId": "threads-reply-publish-success",
+      "topic": "Replied to 3 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-23T19:20:01.854Z"
+    },
+    {
+      "date": "2026-07-24",
+      "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-23T19:09:30.563Z"
@@ -423,13 +430,6 @@
       "topic": "The uncomfortable truth about Prompt Engineering as a career",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-16T05:22:24.160Z"
-    },
-    {
-      "date": "2026-07-15",
-      "postId": "threads-publish-success",
-      "topic": "The security nightmare of giving AI agents write-access",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-15T16:01:59.854Z"
     }
   ],
   "ig_total_posts_life_quotes": 28,
@@ -631,5 +631,9 @@
       "timestamp": "2026-07-11T18:05:57.318Z"
     }
   ],
-  "replied_comment_ids": []
+  "replied_comment_ids": [
+    "18123240607813221",
+    "17893120914573075",
+    "18114028342820836"
+  ]
 }
