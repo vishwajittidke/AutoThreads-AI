@@ -26,11 +26,11 @@ export class DirectorLifeQuotesEngine {
       .join(", ");
 
     const categories = [
-      "Earthy & Tactile Minimalism (Smooth river rocks, pebbles on sand, a compass, rustic wooden bowls, solitary feathers. Warm beiges, browns, muted golds)",
-      "The Artisan’s Focus (Craftsmen at wooden workbenches, open books, dim rooms illuminated by warm desk lamps. Deep shadows, rich browns, amber light)",
-      "Solitude & Reflection (Silhouettes sitting by large windows overlooking moody cityscapes at dusk, drinking coffee in quiet rooms. Cool blues contrasting with warm indoor lighting)",
-      "Scenic Life Journeys (Glowing A-frame cabins in dark forests, a runner on a scenic path, dusk falling on an urban street. Sunset oranges, deep forest greens)",
-      "Ethereal & Magical Nature (Highly saturated dreamy landscapes, rainbows over valleys, soft blurred flowers with sparkling butterflies, starry night skies. Vibrant pinks, purples, bright blues)"
+      "Earthy & Tactile Minimalism (Smooth river rocks, pebbles on sand, a rustic wooden bowl, solitary feathers on dark slate. Warm beiges, browns, muted golds)",
+      "The Artisan’s Focus (Empty wooden workbenches, open antique books, dim rooms illuminated by a single warm desk lamp, scattered tools. Deep shadows, rich browns, amber light)",
+      "Solitude & Reflection (Empty leather armchairs by large windows overlooking moody cityscapes at dusk, a steaming cup of coffee on a glass table in a quiet room. Cool blues contrasting with warm indoor lighting)",
+      "Scenic Life Journeys (Glowing A-frame cabins in dark forests, a lonely bridge over a misty river, dusk falling on an empty urban street. Sunset oranges, deep forest greens)",
+      "Ethereal & Magical Nature (Highly saturated dreamy landscapes, rain falling on deep forest leaves, glowing mushrooms, starry night skies. Vibrant pinks, purples, bright blues)"
     ];
     
     // Mathematically rotate through categories so it never repeats the same theme
