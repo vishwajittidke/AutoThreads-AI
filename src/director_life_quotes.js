@@ -47,10 +47,11 @@ MANDATORY AESTHETIC THEME FOR THIS POST:
 You MUST design the scene entirely around this specific visual category: "${currentCategory}".
 Do NOT deviate from this category. Ensure the imagery perfectly embodies this specific aesthetic.
 
-CRITICAL TYPOGRAPHY RULE:
+CRITICAL TYPOGRAPHY & COMPOSITION RULE:
 The quote MUST be extremely short and punchy. Maximum 200 characters total.
+For the image design, you MUST dictate a minimalist composition. The exact center of the image MUST be dark, empty negative space so the text will be readable.
 
-Ensure the quote is philosophically substantial, properly attributed, and not overused. Symbolism must be subtle and indirect. Lighting natural but varied. Maintain calm editorial refinement and ensure strong negative space for the quote and logo.
+Ensure the quote is philosophically substantial, properly attributed, and not overused. Lighting must be low-key and dramatic. Maintain calm editorial refinement and ensure strong negative space in the center. No busy elements in the middle.
 
 OUTPUT FORMAT:
 You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it in markdown blockticks.
@@ -91,8 +92,10 @@ You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it
 
     try {
       // Primary: Pollinations AI
-      const encodedPrompt = encodeURIComponent(prompt + " cinematic, moody atmosphere, ultra high quality, 8k resolution, photorealistic, masterpiece");
-      const randomSeed = Math.floor(Math.random() * 1000000);
+      const randomSeed = Math.floor(Math.random() * 999999999);
+      // Inject strict universal constraints and embed the seed in the prompt to force the AI to bypass its cache and generate a completely unique image
+      const strictModifiers = `shot with low-key lighting, intentionally underexposed, heavily muted desaturated colors, massive dark empty negative space in the exact center, minimalist composition, no text, no watermarks, no letters, cinematic, ultra high quality, 8k resolution, masterpiece, unique variation ${randomSeed}`;
+      const encodedPrompt = encodeURIComponent(prompt + ", " + strictModifiers);
       const url = `https://image.pollinations.ai/prompt/${encodedPrompt}?width=1080&height=1350&nologo=true&seed=${randomSeed}`;
       
       const response = await fetch(url);
