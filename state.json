@@ -432,8 +432,15 @@
       "timestamp": "2026-07-14T09:19:19.916Z"
     }
   ],
-  "ig_total_posts_life_quotes": 22,
+  "ig_total_posts_life_quotes": 23,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-07-23",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Albert Camus",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-23T11:51:57.245Z"
+    },
     {
       "date": "2026-07-23",
       "postId": "ig-publish-success",
