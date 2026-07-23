@@ -432,8 +432,15 @@
       "timestamp": "2026-07-14T09:19:19.916Z"
     }
   ],
-  "ig_total_posts_life_quotes": 20,
+  "ig_total_posts_life_quotes": 21,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-07-23",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Kakuzō Okakura",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-23T11:45:51.380Z"
+    },
     {
       "date": "2026-07-23",
       "postId": "ig-publish-success",
