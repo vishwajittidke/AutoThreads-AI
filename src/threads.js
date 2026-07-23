@@ -14,7 +14,7 @@ import { CONSTANTS } from "./config.js";
  * @param {string} text - The sanitized post content
  * @returns {Promise<string>} The container creation ID
  */
-async function createContainer(userId, accessToken, text) {
+async function createContainer(userId, accessToken, text, replyToId = null) {
   const url = `${CONSTANTS.META_BASE_URL}/${userId}/threads`;
 
   const params = new URLSearchParams({
@@ -22,6 +22,10 @@ async function createContainer(userId, accessToken, text) {
     text: text,
     access_token: accessToken,
   });
+
+  if (replyToId) {
+    params.append("reply_to_id", replyToId);
+  }
 
   const response = await fetchWithRetry(`${url}?${params.toString()}`, {
     method: "POST",
@@ -134,13 +138,14 @@ async function publishContainer(userId, accessToken, containerId) {
  * @param {string} text - Sanitized post content
  * @returns {Promise<{ postId: string, containerId: string }>}
  */
-export async function publishToThreads(userId, accessToken, text) {
+export async function publishToThreads(userId, accessToken, text, replyToId = null) {
   console.log(`\n🚀 [Threads] Starting publication pipeline...`);
   console.log(`   📝 Content preview: "${text.slice(0, 80)}..." (${text.length} chars)`);
+  if (replyToId) console.log(`   ↪️ Replying to comment ID: ${replyToId}`);
 
   // Stage 1: Create container
   console.log(`\n   ── Stage 1: Container Creation ──`);
-  const containerId = await createContainer(userId, accessToken, text);
+  const containerId = await createContainer(userId, accessToken, text, replyToId);
 
   // Stage 2: Poll for completion
   console.log(`\n   ── Stage 2: Processing Verification ──`);
@@ -152,6 +157,37 @@ export async function publishToThreads(userId, accessToken, text) {
   console.log(`   🎉 Post published successfully! Post ID: ${postId}`);
 
   return { postId, containerId };
+}
+
+/**
+ * Fetches the most recent threads published by the user.
+ */
+export async function fetchRecentThreads(userId, accessToken, limit = 5) {
+  const url = `${CONSTANTS.META_BASE_URL}/${userId}/threads`;
+  const params = new URLSearchParams({
+    fields: "id,text,media_product_type,media_type",
+    limit: limit.toString(),
+    access_token: accessToken,
+  });
+
+  const response = await fetchWithRetry(`${url}?${params.toString()}`, { method: "GET" });
+  const data = await response.json();
+  return data.data || [];
+}
+
+/**
+ * Fetches replies to a specific thread post.
+ */
+export async function fetchReplies(mediaId, accessToken) {
+  const url = `${CONSTANTS.META_BASE_URL}/${mediaId}/replies`;
+  const params = new URLSearchParams({
+    fields: "id,text,timestamp",
+    access_token: accessToken,
+  });
+
+  const response = await fetchWithRetry(`${url}?${params.toString()}`, { method: "GET" });
+  const data = await response.json();
+  return data.data || [];
 }
 
 // ─── Internal Helpers ────────────────────────────────────────────────────────

@@ -4,8 +4,8 @@ import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
 import { DirectorEngine } from "./director.js";
 import { overlayTypography } from "./typography.js";
 import { InstagramPublisher } from "./instagram.js";
-import { generateContent } from "./gemini.js";
-import { publishToThreads } from "./threads.js";
+import { generateContent, generateReply } from "./gemini.js";
+import { publishToThreads, fetchRecentThreads, fetchReplies } from "./threads.js";
 import fs from "fs/promises";
 import { execSync } from "child_process";
 
@@ -23,8 +23,8 @@ async function main() {
     target = args[targetIndex + 1].toLowerCase();
   }
   
-  if (target !== "ig" && target !== "threads") {
-    console.error("❌ Invalid or missing target. You must specify --target ig OR --target threads.");
+  if (target !== "ig" && target !== "threads" && target !== "threads-reply") {
+    console.error("❌ Invalid or missing target. You must specify --target ig, --target threads, or --target threads-reply.");
     process.exit(1);
   }
 
@@ -43,7 +43,7 @@ async function main() {
 
   const state = readState();
   
-  if (hasPostedToday(state, target)) {
+  if (target !== "threads-reply" && hasPostedToday(state, target)) {
     console.log(`   ✅ Limit reached for ${target.toUpperCase()} today. Idempotency lock active.`);
     console.log("   🛑 Terminating safely to prevent duplicate posts.");
     process.exit(0);
@@ -130,6 +130,52 @@ async function main() {
     } catch (error) {
       console.error(`\n❌ THREADS PIPELINE ERROR: ${error.message}`);
       recordError(state, "Threads: " + error.message, "Threads");
+      hasError = true;
+    }
+  }
+
+  // ==========================================
+  // PIPELINE: THREADS REPLIES
+  // ==========================================
+  if (target === "threads-reply") {
+    try {
+      console.log("\\n═══ [PIPELINE] Threads Auto-Reply Engine ══════════════════\\n");
+      
+      const recentPosts = await fetchRecentThreads(threadsUserId, threadsToken, 3);
+      console.log(`   📥 Fetched ${recentPosts.length} recent posts.`);
+
+      state.replied_comment_ids = state.replied_comment_ids || [];
+      let repliesSent = 0;
+
+      for (const post of recentPosts) {
+        if (!post.id) continue;
+        
+        const replies = await fetchReplies(post.id, threadsToken);
+        for (const reply of replies) {
+          if (!reply.id || state.replied_comment_ids.includes(reply.id)) {
+            continue; // Already replied to this comment
+          }
+          
+          console.log(`\n   💬 Found new comment: "${reply.text}"`);
+          const aiReplyText = await generateReply(apiKeys, post.text, reply.text);
+          
+          if (aiReplyText !== "Not worth my tokens.") {
+            await publishToThreads(threadsUserId, threadsToken, aiReplyText, reply.id);
+            repliesSent++;
+          }
+          
+          // Mark as processed regardless of whether we replied or skipped
+          state.replied_comment_ids.push(reply.id);
+        }
+      }
+      
+      // Keep state array manageable
+      state.replied_comment_ids = state.replied_comment_ids.slice(-200);
+      
+      finalTopic = `Replied to ${repliesSent} comments`;
+    } catch (error) {
+      console.error(`\n❌ THREADS REPLY PIPELINE ERROR: ${error.message}`);
+      recordError(state, "Threads-Reply: " + error.message, "Threads");
       hasError = true;
     }
   }

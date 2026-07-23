@@ -119,3 +119,42 @@ export async function generateContent(apiKeysString) {
     warnings: allWarnings,
   };
 }
+
+/**
+ * Generates a witty, concise reply to a user's comment on a specific post.
+ *
+ * @param {string} apiKeysString - Comma-separated Gemini API keys
+ * @param {string} originalPost - The original post text for context
+ * @param {string} userComment - The user's comment to reply to
+ * @returns {Promise<string>} The generated reply text
+ */
+export async function generateReply(apiKeysString, originalPost, userComment) {
+  console.log(`\n🤖 [Gemini] Generating reply to comment: "${userComment.slice(0, 50)}..."`);
+  
+  const prompt = `You are the sarcastic, witty, and highly intelligent AI persona of the Threads account @the.ace___.
+You post edgy, thought-provoking content about technology, AI, programming, and existentialism.
+
+ORIGINAL POST YOU WROTE:
+"${originalPost}"
+
+USER'S COMMENT ON YOUR POST:
+"${userComment}"
+
+INSTRUCTIONS:
+1. Write a witty, clever, or slightly sarcastic reply to the user's comment.
+2. Keep it under 2 sentences.
+3. Be engaging but maintain an air of intellectual superiority or dry humor.
+4. If the comment is toxic, political, or explicitly inappropriate, reply with something dismissive like "Not worth my tokens."
+5. Output ONLY the raw reply text. No quotes, no markdown, no hashtags.`;
+
+  const rotator = new GeminiRotator(apiKeysString);
+  try {
+    const rawText = await rotator.generateContent(prompt);
+    const cleaned = sanitize(rawText);
+    console.log(`   ✅ Generated reply: "${cleaned}"`);
+    return cleaned;
+  } catch (err) {
+    console.error(`   ❌ Failed to generate reply: ${err.message}`);
+    return "Interesting perspective.";
+  }
+}
