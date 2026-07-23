@@ -432,8 +432,15 @@
       "timestamp": "2026-07-14T09:19:19.916Z"
     }
   ],
-  "ig_total_posts_life_quotes": 19,
+  "ig_total_posts_life_quotes": 20,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-07-23",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Henri Matisse",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-23T11:28:58.484Z"
+    },
     {
       "date": "2026-07-23",
       "postId": "ig-publish-success",
