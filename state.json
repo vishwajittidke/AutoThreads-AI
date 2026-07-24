@@ -1,13 +1,13 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (500): {\"error\":{\"code\":1,\"message\":\"An unknown error occurred\"}}",
-  "last_error_date": "2026-07-24T06:45:40.993Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 42,
-  "threads_total_posts": 56,
+  "threads_total_posts": 57,
   "ig_history": [
     {
       "date": "2026-07-24",
@@ -224,6 +224,13 @@
     {
       "date": "2026-07-24",
       "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-24T07:12:03.184Z"
+    },
+    {
+      "date": "2026-07-24",
+      "postId": "threads-reply-publish-success",
       "topic": "Replied to 8 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-23T19:40:37.810Z"
@@ -423,13 +430,6 @@
       "topic": "Why local AI running on your laptop is the next big shift",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-16T09:31:28.785Z"
-    },
-    {
-      "date": "2026-07-16",
-      "postId": "threads-publish-success",
-      "topic": "The hidden infrastructure cost of Retrieval-Augmented Generation (RAG)",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-16T07:03:59.847Z"
     }
   ],
   "ig_total_posts_life_quotes": 29,
