@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 42,
+  "ig_total_posts": 43,
   "threads_total_posts": 59,
   "ig_history": [
+    {
+      "date": "2026-07-24",
+      "postId": "ig-publish-success",
+      "topic": "Rainer Maria Rilke",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-24T15:44:37.225Z"
+    },
     {
       "date": "2026-07-24",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Hans Margolius",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-10T15:44:10.459Z"
-    },
-    {
-      "date": "2026-07-10",
-      "postId": "ig-publish-success",
-      "topic": "Marcus Aurelius",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-10T14:51:40.357Z"
     }
   ],
   "threads_history": [
