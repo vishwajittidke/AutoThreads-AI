@@ -213,6 +213,12 @@ async function fetchWithRetry(url, options) {
     }
 
     try {
+      const safeUrl = url.replace(/access_token=[^&]+/, "access_token=***");
+      let safeBody = "";
+      if (options && options.body) {
+        safeBody = options.body.toString().replace(/access_token=[^&]+/, "access_token=***");
+      }
+      console.log(`   🌐 Fetching: ${safeUrl} | Body: ${safeBody}`);
       const response = await fetch(url, options);
 
       if (!response.ok) {
