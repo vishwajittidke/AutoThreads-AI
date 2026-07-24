@@ -167,7 +167,7 @@ export async function publishToThreads(userId, accessToken, text, replyToId = nu
 export async function fetchRecentThreads(userId, accessToken, limit = 5) {
   const url = `${CONSTANTS.META_BASE_URL}/${userId}/threads`;
   const params = new URLSearchParams({
-    fields: "id,text,media_product_type,media_type",
+    fields: "id,text",
     limit: limit.toString(),
     access_token: accessToken,
   });
