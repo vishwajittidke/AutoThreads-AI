@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 42,
-  "threads_total_posts": 57,
+  "threads_total_posts": 58,
   "ig_history": [
     {
       "date": "2026-07-24",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-07-24",
+      "postId": "threads-publish-success",
+      "topic": "Why tech debt is accelerating faster than ever with AI tools",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-24T07:12:33.299Z"
+    },
+    {
+      "date": "2026-07-24",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "The biggest misconception non-technical founders have about AI",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-16T15:50:43.471Z"
-    },
-    {
-      "date": "2026-07-16",
-      "postId": "threads-publish-success",
-      "topic": "Why local AI running on your laptop is the next big shift",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-16T09:31:28.785Z"
     }
   ],
   "ig_total_posts_life_quotes": 29,
