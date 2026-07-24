@@ -27,8 +27,9 @@ async function createContainer(userId, accessToken, text, replyToId = null) {
     params.append("reply_to_id", replyToId);
   }
 
-  const response = await fetchWithRetry(`${url}?${params.toString()}`, {
+  const response = await fetchWithRetry(url, {
     method: "POST",
+    body: params,
   });
 
   const data = await response.json();
@@ -114,8 +115,9 @@ async function publishContainer(userId, accessToken, containerId) {
     access_token: accessToken,
   });
 
-  const response = await fetchWithRetry(`${url}?${params.toString()}`, {
+  const response = await fetchWithRetry(url, {
     method: "POST",
+    body: params,
   });
 
   const data = await response.json();
