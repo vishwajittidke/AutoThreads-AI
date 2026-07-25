@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 44,
+  "ig_total_posts": 45,
   "threads_total_posts": 59,
   "ig_history": [
+    {
+      "date": "2026-07-25",
+      "postId": "ig-publish-success",
+      "topic": "Seneca",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-25T15:19:53.771Z"
+    },
     {
       "date": "2026-07-25",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Henri Bergson",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-11T16:09:45.877Z"
-    },
-    {
-      "date": "2026-07-10",
-      "postId": "ig-publish-success",
-      "topic": "Antoine de Saint-Exupéry",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-10T15:45:31.183Z"
     }
   ],
   "threads_history": [
