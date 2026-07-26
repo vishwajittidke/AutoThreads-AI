@@ -432,8 +432,15 @@
       "timestamp": "2026-07-17T05:24:08.486Z"
     }
   ],
-  "ig_total_posts_life_quotes": 32,
+  "ig_total_posts_life_quotes": 33,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-07-26",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Osho",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-26T06:48:07.128Z"
+    },
     {
       "date": "2026-07-25",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Thich Nhat Hanh",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-12T06:56:47.362Z"
-    },
-    {
-      "date": "2026-07-11",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Ram Dass",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-11T18:18:45.293Z"
     }
   ],
   "replied_comment_ids": [
