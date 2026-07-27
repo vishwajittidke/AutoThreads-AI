@@ -202,7 +202,7 @@ function sleep(ms) {
 /**
  * Wrapper for API calls with automatic retry and exponential backoff
  */
-async function fetchWithRetry(url, options = {}, retries = CONSTANTS.MAX_RETRIES) {
+async function fetchWithRetry(url, options = {}, retries = CONSTANTS.RETRY_DELAYS_MS.length + 1) {
   for (let i = 0; i < retries; i++) {
     // Implement random jitter
     if (i > 0) {
