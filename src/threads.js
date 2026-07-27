@@ -3,6 +3,7 @@
  * Handles container creation, deterministic polling, and final publication.
  */
 
+import axios from "axios";
 import { CONSTANTS } from "./config.js";
 
 /**
@@ -199,17 +200,17 @@ function sleep(ms) {
 }
 
 /**
- * Fetch wrapper with retry logic for Meta API calls.
- * Retries with exponential backoff on transient failures.
+ * Wrapper for API calls with automatic retry and exponential backoff
  */
-async function fetchWithRetry(url, options) {
-  let lastError;
-  const delays = [0, ...CONSTANTS.RETRY_DELAYS_MS];
-
-  for (let i = 0; i < delays.length; i++) {
-    if (delays[i] > 0) {
-      console.log(`   ⏳ Retrying Meta API in ${delays[i] / 1000}s...`);
-      await sleep(delays[i]);
+async function fetchWithRetry(url, options = {}, retries = CONSTANTS.MAX_RETRIES) {
+  for (let i = 0; i < retries; i++) {
+    // Implement random jitter
+    if (i > 0) {
+      const baseDelay = CONSTANTS.RETRY_DELAYS_MS[Math.min(i - 1, CONSTANTS.RETRY_DELAYS_MS.length - 1)];
+      const jitter = Math.floor(Math.random() * 1000); // 0-1s jitter
+      const delay = baseDelay + jitter;
+      console.log(`   ⏳ Retrying Meta API in ${delay / 1000}s...`);
+      await new Promise((res) => setTimeout(res, delay));
     }
 
     try {
@@ -219,31 +220,40 @@ async function fetchWithRetry(url, options) {
         safeBody = options.body.toString().replace(/access_token=[^&]+/, "access_token=***");
       }
       console.log(`   🌐 Fetching: ${safeUrl} | Body: ${safeBody}`);
-      const response = await fetch(url, options);
+      
+      const axiosOptions = {
+        url: url,
+        method: options.method || 'GET',
+        headers: options.headers || {
+          'Accept': 'application/json',
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        data: options.body ? options.body.toString() : undefined
+      };
 
-      if (!response.ok) {
-        const errorBody = await response.text();
-        const status = response.status;
+      const response = await axios(axiosOptions);
 
-        // Fatal errors: don't retry
-        if (status === 400 || status === 401 || status === 403) {
-          throw new Error(`Meta API fatal error (${status}): ${errorBody}`);
-        }
-
-        lastError = new Error(`Meta API error (${status}): ${errorBody}`);
-        console.error(`   ❌ Meta API returned ${status} on attempt ${i + 1}`);
-        continue;
-      }
-
-      return response;
+      return {
+        ok: true,
+        json: async () => response.data
+      };
     } catch (error) {
-      if (error.message.includes("fatal")) {
+      if (error.response) {
+        const status = error.response.status;
+        console.log(`   ❌ Meta API returned ${status} on attempt ${i + 1}`);
+        if (status === 400 || status === 401 || status === 403) {
+          throw new Error(`Meta API error (${status}): ${JSON.stringify(error.response.data)}`);
+        }
+      } else {
+        console.log(`   ❌ Network/Timeout error on attempt ${i + 1}: ${error.message}`);
+      }
+      
+      if (i === retries - 1) {
+        if (error.response) {
+          throw new Error(`Meta API error (${error.response.status}): ${JSON.stringify(error.response.data)}`);
+        }
         throw error;
       }
-      lastError = error;
-      console.error(`   ❌ Meta API request failed on attempt ${i + 1}: ${error.message}`);
     }
   }
-
-  throw lastError || new Error("All Meta API attempts exhausted.");
 }
