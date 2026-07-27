@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 48,
-  "threads_total_posts": 61,
+  "threads_total_posts": 62,
   "ig_history": [
     {
       "date": "2026-07-27",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-07-27",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-27T12:41:36.695Z"
+    },
+    {
+      "date": "2026-07-27",
       "postId": "threads-publish-success",
       "topic": "Why 'prompt injection' is the biggest unsolved problem in AI",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Why most AI wrappers will fail in the next 12 months",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-17T15:44:57.468Z"
-    },
-    {
-      "date": "2026-07-17",
-      "postId": "threads-publish-success",
-      "topic": "Why most AI wrappers will fail in the next 12 months",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-17T15:32:22.075Z"
     }
   ],
   "ig_total_posts_life_quotes": 35,
