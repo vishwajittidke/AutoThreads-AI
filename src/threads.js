@@ -15,7 +15,7 @@ import { CONSTANTS } from "./config.js";
  * @returns {Promise<string>} The container creation ID
  */
 async function createContainer(userId, accessToken, text, replyToId = null) {
-  const url = `${CONSTANTS.META_BASE_URL}/${userId}/threads`;
+  const url = `${CONSTANTS.META_BASE_URL}/me/threads`;
 
   const params = new URLSearchParams({
     media_type: "TEXT",
@@ -108,7 +108,7 @@ async function pollContainerStatus(containerId, accessToken) {
  * @returns {Promise<string>} The published post ID
  */
 async function publishContainer(userId, accessToken, containerId) {
-  const url = `${CONSTANTS.META_BASE_URL}/${userId}/threads_publish`;
+  const url = `${CONSTANTS.META_BASE_URL}/me/threads_publish`;
 
   const params = new URLSearchParams({
     creation_id: containerId,
@@ -165,7 +165,7 @@ export async function publishToThreads(userId, accessToken, text, replyToId = nu
  * Fetches the most recent threads published by the user.
  */
 export async function fetchRecentThreads(userId, accessToken, limit = 5) {
-  const url = `${CONSTANTS.META_BASE_URL}/${userId}/threads`;
+  const url = `${CONSTANTS.META_BASE_URL}/me/threads`;
   const params = new URLSearchParams({
     fields: "id,text",
     limit: limit.toString(),
