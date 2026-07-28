@@ -5,6 +5,7 @@
 
 import axios from "axios";
 import { CONSTANTS } from "./config.js";
+import { execSync } from "child_process";
 
 /**
  * Creates a media container on Meta Threads with the given text content.
@@ -221,22 +222,38 @@ async function fetchWithRetry(url, options = {}, retries = CONSTANTS.RETRY_DELAY
       }
       console.log(`   🌐 Fetching: ${safeUrl} | Body: ${safeBody}`);
       
-      const axiosOptions = {
-        url: url,
-        method: options.method || 'GET',
-        headers: options.headers || {
-          'Accept': 'application/json',
-          'Content-Type': 'application/x-www-form-urlencoded',
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
-        },
-        data: options.body ? options.body.toString() : undefined
-      };
-
-      const response = await axios(axiosOptions);
+      let responseData;
+      
+      if (options.method === "POST") {
+        // Use native curl to bypass any NodeJS/Axios HTTP client quirks
+        console.log(`   🚀 Executing native cURL fallback...`);
+        const curlCmd = `curl -s -X POST "https://graph.threads.net/v1.0/me/threads" -d "${options.body.toString()}"`;
+        const stdout = execSync(curlCmd, { encoding: 'utf-8' });
+        responseData = JSON.parse(stdout);
+        
+        if (responseData.error) {
+          const err = new Error("Meta API error");
+          err.response = { status: 500, data: responseData };
+          throw err;
+        }
+      } else {
+        const axiosOptions = {
+          url: url,
+          method: options.method || 'GET',
+          headers: options.headers || {
+            'Accept': 'application/json',
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
+          },
+          data: options.body ? options.body.toString() : undefined
+        };
+        const response = await axios(axiosOptions);
+        responseData = response.data;
+      }
 
       return {
         ok: true,
-        json: async () => response.data
+        json: async () => responseData
       };
     } catch (error) {
       if (error.response) {

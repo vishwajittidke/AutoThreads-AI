@@ -30,11 +30,11 @@ async function main() {
 
   console.log(`   🎯 Target Platform: ${target.toUpperCase()}\n`);
 
-  const apiKeys = process.env.GEMINI_API_KEYS;
-  const igToken = process.env.INSTAGRAM_ACCESS_TOKEN;
-  const threadsToken = process.env.THREADS_ACCESS_TOKEN;
-  const igUserId = process.env.INSTAGRAM_USER_ID;
-  const threadsUserId = process.env.THREADS_USER_ID;
+  const apiKeys = process.env.GEMINI_API_KEYS ? process.env.GEMINI_API_KEYS.trim() : "";
+  const igToken = process.env.INSTAGRAM_ACCESS_TOKEN ? process.env.INSTAGRAM_ACCESS_TOKEN.trim() : "";
+  const threadsToken = process.env.THREADS_ACCESS_TOKEN ? process.env.THREADS_ACCESS_TOKEN.trim() : "";
+  const igUserId = process.env.INSTAGRAM_USER_ID ? process.env.INSTAGRAM_USER_ID.trim() : "";
+  const threadsUserId = process.env.THREADS_USER_ID ? process.env.THREADS_USER_ID.trim() : "";
 
   if (!apiKeys || !igToken || !threadsToken || !igUserId || !threadsUserId) {
     console.error("❌ Missing environment variables. Please configure GitHub Secrets (GEMINI_API_KEYS, INSTAGRAM_ACCESS_TOKEN, THREADS_ACCESS_TOKEN, INSTAGRAM_USER_ID, THREADS_USER_ID).");
