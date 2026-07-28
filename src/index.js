@@ -41,6 +41,8 @@ async function main() {
     process.exit(1);
   }
 
+  console.log(`   🔑 Token Verification: ends with ${threadsToken.slice(-4)}`);
+
   const state = readState();
   
   if (target !== "threads-reply" && hasPostedToday(state, target)) {
