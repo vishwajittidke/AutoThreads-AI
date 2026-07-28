@@ -227,7 +227,7 @@ async function fetchWithRetry(url, options = {}, retries = CONSTANTS.RETRY_DELAY
       if (options.method === "POST") {
         // Use native curl to bypass any NodeJS/Axios HTTP client quirks
         console.log(`   🚀 Executing native cURL fallback...`);
-        const curlCmd = `curl -s -X POST "https://graph.threads.net/v1.0/me/threads" -d "${options.body.toString()}"`;
+        const curlCmd = `curl -s -X POST "${url}" -d "${options.body.toString()}"`;
         const stdout = execSync(curlCmd, { encoding: 'utf-8' });
         responseData = JSON.parse(stdout);
         
