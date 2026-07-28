@@ -226,7 +226,8 @@ async function fetchWithRetry(url, options = {}, retries = CONSTANTS.RETRY_DELAY
         method: options.method || 'GET',
         headers: options.headers || {
           'Accept': 'application/json',
-          'Content-Type': 'application/x-www-form-urlencoded'
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36'
         },
         data: options.body ? options.body.toString() : undefined
       };
