@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 50,
+  "ig_total_posts": 51,
   "threads_total_posts": 64,
   "ig_history": [
+    {
+      "date": "2026-07-29",
+      "postId": "ig-publish-success",
+      "topic": "Anaïs Nin",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-29T15:58:58.676Z"
+    },
     {
       "date": "2026-07-29",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Tadao Ando",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-14T05:10:30.022Z"
-    },
-    {
-      "date": "2026-07-14",
-      "postId": "ig-publish-success",
-      "topic": "Theodore Roethke",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-14T04:17:48.071Z"
     }
   ],
   "threads_history": [
