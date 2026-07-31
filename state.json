@@ -1,14 +1,21 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (500): \"\"",
-  "last_error_date": "2026-07-31T04:55:06.691Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 52,
+  "ig_total_posts": 53,
   "threads_total_posts": 64,
   "ig_history": [
+    {
+      "date": "2026-07-31",
+      "postId": "ig-publish-success",
+      "topic": "Blaise Pascal",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-07-31T05:46:03.295Z"
+    },
     {
       "date": "2026-07-30",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Theodore Roethke",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-15T20:23:07.011Z"
-    },
-    {
-      "date": "2026-07-15",
-      "postId": "ig-publish-success",
-      "topic": "Anne Morrow Lindbergh",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-15T05:10:29.277Z"
     }
   ],
   "threads_history": [
