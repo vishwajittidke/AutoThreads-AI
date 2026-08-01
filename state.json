@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 55,
+  "ig_total_posts": 56,
   "threads_total_posts": 64,
   "ig_history": [
+    {
+      "date": "2026-08-01",
+      "postId": "ig-publish-success",
+      "topic": "Ram Dass",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-01T15:19:22.797Z"
+    },
     {
       "date": "2026-08-01",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Marguerite Yourcenar",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-17T05:23:30.044Z"
-    },
-    {
-      "date": "2026-07-16",
-      "postId": "ig-publish-success",
-      "topic": "Amelia Earhart",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-16T05:21:06.782Z"
     }
   ],
   "threads_history": [
