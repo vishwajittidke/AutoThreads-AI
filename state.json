@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 57,
+  "ig_total_posts": 58,
   "threads_total_posts": 64,
   "ig_history": [
+    {
+      "date": "2026-08-02",
+      "postId": "ig-publish-success",
+      "topic": "Marcus Aurelius",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-02T15:20:17.688Z"
+    },
     {
       "date": "2026-08-02",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Vincent van Gogh",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-18T15:12:10.532Z"
-    },
-    {
-      "date": "2026-07-18",
-      "postId": "ig-publish-success",
-      "topic": "Gaston Bachelard",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-18T05:05:45.285Z"
     }
   ],
   "threads_history": [
