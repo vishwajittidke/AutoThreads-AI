@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads: Unexpected end of JSON input",
-  "last_error_date": "2026-08-02T05:38:49.956Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-07-18T09:00:35.573Z"
     }
   ],
-  "ig_total_posts_life_quotes": 46,
+  "ig_total_posts_life_quotes": 47,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-02",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Robert Frost",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-02T06:47:05.119Z"
+    },
     {
       "date": "2026-08-01",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Hans Margolius",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-22T06:41:51.178Z"
-    },
-    {
-      "date": "2026-07-21",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: John Ruskin",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-21T15:54:47.814Z"
     }
   ],
   "replied_comment_ids": [
