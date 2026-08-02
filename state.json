@@ -1,14 +1,21 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (500): {\"error\":{\"code\":1,\"message\":\"An unknown error occurred\"}}",
-  "last_error_date": "2026-08-02T04:50:35.692Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 56,
+  "ig_total_posts": 57,
   "threads_total_posts": 64,
   "ig_history": [
+    {
+      "date": "2026-08-02",
+      "postId": "ig-publish-success",
+      "topic": "Henri Bergson",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-02T05:36:43.047Z"
+    },
     {
       "date": "2026-08-01",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Gaston Bachelard",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-18T05:05:45.285Z"
-    },
-    {
-      "date": "2026-07-17",
-      "postId": "ig-publish-success",
-      "topic": "Marguerite Yourcenar",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-17T05:23:30.044Z"
     }
   ],
   "threads_history": [
