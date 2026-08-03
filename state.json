@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads: Meta API error (500): {\"error\":{\"code\":1,\"message\":\"An unknown error occurred\"}}",
-  "last_error_date": "2026-08-03T05:54:39.748Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-07-18T09:00:35.573Z"
     }
   ],
-  "ig_total_posts_life_quotes": 48,
+  "ig_total_posts_life_quotes": 49,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-03",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Rainer Maria Rilke",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-03T07:44:58.059Z"
+    },
     {
       "date": "2026-08-02",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Henri Matisse",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-23T11:28:58.484Z"
-    },
-    {
-      "date": "2026-07-23",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Albert Camus",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-23T06:39:29.988Z"
     }
   ],
   "replied_comment_ids": [
