@@ -1,14 +1,21 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (500): {\"error\":{\"code\":1,\"message\":\"An unknown error occurred\"}}",
-  "last_error_date": "2026-08-08T02:28:04.011Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 63,
+  "ig_total_posts": 64,
   "threads_total_posts": 64,
   "ig_history": [
+    {
+      "date": "2026-08-08",
+      "postId": "ig-publish-success",
+      "topic": "Marcus Aurelius",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-08T03:43:31.880Z"
+    },
     {
       "date": "2026-08-07",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "James Salter",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-20T16:03:53.699Z"
-    },
-    {
-      "date": "2026-07-20",
-      "postId": "ig-publish-success",
-      "topic": "Gaston Rébuffat",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-20T13:15:56.817Z"
     }
   ],
   "threads_history": [
