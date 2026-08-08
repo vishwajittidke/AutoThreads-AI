@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 28-Jul-26 02:00:00 PDT. The current time is Friday, 07-Aug-26 20:49:55 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AQL5Looyf6yw-ZITX4naNQ2\"}}",
-  "last_error_date": "2026-08-08T03:49:55.395Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-07-18T09:00:35.573Z"
     }
   ],
-  "ig_total_posts_life_quotes": 54,
+  "ig_total_posts_life_quotes": 55,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-08",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Antoine de Saint-Exupéry",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-08T05:09:22.841Z"
+    },
     {
       "date": "2026-08-07",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Dag Hammarskjöld",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-23T12:17:53.230Z"
-    },
-    {
-      "date": "2026-07-23",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Albert Camus",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-23T12:09:35.762Z"
     }
   ],
   "replied_comment_ids": [
