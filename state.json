@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 28-Jul-26 02:00:00 PDT. The current time is Saturday, 08-Aug-26 21:43:43 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AqqTJcyDcgsw8RElLrCP5MI\"}}",
-  "last_error_date": "2026-08-09T04:43:43.721Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-07-18T09:00:35.573Z"
     }
   ],
-  "ig_total_posts_life_quotes": 56,
+  "ig_total_posts_life_quotes": 57,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-09",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Chinese Proverb",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-09T05:17:59.161Z"
+    },
     {
       "date": "2026-08-08",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: May Sarton",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-23T12:32:56.072Z"
-    },
-    {
-      "date": "2026-07-23",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Lao Tzu",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-23T12:23:29.573Z"
     }
   ],
   "replied_comment_ids": [
