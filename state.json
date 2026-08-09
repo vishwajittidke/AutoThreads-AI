@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 65,
+  "ig_total_posts": 66,
   "threads_total_posts": 64,
   "ig_history": [
+    {
+      "date": "2026-08-09",
+      "postId": "ig-publish-success",
+      "topic": "Mary Oliver",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-09T14:52:55.637Z"
+    },
     {
       "date": "2026-08-09",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Gaston Bachelard",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-22T05:29:35.068Z"
-    },
-    {
-      "date": "2026-07-21",
-      "postId": "ig-publish-success",
-      "topic": "Jun'ichirō Tanizaki",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-21T05:30:31.694Z"
     }
   ],
   "threads_history": [
