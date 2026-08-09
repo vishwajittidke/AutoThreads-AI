@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 28-Jul-26 02:00:00 PDT. The current time is Sunday, 09-Aug-26 12:55:15 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AcqzdhmZ9ojEdjQwVbtgdhC\"}}",
-  "last_error_date": "2026-08-09T19:55:15.314Z",
+  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 28-Jul-26 02:00:00 PDT. The current time is Sunday, 09-Aug-26 14:01:06 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AuTEBHfQ8OjFJsRHBF054rM\"}}",
+  "last_error_date": "2026-08-09T21:01:07.010Z",
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
