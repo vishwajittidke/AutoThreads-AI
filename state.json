@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 28-Jul-26 02:00:00 PDT. The current time is Sunday, 09-Aug-26 07:07:58 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AWs20seZLD4rFcAQ2LkbS7W\"}}",
-  "last_error_date": "2026-08-09T14:07:58.970Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-07-18T09:00:35.573Z"
     }
   ],
-  "ig_total_posts_life_quotes": 57,
+  "ig_total_posts_life_quotes": 58,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-09",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Rainer Maria Rilke",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-09T14:51:44.059Z"
+    },
     {
       "date": "2026-08-09",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Antonio Machado",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-24T06:38:48.334Z"
-    },
-    {
-      "date": "2026-07-23",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: May Sarton",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-23T12:32:56.072Z"
     }
   ],
   "replied_comment_ids": [
