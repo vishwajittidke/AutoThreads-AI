@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 28-Jul-26 02:00:00 PDT. The current time is Monday, 10-Aug-26 06:52:13 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A4gpRz3424NkqVBc9YMvVrC\"}}",
-  "last_error_date": "2026-08-10T13:52:13.386Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-07-18T09:00:35.573Z"
     }
   ],
-  "ig_total_posts_life_quotes": 59,
+  "ig_total_posts_life_quotes": 60,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-10",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: W.B. Yeats",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-10T15:15:42.686Z"
+    },
     {
       "date": "2026-08-10",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Robert Frost",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-25T06:28:42.832Z"
-    },
-    {
-      "date": "2026-07-24",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Eleanor Roosevelt",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-24T15:43:30.352Z"
     }
   ],
   "replied_comment_ids": [
