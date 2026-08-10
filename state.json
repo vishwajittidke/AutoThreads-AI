@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 67,
+  "ig_total_posts": 68,
   "threads_total_posts": 64,
   "ig_history": [
+    {
+      "date": "2026-08-10",
+      "postId": "ig-publish-success",
+      "topic": "Bruce Lee",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-10T15:16:51.512Z"
+    },
     {
       "date": "2026-08-10",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Gaston Bachelard",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-23T05:34:28.206Z"
-    },
-    {
-      "date": "2026-07-22",
-      "postId": "ig-publish-success",
-      "topic": "Vincent van Gogh",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-22T15:53:17.230Z"
     }
   ],
   "threads_history": [
