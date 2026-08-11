@@ -1,14 +1,21 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 28-Jul-26 02:00:00 PDT. The current time is Monday, 10-Aug-26 19:34:17 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A4T-JfHAXClIycOU-5mHtwS\"}}",
-  "last_error_date": "2026-08-11T02:34:17.158Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 68,
+  "ig_total_posts": 69,
   "threads_total_posts": 64,
   "ig_history": [
+    {
+      "date": "2026-08-11",
+      "postId": "ig-publish-success",
+      "topic": "Rumi",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-11T03:55:24.453Z"
+    },
     {
       "date": "2026-08-10",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Italo Calvino",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-23T11:27:26.976Z"
-    },
-    {
-      "date": "2026-07-23",
-      "postId": "ig-publish-success",
-      "topic": "Gaston Bachelard",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-23T05:34:28.206Z"
     }
   ],
   "threads_history": [
