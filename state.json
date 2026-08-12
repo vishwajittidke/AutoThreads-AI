@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 28-Jul-26 02:00:00 PDT. The current time is Wednesday, 12-Aug-26 06:55:06 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AFDx390JaEZu8VoWtajMKqO\"}}",
-  "last_error_date": "2026-08-12T13:55:06.596Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-07-18T09:00:35.573Z"
     }
   ],
-  "ig_total_posts_life_quotes": 62,
+  "ig_total_posts_life_quotes": 63,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-12",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: William Hazlitt",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-12T15:13:55.850Z"
+    },
     {
       "date": "2026-08-12",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Confucius",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-26T15:20:33.488Z"
-    },
-    {
-      "date": "2026-07-26",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Osho",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-26T06:48:07.128Z"
     }
   ],
   "replied_comment_ids": [
