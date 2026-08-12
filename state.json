@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 70,
+  "ig_total_posts": 71,
   "threads_total_posts": 64,
   "ig_history": [
+    {
+      "date": "2026-08-12",
+      "postId": "ig-publish-success",
+      "topic": "Thomas Campbell",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-12T15:14:43.996Z"
+    },
     {
       "date": "2026-08-12",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Seneca",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-24T05:30:24.799Z"
-    },
-    {
-      "date": "2026-07-23",
-      "postId": "ig-publish-success",
-      "topic": "William James",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-23T13:44:58.610Z"
     }
   ],
   "threads_history": [
