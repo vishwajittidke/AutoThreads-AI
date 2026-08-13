@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 72,
+  "ig_total_posts": 73,
   "threads_total_posts": 66,
   "ig_history": [
+    {
+      "date": "2026-08-13",
+      "postId": "ig-publish-success",
+      "topic": "Søren Kierkegaard",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-13T15:14:57.615Z"
+    },
     {
       "date": "2026-08-13",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Eden Phillpotts",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-25T05:24:37.610Z"
-    },
-    {
-      "date": "2026-07-24",
-      "postId": "ig-publish-success",
-      "topic": "Rainer Maria Rilke",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-24T15:44:37.225Z"
     }
   ],
   "threads_history": [
