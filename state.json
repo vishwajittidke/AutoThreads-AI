@@ -1,14 +1,21 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Tuesday, 28-Jul-26 02:00:00 PDT. The current time is Wednesday, 12-Aug-26 20:06:46 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AuI7X15Issx5VIsMb99nwnP\"}}",
-  "last_error_date": "2026-08-13T03:06:46.870Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 71,
+  "ig_total_posts": 72,
   "threads_total_posts": 64,
   "ig_history": [
+    {
+      "date": "2026-08-13",
+      "postId": "ig-publish-success",
+      "topic": "Dorothy Thompson",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-13T04:20:56.918Z"
+    },
     {
       "date": "2026-08-12",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Rainer Maria Rilke",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-24T15:44:37.225Z"
-    },
-    {
-      "date": "2026-07-24",
-      "postId": "ig-publish-success",
-      "topic": "Seneca",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-24T05:30:24.799Z"
     }
   ],
   "threads_history": [
