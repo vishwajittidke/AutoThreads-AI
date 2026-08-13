@@ -432,8 +432,15 @@
       "timestamp": "2026-07-19T05:33:47.324Z"
     }
   ],
-  "ig_total_posts_life_quotes": 64,
+  "ig_total_posts_life_quotes": 65,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-13",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: James Cash Penney",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-13T15:14:11.105Z"
+    },
     {
       "date": "2026-08-13",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Vincent Van Gogh",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-27T16:34:19.586Z"
-    },
-    {
-      "date": "2026-07-27",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Meister Eckhart",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-27T07:48:58.213Z"
     }
   ],
   "replied_comment_ids": [
