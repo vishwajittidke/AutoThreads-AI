@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 74,
-  "threads_total_posts": 90,
+  "threads_total_posts": 91,
   "ig_history": [
     {
       "date": "2026-08-14",
@@ -222,6 +222,13 @@
   ],
   "threads_history": [
     {
+      "date": "2026-08-15",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-14T19:26:48.738Z"
+    },
+    {
       "date": "2026-08-14",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-27T12:41:36.695Z"
-    },
-    {
-      "date": "2026-07-27",
-      "postId": "threads-publish-success",
-      "topic": "Why 'prompt injection' is the biggest unsolved problem in AI",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-27T12:27:50.462Z"
     }
   ],
   "ig_total_posts_life_quotes": 67,
