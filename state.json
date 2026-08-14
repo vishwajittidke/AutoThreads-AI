@@ -432,8 +432,15 @@
       "timestamp": "2026-07-23T16:04:20.774Z"
     }
   ],
-  "ig_total_posts_life_quotes": 65,
+  "ig_total_posts_life_quotes": 66,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-14",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Henry David Thoreau",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-14T05:45:24.295Z"
+    },
     {
       "date": "2026-08-13",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Peter Marshall",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-28T06:39:47.196Z"
-    },
-    {
-      "date": "2026-07-27",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Vincent Van Gogh",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-27T16:34:19.586Z"
     }
   ],
   "replied_comment_ids": [
