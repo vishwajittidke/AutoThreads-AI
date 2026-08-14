@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 73,
-  "threads_total_posts": 76,
+  "threads_total_posts": 77,
   "ig_history": [
     {
       "date": "2026-08-13",
@@ -226,6 +226,13 @@
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
+      "timestamp": "2026-08-14T03:05:21.582Z"
+    },
+    {
+      "date": "2026-08-14",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
       "timestamp": "2026-08-14T00:06:03.464Z"
     },
     {
@@ -423,13 +430,6 @@
       "topic": "Why UX is suddenly the most important part of AI development",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-23T05:35:34.989Z"
-    },
-    {
-      "date": "2026-07-22",
-      "postId": "threads-publish-success",
-      "topic": "Why we need to stop romanticizing Artificial General Intelligence (AGI)",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-22T09:40:50.698Z"
     }
   ],
   "ig_total_posts_life_quotes": 65,
