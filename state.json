@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 76,
-  "threads_total_posts": 112,
+  "threads_total_posts": 113,
   "ig_history": [
     {
       "date": "2026-08-15",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-08-15",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-15T14:46:10.112Z"
+    },
+    {
+      "date": "2026-08-15",
       "postId": "threads-publish-success",
       "topic": "Why open-source AI is terrifying proprietary tech giants",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-14T12:05:36.131Z"
-    },
-    {
-      "date": "2026-08-14",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-14T10:31:31.839Z"
     }
   ],
   "ig_total_posts_life_quotes": 69,
