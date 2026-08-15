@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 74,
+  "ig_total_posts": 75,
   "threads_total_posts": 97,
   "ig_history": [
+    {
+      "date": "2026-08-15",
+      "postId": "ig-publish-success",
+      "topic": "Louise Glück",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-15T03:05:05.388Z"
+    },
     {
       "date": "2026-08-14",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Jean-Paul Sartre",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-26T05:42:16.796Z"
-    },
-    {
-      "date": "2026-07-25",
-      "postId": "ig-publish-success",
-      "topic": "Seneca",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-25T15:19:53.771Z"
     }
   ],
   "threads_history": [
