@@ -432,8 +432,15 @@
       "timestamp": "2026-08-14T08:42:28.990Z"
     }
   ],
-  "ig_total_posts_life_quotes": 68,
+  "ig_total_posts_life_quotes": 69,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-15",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Leonard Cohen",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-15T14:37:34.660Z"
+    },
     {
       "date": "2026-08-15",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Robert Frost",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-29T15:58:05.164Z"
-    },
-    {
-      "date": "2026-07-29",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Henry David Thoreau",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-29T06:44:27.726Z"
     }
   ],
   "replied_comment_ids": [
