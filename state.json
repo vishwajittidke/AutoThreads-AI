@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 74,
-  "threads_total_posts": 96,
+  "threads_total_posts": 97,
   "ig_history": [
     {
       "date": "2026-08-14",
@@ -226,6 +226,13 @@
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
+      "timestamp": "2026-08-15T01:55:30.254Z"
+    },
+    {
+      "date": "2026-08-15",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
       "timestamp": "2026-08-14T23:45:41.655Z"
     },
     {
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-13T15:29:27.887Z"
-    },
-    {
-      "date": "2026-08-13",
-      "postId": "threads-publish-success",
-      "topic": "Why multi-agent AI systems are harder to build than you think",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-13T15:17:37.038Z"
     }
   ],
   "ig_total_posts_life_quotes": 67,
