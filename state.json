@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 76,
+  "ig_total_posts": 77,
   "threads_total_posts": 124,
   "ig_history": [
+    {
+      "date": "2026-08-16",
+      "postId": "ig-publish-success",
+      "topic": "Heraclitus",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-16T03:13:11.127Z"
+    },
     {
       "date": "2026-08-15",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Joseph Campbell",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-27T10:31:25.852Z"
-    },
-    {
-      "date": "2026-07-26",
-      "postId": "ig-publish-success",
-      "topic": "Rumi",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-26T15:29:06.020Z"
     }
   ],
   "threads_history": [
