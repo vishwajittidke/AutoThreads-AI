@@ -432,8 +432,15 @@
       "timestamp": "2026-08-15T03:07:11.229Z"
     }
   ],
-  "ig_total_posts_life_quotes": 69,
+  "ig_total_posts_life_quotes": 70,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-16",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: George Bernard Shaw",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-16T04:49:28.732Z"
+    },
     {
       "date": "2026-08-15",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Vincent van Gogh",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-30T06:40:34.566Z"
-    },
-    {
-      "date": "2026-07-29",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Robert Frost",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-29T15:58:05.164Z"
     }
   ],
   "replied_comment_ids": [
