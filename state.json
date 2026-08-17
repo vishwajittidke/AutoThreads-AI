@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 79,
+  "ig_total_posts": 80,
   "threads_total_posts": 166,
   "ig_history": [
+    {
+      "date": "2026-08-17",
+      "postId": "ig-publish-success",
+      "topic": "Maya Angelou",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-17T14:44:54.404Z"
+    },
     {
       "date": "2026-08-17",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Anaïs Nin",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-29T15:58:58.676Z"
-    },
-    {
-      "date": "2026-07-29",
-      "postId": "ig-publish-success",
-      "topic": "Lao Tzu",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-29T05:31:50.766Z"
     }
   ],
   "threads_history": [
