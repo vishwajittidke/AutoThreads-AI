@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 79,
-  "threads_total_posts": 159,
+  "threads_total_posts": 160,
   "ig_history": [
     {
       "date": "2026-08-17",
@@ -224,6 +224,13 @@
     {
       "date": "2026-08-17",
       "postId": "threads-reply-publish-success",
+      "topic": "Replied to 1 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-17T09:07:32.462Z"
+    },
+    {
+      "date": "2026-08-17",
+      "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-17T08:08:57.538Z"
@@ -423,13 +430,6 @@
       "topic": "The biggest misconception non-technical founders have about AI",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-16T07:47:32.227Z"
-    },
-    {
-      "date": "2026-08-16",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-16T07:08:06.601Z"
     }
   ],
   "ig_total_posts_life_quotes": 72,
@@ -659,6 +659,7 @@
     "17973624171067947",
     "18088578746649853",
     "17892851325668527",
-    "17902317693487417"
+    "17902317693487417",
+    "17960779493981912"
   ]
 }
