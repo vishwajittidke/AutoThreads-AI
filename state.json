@@ -432,8 +432,15 @@
       "timestamp": "2026-08-16T11:42:42.627Z"
     }
   ],
-  "ig_total_posts_life_quotes": 72,
+  "ig_total_posts_life_quotes": 73,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-17",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Marcus Aurelius",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-17T14:43:21.017Z"
+    },
     {
       "date": "2026-08-17",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Thomas S. Monson",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-31T16:10:30.250Z"
-    },
-    {
-      "date": "2026-07-31",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Unknown",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-31T07:13:11.197Z"
     }
   ],
   "replied_comment_ids": [
