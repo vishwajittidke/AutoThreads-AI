@@ -432,8 +432,15 @@
       "timestamp": "2026-08-17T11:48:31.581Z"
     }
   ],
-  "ig_total_posts_life_quotes": 74,
+  "ig_total_posts_life_quotes": 75,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-18",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Wangari Maathai",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-18T13:52:30.579Z"
+    },
     {
       "date": "2026-08-18",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Arthur Ashe",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-01T15:18:03.844Z"
-    },
-    {
-      "date": "2026-08-01",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: T.S. Eliot",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-01T06:40:20.557Z"
     }
   ],
   "replied_comment_ids": [
