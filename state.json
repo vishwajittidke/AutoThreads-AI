@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 80,
+  "ig_total_posts": 81,
   "threads_total_posts": 178,
   "ig_history": [
+    {
+      "date": "2026-08-18",
+      "postId": "ig-publish-success",
+      "topic": "Antoine de Saint-Exupéry",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-18T03:08:25.499Z"
+    },
     {
       "date": "2026-08-17",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Rumi",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-30T05:18:52.787Z"
-    },
-    {
-      "date": "2026-07-29",
-      "postId": "ig-publish-success",
-      "topic": "Anaïs Nin",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-29T15:58:58.676Z"
     }
   ],
   "threads_history": [
