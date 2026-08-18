@@ -432,8 +432,15 @@
       "timestamp": "2026-08-17T03:14:45.104Z"
     }
   ],
-  "ig_total_posts_life_quotes": 73,
+  "ig_total_posts_life_quotes": 74,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-18",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Edmund Hillary",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-18T04:50:24.152Z"
+    },
     {
       "date": "2026-08-17",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: T.S. Eliot",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-01T06:40:20.557Z"
-    },
-    {
-      "date": "2026-07-31",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Thomas S. Monson",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-31T16:10:30.250Z"
     }
   ],
   "replied_comment_ids": [
