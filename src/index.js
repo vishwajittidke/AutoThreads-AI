@@ -67,7 +67,7 @@ async function main() {
       console.log(`✍️  Author: ${data.author}\n`);
       finalTopic = data.author;
       
-      const base64Image = await director.generateImage(data.imagen_prompt);
+      const base64Image = await director.generateImage(data.imagen_prompt, data._categoryModifiers || "");
       const finalBuffer = await overlayTypography(base64Image, data.quote_text, data.author);
 
       const imagePath = "outputs/today_post.jpg";
