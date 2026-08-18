@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 81,
-  "threads_total_posts": 186,
+  "threads_total_posts": 187,
   "ig_history": [
     {
       "date": "2026-08-18",
@@ -226,6 +226,13 @@
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
+      "timestamp": "2026-08-18T09:02:21.023Z"
+    },
+    {
+      "date": "2026-08-18",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
       "timestamp": "2026-08-18T08:01:06.316Z"
     },
     {
@@ -423,13 +430,6 @@
       "topic": "The real bottleneck in AI development isn't compute, it's data quality",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-17T08:02:25.317Z"
-    },
-    {
-      "date": "2026-08-17",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-17T07:30:10.568Z"
     }
   ],
   "ig_total_posts_life_quotes": 74,
