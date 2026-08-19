@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 82,
+  "ig_total_posts": 83,
   "threads_total_posts": 205,
   "ig_history": [
+    {
+      "date": "2026-08-19",
+      "postId": "ig-publish-success",
+      "topic": "George Santayana",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-19T03:11:10.020Z"
+    },
     {
       "date": "2026-08-18",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Søren Kierkegaard",
       "contentPreview": "Published to platform",
       "timestamp": "2026-07-31T16:12:05.700Z"
-    },
-    {
-      "date": "2026-07-31",
-      "postId": "ig-publish-success",
-      "topic": "Blaise Pascal",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-31T05:46:03.295Z"
     }
   ],
   "threads_history": [
