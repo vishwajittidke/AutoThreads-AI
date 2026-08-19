@@ -432,8 +432,15 @@
       "timestamp": "2026-08-18T03:10:41.740Z"
     }
   ],
-  "ig_total_posts_life_quotes": 76,
+  "ig_total_posts_life_quotes": 77,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-19",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Emily Brontë",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-19T04:50:42.671Z"
+    },
     {
       "date": "2026-08-18",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Robert Frost",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-02T15:19:03.900Z"
-    },
-    {
-      "date": "2026-08-02",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Robert Frost",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-02T06:47:05.119Z"
     }
   ],
   "replied_comment_ids": [
