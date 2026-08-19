@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 84,
-  "threads_total_posts": 222,
+  "threads_total_posts": 223,
   "ig_history": [
     {
       "date": "2026-08-19",
@@ -226,6 +226,13 @@
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
+      "timestamp": "2026-08-19T16:54:53.419Z"
+    },
+    {
+      "date": "2026-08-19",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
       "timestamp": "2026-08-19T15:55:26.703Z"
     },
     {
@@ -423,13 +430,6 @@
       "topic": "The truth about how much OpenAI/Anthropic APIs actually cost at scale",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-18T14:54:34.369Z"
-    },
-    {
-      "date": "2026-08-18",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-18T14:04:25.178Z"
     }
   ],
   "ig_total_posts_life_quotes": 78,
