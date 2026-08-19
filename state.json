@@ -432,8 +432,15 @@
       "timestamp": "2026-08-18T11:47:17.097Z"
     }
   ],
-  "ig_total_posts_life_quotes": 77,
+  "ig_total_posts_life_quotes": 78,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-19",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Anonymous",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-19T14:52:38.652Z"
+    },
     {
       "date": "2026-08-19",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Rainer Maria Rilke",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-03T07:44:58.059Z"
-    },
-    {
-      "date": "2026-08-02",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Robert Frost",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-02T15:19:03.900Z"
     }
   ],
   "replied_comment_ids": [
