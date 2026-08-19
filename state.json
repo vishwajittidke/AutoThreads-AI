@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 83,
+  "ig_total_posts": 84,
   "threads_total_posts": 219,
   "ig_history": [
+    {
+      "date": "2026-08-19",
+      "postId": "ig-publish-success",
+      "topic": "Lao Tzu",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-19T14:53:46.283Z"
+    },
     {
       "date": "2026-08-19",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Herman Melville",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-01T05:36:18.134Z"
-    },
-    {
-      "date": "2026-07-31",
-      "postId": "ig-publish-success",
-      "topic": "Søren Kierkegaard",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-07-31T16:12:05.700Z"
     }
   ],
   "threads_history": [
