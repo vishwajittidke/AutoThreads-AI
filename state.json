@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 84,
+  "ig_total_posts": 85,
   "threads_total_posts": 231,
   "ig_history": [
+    {
+      "date": "2026-08-20",
+      "postId": "ig-publish-success",
+      "topic": "Rainer Maria Rilke",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-20T03:10:08.248Z"
+    },
     {
       "date": "2026-08-19",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Ram Dass",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-01T15:19:22.797Z"
-    },
-    {
-      "date": "2026-08-01",
-      "postId": "ig-publish-success",
-      "topic": "Herman Melville",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-01T05:36:18.134Z"
     }
   ],
   "threads_history": [
