@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 86,
+  "ig_total_posts": 87,
   "threads_total_posts": 271,
   "ig_history": [
+    {
+      "date": "2026-08-21",
+      "postId": "ig-publish-success",
+      "topic": "Ralph Waldo Emerson",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-21T14:53:36.952Z"
+    },
     {
       "date": "2026-08-21",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Marcus Aurelius",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-02T15:20:17.688Z"
-    },
-    {
-      "date": "2026-08-02",
-      "postId": "ig-publish-success",
-      "topic": "Henri Bergson",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-02T05:36:43.047Z"
     }
   ],
   "threads_history": [
