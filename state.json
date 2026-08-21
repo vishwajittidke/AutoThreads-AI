@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 85,
+  "ig_total_posts": 86,
   "threads_total_posts": 257,
   "ig_history": [
+    {
+      "date": "2026-08-21",
+      "postId": "ig-publish-success",
+      "topic": "Ovid",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-21T03:16:23.836Z"
+    },
     {
       "date": "2026-08-20",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Henri Bergson",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-02T05:36:43.047Z"
-    },
-    {
-      "date": "2026-08-01",
-      "postId": "ig-publish-success",
-      "topic": "Ram Dass",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-01T15:19:22.797Z"
     }
   ],
   "threads_history": [
