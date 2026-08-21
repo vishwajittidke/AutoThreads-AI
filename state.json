@@ -432,8 +432,15 @@
       "timestamp": "2026-08-20T01:57:18.652Z"
     }
   ],
-  "ig_total_posts_life_quotes": 80,
+  "ig_total_posts_life_quotes": 81,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-21",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Rumi",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-21T04:53:32.345Z"
+    },
     {
       "date": "2026-08-20",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: T.S. Eliot",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-06T06:44:39.389Z"
-    },
-    {
-      "date": "2026-08-04",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Paramahansa Yogananda",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-04T06:39:54.502Z"
     }
   ],
   "replied_comment_ids": [
