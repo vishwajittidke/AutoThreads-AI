@@ -432,8 +432,15 @@
       "timestamp": "2026-08-21T10:55:42.265Z"
     }
   ],
-  "ig_total_posts_life_quotes": 83,
+  "ig_total_posts_life_quotes": 84,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-22",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Socrates",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-22T14:36:52.965Z"
+    },
     {
       "date": "2026-08-22",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Antoine de Saint-Exupéry",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-08T05:09:22.841Z"
-    },
-    {
-      "date": "2026-08-07",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Dag Hammarskjöld",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-07T15:08:27.378Z"
     }
   ],
   "replied_comment_ids": [
