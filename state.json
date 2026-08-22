@@ -432,8 +432,15 @@
       "timestamp": "2026-08-21T02:06:29.788Z"
     }
   ],
-  "ig_total_posts_life_quotes": 82,
+  "ig_total_posts_life_quotes": 83,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-22",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Koji Tanaka",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-22T04:48:12.173Z"
+    },
     {
       "date": "2026-08-21",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Dag Hammarskjöld",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-07T15:08:27.378Z"
-    },
-    {
-      "date": "2026-08-07",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: William Hazlitt",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-07T05:50:00.889Z"
     }
   ],
   "replied_comment_ids": [
