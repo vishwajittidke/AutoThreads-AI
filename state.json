@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 88,
+  "ig_total_posts": 89,
   "threads_total_posts": 297,
   "ig_history": [
+    {
+      "date": "2026-08-22",
+      "postId": "ig-publish-success",
+      "topic": "Paramahansa Yogananda",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-22T14:37:54.184Z"
+    },
     {
       "date": "2026-08-22",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Anaïs Nin",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-04T05:25:35.428Z"
-    },
-    {
-      "date": "2026-08-03",
-      "postId": "ig-publish-success",
-      "topic": "Lao Tzu",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-03T05:52:36.066Z"
     }
   ],
   "threads_history": [
