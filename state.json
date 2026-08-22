@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 87,
+  "ig_total_posts": 88,
   "threads_total_posts": 283,
   "ig_history": [
+    {
+      "date": "2026-08-22",
+      "postId": "ig-publish-success",
+      "topic": "Lao Tzu",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-22T03:07:26.192Z"
+    },
     {
       "date": "2026-08-21",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Lao Tzu",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-03T05:52:36.066Z"
-    },
-    {
-      "date": "2026-08-02",
-      "postId": "ig-publish-success",
-      "topic": "Marcus Aurelius",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-02T15:20:17.688Z"
     }
   ],
   "threads_history": [
