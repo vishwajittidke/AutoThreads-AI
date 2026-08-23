@@ -432,8 +432,15 @@
       "timestamp": "2026-08-22T10:47:08.821Z"
     }
   ],
-  "ig_total_posts_life_quotes": 85,
+  "ig_total_posts_life_quotes": 86,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-23",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Betty Smith",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-23T14:37:53.512Z"
+    },
     {
       "date": "2026-08-23",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Chinese Proverb",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-09T05:17:59.161Z"
-    },
-    {
-      "date": "2026-08-08",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Lao Tzu",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-08T14:49:18.804Z"
     }
   ],
   "replied_comment_ids": [
