@@ -432,8 +432,15 @@
       "timestamp": "2026-08-22T01:56:29.263Z"
     }
   ],
-  "ig_total_posts_life_quotes": 84,
+  "ig_total_posts_life_quotes": 85,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-23",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Eleanor Roosevelt",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-23T04:51:18.235Z"
+    },
     {
       "date": "2026-08-22",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Lao Tzu",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-08T14:49:18.804Z"
-    },
-    {
-      "date": "2026-08-08",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Antoine de Saint-Exupéry",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-08T05:09:22.841Z"
     }
   ],
   "replied_comment_ids": [
