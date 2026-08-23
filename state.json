@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 89,
+  "ig_total_posts": 90,
   "threads_total_posts": 309,
   "ig_history": [
+    {
+      "date": "2026-08-23",
+      "postId": "ig-publish-success",
+      "topic": "W.B. Yeats",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-23T03:15:27.033Z"
+    },
     {
       "date": "2026-08-22",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Rainer Maria Rilke",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-06T05:27:21.202Z"
-    },
-    {
-      "date": "2026-08-04",
-      "postId": "ig-publish-success",
-      "topic": "Anaïs Nin",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-04T05:25:35.428Z"
     }
   ],
   "threads_history": [
