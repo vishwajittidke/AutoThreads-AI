@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 90,
-  "threads_total_posts": 309,
+  "threads_total_posts": 310,
   "ig_history": [
     {
       "date": "2026-08-23",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-08-23",
+      "postId": "threads-publish-success",
+      "topic": "The biggest misconception non-technical founders have about AI",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-23T03:18:18.405Z"
+    },
+    {
+      "date": "2026-08-23",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-21T22:48:29.076Z"
-    },
-    {
-      "date": "2026-08-22",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-21T21:46:54.212Z"
     }
   ],
   "ig_total_posts_life_quotes": 84,
