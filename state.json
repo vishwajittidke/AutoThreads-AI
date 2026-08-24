@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 91,
+  "ig_total_posts": 92,
   "threads_total_posts": 335,
   "ig_history": [
+    {
+      "date": "2026-08-24",
+      "postId": "ig-publish-success",
+      "topic": "Lao Tzu",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-24T03:16:49.020Z"
+    },
     {
       "date": "2026-08-23",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Anaïs Nin",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-07T15:09:17.812Z"
-    },
-    {
-      "date": "2026-08-07",
-      "postId": "ig-publish-success",
-      "topic": "Marcel Proust",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-07T04:33:06.857Z"
     }
   ],
   "threads_history": [
