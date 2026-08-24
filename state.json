@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 92,
+  "ig_total_posts": 93,
   "threads_total_posts": 348,
   "ig_history": [
+    {
+      "date": "2026-08-24",
+      "postId": "ig-publish-success",
+      "topic": "William Gibson",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-24T15:00:04.295Z"
+    },
     {
       "date": "2026-08-24",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Marcus Aurelius",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-08T03:43:31.880Z"
-    },
-    {
-      "date": "2026-08-07",
-      "postId": "ig-publish-success",
-      "topic": "Anaïs Nin",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-07T15:09:17.812Z"
     }
   ],
   "threads_history": [
