@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 93,
+  "ig_total_posts": 94,
   "threads_total_posts": 360,
   "ig_history": [
+    {
+      "date": "2026-08-25",
+      "postId": "ig-publish-success",
+      "topic": "Buddha",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-25T03:12:43.243Z"
+    },
     {
       "date": "2026-08-24",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Carl Sagan",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-09T03:53:23.644Z"
-    },
-    {
-      "date": "2026-08-08",
-      "postId": "ig-publish-success",
-      "topic": "Marcus Aurelius",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-08T03:43:31.880Z"
     }
   ],
   "threads_history": [
