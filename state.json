@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 95,
-  "threads_total_posts": 374,
+  "threads_total_posts": 375,
   "ig_history": [
     {
       "date": "2026-08-25",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-08-25",
+      "postId": "threads-publish-success",
+      "topic": "Why local AI running on your laptop is the next big shift",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-25T15:08:44.560Z"
+    },
+    {
+      "date": "2026-08-25",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-24T11:51:29.048Z"
-    },
-    {
-      "date": "2026-08-24",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-24T11:00:51.889Z"
     }
   ],
   "ig_total_posts_life_quotes": 90,
