@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 94,
+  "ig_total_posts": 95,
   "threads_total_posts": 374,
   "ig_history": [
+    {
+      "date": "2026-08-25",
+      "postId": "ig-publish-success",
+      "topic": "Ram Dass",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-25T15:05:46.454Z"
+    },
     {
       "date": "2026-08-25",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Mary Oliver",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-09T14:52:55.637Z"
-    },
-    {
-      "date": "2026-08-09",
-      "postId": "ig-publish-success",
-      "topic": "Carl Sagan",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-09T03:53:23.644Z"
     }
   ],
   "threads_history": [
