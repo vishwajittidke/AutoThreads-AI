@@ -432,8 +432,15 @@
       "timestamp": "2026-08-24T11:00:51.889Z"
     }
   ],
-  "ig_total_posts_life_quotes": 89,
+  "ig_total_posts_life_quotes": 90,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-25",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Ralph Waldo Emerson",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-25T15:03:42.029Z"
+    },
     {
       "date": "2026-08-25",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Robert Frost",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-11T05:21:28.302Z"
-    },
-    {
-      "date": "2026-08-10",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: W.B. Yeats",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-10T15:15:42.686Z"
     }
   ],
   "replied_comment_ids": [
