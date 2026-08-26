@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 96,
-  "threads_total_posts": 399,
+  "threads_total_posts": 400,
   "ig_history": [
     {
       "date": "2026-08-26",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-08-26",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-26T15:58:18.475Z"
+    },
+    {
+      "date": "2026-08-26",
       "postId": "threads-publish-success",
       "topic": "The hidden infrastructure cost of Retrieval-Augmented Generation (RAG)",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-25T10:57:42.468Z"
-    },
-    {
-      "date": "2026-08-25",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-25T09:59:24.594Z"
     }
   ],
   "ig_total_posts_life_quotes": 91,
