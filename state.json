@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 95,
+  "ig_total_posts": 96,
   "threads_total_posts": 386,
   "ig_history": [
+    {
+      "date": "2026-08-26",
+      "postId": "ig-publish-success",
+      "topic": "Fritjof Capra",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-26T03:18:14.841Z"
+    },
     {
       "date": "2026-08-25",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Winston Churchill",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-10T04:06:42.816Z"
-    },
-    {
-      "date": "2026-08-09",
-      "postId": "ig-publish-success",
-      "topic": "Mary Oliver",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-09T14:52:55.637Z"
     }
   ],
   "threads_history": [
