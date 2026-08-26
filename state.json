@@ -432,8 +432,15 @@
       "timestamp": "2026-08-25T09:06:35.537Z"
     }
   ],
-  "ig_total_posts_life_quotes": 90,
+  "ig_total_posts_life_quotes": 91,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-26",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Robin Wall Kimmerer",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-26T15:51:58.262Z"
+    },
     {
       "date": "2026-08-25",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Robert Frost",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-12T05:45:16.806Z"
-    },
-    {
-      "date": "2026-08-11",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Robert Frost",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-11T05:21:28.302Z"
     }
   ],
   "replied_comment_ids": [
