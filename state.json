@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 97,
-  "threads_total_posts": 405,
+  "threads_total_posts": 406,
   "ig_history": [
     {
       "date": "2026-08-27",
@@ -222,6 +222,13 @@
   ],
   "threads_history": [
     {
+      "date": "2026-08-28",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-27T20:38:09.150Z"
+    },
+    {
       "date": "2026-08-27",
       "postId": "threads-publish-success",
       "topic": "Why junior developers shouldn't rely entirely on AI coding assistants",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-25T16:07:17.981Z"
-    },
-    {
-      "date": "2026-08-25",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-25T15:13:05.974Z"
     }
   ],
   "ig_total_posts_life_quotes": 92,
