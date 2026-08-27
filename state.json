@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 97,
+  "ig_total_posts": 98,
   "threads_total_posts": 406,
   "ig_history": [
+    {
+      "date": "2026-08-28",
+      "postId": "ig-publish-success",
+      "topic": "George Santayana",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-27T23:47:38.581Z"
+    },
     {
       "date": "2026-08-27",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Rumi",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-11T03:55:24.453Z"
-    },
-    {
-      "date": "2026-08-10",
-      "postId": "ig-publish-success",
-      "topic": "Bruce Lee",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-10T15:16:51.512Z"
     }
   ],
   "threads_history": [
