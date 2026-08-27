@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 96,
+  "ig_total_posts": 97,
   "threads_total_posts": 404,
   "ig_history": [
+    {
+      "date": "2026-08-27",
+      "postId": "ig-publish-success",
+      "topic": "Ram Dass",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-27T12:47:27.264Z"
+    },
     {
       "date": "2026-08-26",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Bruce Lee",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-10T15:16:51.512Z"
-    },
-    {
-      "date": "2026-08-10",
-      "postId": "ig-publish-success",
-      "topic": "Winston Churchill",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-10T04:06:42.816Z"
     }
   ],
   "threads_history": [
