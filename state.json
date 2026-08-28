@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 99,
-  "threads_total_posts": 409,
+  "threads_total_posts": 410,
   "ig_history": [
     {
       "date": "2026-08-28",
@@ -222,6 +222,13 @@
   ],
   "threads_history": [
     {
+      "date": "2026-08-29",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-28T18:53:12.669Z"
+    },
+    {
       "date": "2026-08-28",
       "postId": "threads-publish-success",
       "topic": "Why UX is suddenly the most important part of AI development",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-25T19:53:58.868Z"
-    },
-    {
-      "date": "2026-08-26",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-25T19:07:41.183Z"
     }
   ],
   "ig_total_posts_life_quotes": 93,
