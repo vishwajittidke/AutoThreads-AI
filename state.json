@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 98,
+  "ig_total_posts": 99,
   "threads_total_posts": 408,
   "ig_history": [
+    {
+      "date": "2026-08-28",
+      "postId": "ig-publish-success",
+      "topic": "Ram Dass",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-28T14:21:20.538Z"
+    },
     {
       "date": "2026-08-28",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Anaïs Nin",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-12T04:17:51.030Z"
-    },
-    {
-      "date": "2026-08-11",
-      "postId": "ig-publish-success",
-      "topic": "Rumi",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-11T03:55:24.453Z"
     }
   ],
   "threads_history": [
