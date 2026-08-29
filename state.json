@@ -432,8 +432,15 @@
       "timestamp": "2026-08-25T23:47:31.781Z"
     }
   ],
-  "ig_total_posts_life_quotes": 94,
+  "ig_total_posts_life_quotes": 95,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-29",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Elizabeth Gilbert",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-29T17:43:35.505Z"
+    },
     {
       "date": "2026-08-29",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Henry David Thoreau",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-14T05:45:24.295Z"
-    },
-    {
-      "date": "2026-08-13",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: James Cash Penney",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-13T15:14:11.105Z"
     }
   ],
   "replied_comment_ids": [
