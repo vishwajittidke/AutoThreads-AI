@@ -432,8 +432,15 @@
       "timestamp": "2026-08-25T22:52:44.198Z"
     }
   ],
-  "ig_total_posts_life_quotes": 93,
+  "ig_total_posts_life_quotes": 94,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-29",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Robert Frost",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-29T11:04:37.589Z"
+    },
     {
       "date": "2026-08-28",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: James Cash Penney",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-13T15:14:11.105Z"
-    },
-    {
-      "date": "2026-08-13",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Ram Dass",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-13T05:47:56.066Z"
     }
   ],
   "replied_comment_ids": [
