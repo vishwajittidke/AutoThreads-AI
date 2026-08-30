@@ -432,8 +432,15 @@
       "timestamp": "2026-08-26T07:23:44.410Z"
     }
   ],
-  "ig_total_posts_life_quotes": 95,
+  "ig_total_posts_life_quotes": 96,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-30",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Rumi",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-30T09:56:10.490Z"
+    },
     {
       "date": "2026-08-29",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Henry David Thoreau",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-14T15:06:43.704Z"
-    },
-    {
-      "date": "2026-08-14",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Henry David Thoreau",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-14T05:45:24.295Z"
     }
   ],
   "replied_comment_ids": [
