@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 100,
+  "ig_total_posts": 101,
   "threads_total_posts": 419,
   "ig_history": [
+    {
+      "date": "2026-08-30",
+      "postId": "ig-publish-success",
+      "topic": "Ralph Waldo Emerson",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-30T08:18:56.859Z"
+    },
     {
       "date": "2026-08-29",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Dorothy Thompson",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-13T04:20:56.918Z"
-    },
-    {
-      "date": "2026-08-12",
-      "postId": "ig-publish-success",
-      "topic": "Thomas Campbell",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-12T15:14:43.996Z"
     }
   ],
   "threads_history": [
