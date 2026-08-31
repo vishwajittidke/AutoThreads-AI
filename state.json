@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 102,
+  "ig_total_posts": 103,
   "threads_total_posts": 429,
   "ig_history": [
+    {
+      "date": "2026-09-01",
+      "postId": "ig-publish-success",
+      "topic": "Lao Tzu",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-31T20:04:55.447Z"
+    },
     {
       "date": "2026-08-31",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Friedrich Nietzsche",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-14T04:18:37.256Z"
-    },
-    {
-      "date": "2026-08-13",
-      "postId": "ig-publish-success",
-      "topic": "Søren Kierkegaard",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-13T15:14:57.615Z"
     }
   ],
   "threads_history": [
