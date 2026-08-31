@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 102,
-  "threads_total_posts": 428,
+  "threads_total_posts": 429,
   "ig_history": [
     {
       "date": "2026-08-31",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-08-31",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-31T15:14:54.753Z"
+    },
+    {
+      "date": "2026-08-31",
       "postId": "threads-publish-success",
       "topic": "Why open-source AI is terrifying proprietary tech giants",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-26T15:58:18.475Z"
-    },
-    {
-      "date": "2026-08-26",
-      "postId": "threads-publish-success",
-      "topic": "The hidden infrastructure cost of Retrieval-Augmented Generation (RAG)",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-26T15:54:43.520Z"
     }
   ],
   "ig_total_posts_life_quotes": 98,
