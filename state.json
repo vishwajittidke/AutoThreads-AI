@@ -432,8 +432,15 @@
       "timestamp": "2026-08-26T15:58:18.475Z"
     }
   ],
-  "ig_total_posts_life_quotes": 98,
+  "ig_total_posts_life_quotes": 99,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-01",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Edmund Hillary",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-31T20:02:58.907Z"
+    },
     {
       "date": "2026-08-31",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: George Bernard Shaw",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-16T04:49:28.732Z"
-    },
-    {
-      "date": "2026-08-15",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Leonard Cohen",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-15T14:37:34.660Z"
     }
   ],
   "replied_comment_ids": [
