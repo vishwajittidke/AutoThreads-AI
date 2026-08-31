@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 101,
+  "ig_total_posts": 102,
   "threads_total_posts": 427,
   "ig_history": [
+    {
+      "date": "2026-08-31",
+      "postId": "ig-publish-success",
+      "topic": "Ram Dass",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-31T08:39:19.089Z"
+    },
     {
       "date": "2026-08-30",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Søren Kierkegaard",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-13T15:14:57.615Z"
-    },
-    {
-      "date": "2026-08-13",
-      "postId": "ig-publish-success",
-      "topic": "Dorothy Thompson",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-13T04:20:56.918Z"
     }
   ],
   "threads_history": [
