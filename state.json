@@ -432,8 +432,15 @@
       "timestamp": "2026-08-26T15:54:43.520Z"
     }
   ],
-  "ig_total_posts_life_quotes": 97,
+  "ig_total_posts_life_quotes": 98,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-08-31",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Lao Tzu",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-08-31T10:50:23.314Z"
+    },
     {
       "date": "2026-08-30",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Leonard Cohen",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-15T14:37:34.660Z"
-    },
-    {
-      "date": "2026-08-15",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Ram Dass",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-15T04:46:08.801Z"
     }
   ],
   "replied_comment_ids": [
