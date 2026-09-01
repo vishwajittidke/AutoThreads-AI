@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 103,
+  "ig_total_posts": 104,
   "threads_total_posts": 433,
   "ig_history": [
+    {
+      "date": "2026-09-01",
+      "postId": "ig-publish-success",
+      "topic": "Thich Nhat Hanh",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-01T07:49:22.166Z"
+    },
     {
       "date": "2026-09-01",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Louise Glück",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-15T03:05:05.388Z"
-    },
-    {
-      "date": "2026-08-14",
-      "postId": "ig-publish-success",
-      "topic": "Friedrich Nietzsche",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-14T04:18:37.256Z"
     }
   ],
   "threads_history": [
