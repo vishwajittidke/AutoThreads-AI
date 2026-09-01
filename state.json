@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 104,
-  "threads_total_posts": 433,
+  "threads_total_posts": 434,
   "ig_history": [
     {
       "date": "2026-09-01",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-01",
+      "postId": "threads-publish-success",
+      "topic": "Why fine-tuning is rarely the first step you should take",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-01T07:51:25.263Z"
+    },
+    {
+      "date": "2026-09-01",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Why junior developers shouldn't rely entirely on AI coding assistants",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-27T12:51:05.368Z"
-    },
-    {
-      "date": "2026-08-27",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-27T10:04:17.750Z"
     }
   ],
   "ig_total_posts_life_quotes": 99,
