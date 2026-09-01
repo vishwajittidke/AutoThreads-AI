@@ -432,8 +432,15 @@
       "timestamp": "2026-08-27T12:51:05.368Z"
     }
   ],
-  "ig_total_posts_life_quotes": 99,
+  "ig_total_posts_life_quotes": 100,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-01",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Anne Frank",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-01T09:23:52.201Z"
+    },
     {
       "date": "2026-09-01",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Ram Dass",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-16T14:37:06.415Z"
-    },
-    {
-      "date": "2026-08-16",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: George Bernard Shaw",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-16T04:49:28.732Z"
     }
   ],
   "replied_comment_ids": [
