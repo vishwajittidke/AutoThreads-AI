@@ -432,8 +432,15 @@
       "timestamp": "2026-08-27T23:49:22.293Z"
     }
   ],
-  "ig_total_posts_life_quotes": 100,
+  "ig_total_posts_life_quotes": 101,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-01",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Ralph Waldo Emerson",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-01T17:49:11.344Z"
+    },
     {
       "date": "2026-09-01",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Ralph Waldo Emerson",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-17T04:57:11.314Z"
-    },
-    {
-      "date": "2026-08-16",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Ram Dass",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-16T14:37:06.415Z"
     }
   ],
   "replied_comment_ids": [
