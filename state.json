@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 105,
-  "threads_total_posts": 443,
+  "threads_total_posts": 444,
   "ig_history": [
     {
       "date": "2026-09-02",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-02",
+      "postId": "threads-publish-success",
+      "topic": "Why vector databases aren't always the answer",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-02T12:08:16.244Z"
+    },
+    {
+      "date": "2026-09-02",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Why we need to stop romanticizing Artificial General Intelligence (AGI)",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-29T17:45:22.088Z"
-    },
-    {
-      "date": "2026-08-29",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-29T14:36:49.449Z"
     }
   ],
   "ig_total_posts_life_quotes": 102,
