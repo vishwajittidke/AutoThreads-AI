@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 104,
-  "threads_total_posts": 440,
+  "threads_total_posts": 441,
   "ig_history": [
     {
       "date": "2026-09-01",
@@ -226,6 +226,13 @@
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
+      "timestamp": "2026-09-02T06:05:22.258Z"
+    },
+    {
+      "date": "2026-09-02",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
       "timestamp": "2026-09-02T01:11:01.716Z"
     },
     {
@@ -423,13 +430,6 @@
       "topic": "The quiet death of the 'traditional' software engineer role",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-29T09:06:05.021Z"
-    },
-    {
-      "date": "2026-08-29",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-29T02:20:59.520Z"
     }
   ],
   "ig_total_posts_life_quotes": 101,
