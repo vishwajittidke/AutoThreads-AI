@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 104,
+  "ig_total_posts": 105,
   "threads_total_posts": 441,
   "ig_history": [
+    {
+      "date": "2026-09-02",
+      "postId": "ig-publish-success",
+      "topic": "Henry David Thoreau",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-02T07:06:18.397Z"
+    },
     {
       "date": "2026-09-01",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Viktor Frankl",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-15T14:39:46.231Z"
-    },
-    {
-      "date": "2026-08-15",
-      "postId": "ig-publish-success",
-      "topic": "Louise Glück",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-15T03:05:05.388Z"
     }
   ],
   "threads_history": [
