@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 105,
-  "threads_total_posts": 441,
+  "threads_total_posts": 442,
   "ig_history": [
     {
       "date": "2026-09-02",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-02",
+      "postId": "threads-publish-success",
+      "topic": "The truth about how much OpenAI/Anthropic APIs actually cost at scale",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-02T07:08:34.431Z"
+    },
+    {
+      "date": "2026-09-02",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-29T09:14:25.754Z"
-    },
-    {
-      "date": "2026-08-29",
-      "postId": "threads-publish-success",
-      "topic": "The quiet death of the 'traditional' software engineer role",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-29T09:06:05.021Z"
     }
   ],
   "ig_total_posts_life_quotes": 101,
