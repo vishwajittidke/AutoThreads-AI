@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 105,
-  "threads_total_posts": 449,
+  "threads_total_posts": 450,
   "ig_history": [
     {
       "date": "2026-09-02",
@@ -226,6 +226,13 @@
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
+      "timestamp": "2026-09-03T06:03:05.387Z"
+    },
+    {
+      "date": "2026-09-03",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
       "timestamp": "2026-09-03T01:16:44.443Z"
     },
     {
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-30T12:04:54.771Z"
-    },
-    {
-      "date": "2026-08-30",
-      "postId": "threads-publish-success",
-      "topic": "Why junior developers shouldn't rely entirely on AI coding assistants",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-30T08:21:20.267Z"
     }
   ],
   "ig_total_posts_life_quotes": 103,
