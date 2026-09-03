@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 105,
+  "ig_total_posts": 106,
   "threads_total_posts": 450,
   "ig_history": [
+    {
+      "date": "2026-09-03",
+      "postId": "ig-publish-success",
+      "topic": "Antoine de Saint-Exupéry",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-03T07:10:41.218Z"
+    },
     {
       "date": "2026-09-02",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Heraclitus",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-16T03:13:11.127Z"
-    },
-    {
-      "date": "2026-08-15",
-      "postId": "ig-publish-success",
-      "topic": "Viktor Frankl",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-15T14:39:46.231Z"
     }
   ],
   "threads_history": [
