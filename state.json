@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 106,
-  "threads_total_posts": 453,
+  "threads_total_posts": 454,
   "ig_history": [
     {
       "date": "2026-09-03",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-03",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-03T15:08:00.978Z"
+    },
+    {
+      "date": "2026-09-03",
       "postId": "threads-publish-success",
       "topic": "Why everyone is pivoting to AI agents but no one has cracked it",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-30T22:52:39.019Z"
-    },
-    {
-      "date": "2026-08-31",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-30T19:56:02.731Z"
     }
   ],
   "ig_total_posts_life_quotes": 104,
