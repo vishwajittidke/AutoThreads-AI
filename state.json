@@ -1,14 +1,21 @@
 {
-  "last_error": "[Instagram] IG Life Quotes: Meta API Error (Container): Only photo or video can be accepted as media type.",
-  "last_error_date": "2026-09-03T17:50:41.126Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 106,
+  "ig_total_posts": 107,
   "threads_total_posts": 454,
   "ig_history": [
+    {
+      "date": "2026-09-03",
+      "postId": "ig-publish-success",
+      "topic": "George Santayana",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-03T17:52:28.718Z"
+    },
     {
       "date": "2026-09-03",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Hermann Hesse",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-16T14:38:23.311Z"
-    },
-    {
-      "date": "2026-08-16",
-      "postId": "ig-publish-success",
-      "topic": "Heraclitus",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-16T03:13:11.127Z"
     }
   ],
   "threads_history": [
