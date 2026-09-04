@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 108,
-  "threads_total_posts": 464,
+  "threads_total_posts": 465,
   "ig_history": [
     {
       "date": "2026-09-04",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-04",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-04T17:42:03.699Z"
+    },
+    {
+      "date": "2026-09-04",
       "postId": "threads-publish-success",
       "topic": "The most overrated AI trend right now",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-01T16:48:30.593Z"
-    },
-    {
-      "date": "2026-09-01",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-01T11:52:59.170Z"
     }
   ],
   "ig_total_posts_life_quotes": 106,
