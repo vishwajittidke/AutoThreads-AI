@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 108,
-  "threads_total_posts": 462,
+  "threads_total_posts": 463,
   "ig_history": [
     {
       "date": "2026-09-04",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-04",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-04T14:27:01.764Z"
+    },
+    {
+      "date": "2026-09-04",
       "postId": "threads-publish-success",
       "topic": "The most overrated AI trend right now",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Why fine-tuning is rarely the first step you should take",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-01T07:51:25.263Z"
-    },
-    {
-      "date": "2026-09-01",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-01T06:25:52.227Z"
     }
   ],
   "ig_total_posts_life_quotes": 105,
