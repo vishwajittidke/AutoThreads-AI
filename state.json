@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 107,
+  "ig_total_posts": 108,
   "threads_total_posts": 459,
   "ig_history": [
+    {
+      "date": "2026-09-04",
+      "postId": "ig-publish-success",
+      "topic": "Emily Dickinson",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-04T07:15:07.458Z"
+    },
     {
       "date": "2026-09-03",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Thich Nhat Hanh",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-17T03:13:19.831Z"
-    },
-    {
-      "date": "2026-08-16",
-      "postId": "ig-publish-success",
-      "topic": "Hermann Hesse",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-16T14:38:23.311Z"
     }
   ],
   "threads_history": [
