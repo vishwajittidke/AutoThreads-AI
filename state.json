@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 108,
-  "threads_total_posts": 459,
+  "threads_total_posts": 460,
   "ig_history": [
     {
       "date": "2026-09-04",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-04",
+      "postId": "threads-publish-success",
+      "topic": "Why most AI wrappers will fail in the next 12 months",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-04T07:16:15.936Z"
+    },
+    {
+      "date": "2026-09-04",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-31T20:56:09.675Z"
-    },
-    {
-      "date": "2026-09-01",
-      "postId": "threads-publish-success",
-      "topic": "Why multi-agent AI systems are harder to build than you think",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-31T20:09:26.711Z"
     }
   ],
   "ig_total_posts_life_quotes": 104,
