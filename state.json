@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 108,
+  "ig_total_posts": 109,
   "threads_total_posts": 469,
   "ig_history": [
+    {
+      "date": "2026-09-05",
+      "postId": "ig-publish-success",
+      "topic": "Isaac Newton",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-05T06:56:23.862Z"
+    },
     {
       "date": "2026-09-04",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Maya Angelou",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-17T14:44:54.404Z"
-    },
-    {
-      "date": "2026-08-17",
-      "postId": "ig-publish-success",
-      "topic": "Thich Nhat Hanh",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-17T03:13:19.831Z"
     }
   ],
   "threads_history": [
