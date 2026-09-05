@@ -432,8 +432,15 @@
       "timestamp": "2026-09-02T16:44:40.477Z"
     }
   ],
-  "ig_total_posts_life_quotes": 107,
+  "ig_total_posts_life_quotes": 108,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-05",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Neil Barringham",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-05T16:49:49.748Z"
+    },
     {
       "date": "2026-09-05",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Anne Lamott",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-20T04:52:00.117Z"
-    },
-    {
-      "date": "2026-08-19",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Anonymous",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-19T14:52:38.652Z"
     }
   ],
   "replied_comment_ids": [
