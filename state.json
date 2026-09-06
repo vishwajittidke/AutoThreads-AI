@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 110,
+  "ig_total_posts": 111,
   "threads_total_posts": 485,
   "ig_history": [
+    {
+      "date": "2026-09-06",
+      "postId": "ig-publish-success",
+      "topic": "Cesare Pavese",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-06T17:02:36.012Z"
+    },
     {
       "date": "2026-09-06",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Lao Tzu",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-18T14:52:51.628Z"
-    },
-    {
-      "date": "2026-08-18",
-      "postId": "ig-publish-success",
-      "topic": "Antoine de Saint-Exupéry",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-18T03:08:25.499Z"
     }
   ],
   "threads_history": [
