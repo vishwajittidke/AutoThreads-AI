@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 109,
+  "ig_total_posts": 110,
   "threads_total_posts": 481,
   "ig_history": [
+    {
+      "date": "2026-09-06",
+      "postId": "ig-publish-success",
+      "topic": "Ralph Waldo Emerson",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-06T07:07:47.334Z"
+    },
     {
       "date": "2026-09-05",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Antoine de Saint-Exupéry",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-18T03:08:25.499Z"
-    },
-    {
-      "date": "2026-08-17",
-      "postId": "ig-publish-success",
-      "topic": "Maya Angelou",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-17T14:44:54.404Z"
     }
   ],
   "threads_history": [
