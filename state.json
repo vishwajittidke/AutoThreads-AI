@@ -432,8 +432,15 @@
       "timestamp": "2026-09-03T12:07:53.887Z"
     }
   ],
-  "ig_total_posts_life_quotes": 108,
+  "ig_total_posts_life_quotes": 109,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-06",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Confucius",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-06T08:39:44.748Z"
+    },
     {
       "date": "2026-09-05",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Sara Henderson",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-20T14:54:08.159Z"
-    },
-    {
-      "date": "2026-08-20",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Anne Lamott",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-20T04:52:00.117Z"
     }
   ],
   "replied_comment_ids": [
