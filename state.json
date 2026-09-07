@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 111,
+  "ig_total_posts": 112,
   "threads_total_posts": 495,
   "ig_history": [
+    {
+      "date": "2026-09-08",
+      "postId": "ig-publish-success",
+      "topic": "Ralph Waldo Emerson",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-07T18:44:30.694Z"
+    },
     {
       "date": "2026-09-06",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "George Santayana",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-19T03:11:10.020Z"
-    },
-    {
-      "date": "2026-08-18",
-      "postId": "ig-publish-success",
-      "topic": "Lao Tzu",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-18T14:52:51.628Z"
     }
   ],
   "threads_history": [
