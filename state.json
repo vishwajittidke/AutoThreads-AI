@@ -432,8 +432,15 @@
       "timestamp": "2026-09-04T17:38:21.882Z"
     }
   ],
-  "ig_total_posts_life_quotes": 110,
+  "ig_total_posts_life_quotes": 111,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-07",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Dolly Parton",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-07T09:20:47.338Z"
+    },
     {
       "date": "2026-09-06",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Japanese Proverb",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-21T14:52:53.634Z"
-    },
-    {
-      "date": "2026-08-21",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Rumi",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-21T04:53:32.345Z"
     }
   ],
   "replied_comment_ids": [
