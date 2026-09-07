@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 112,
-  "threads_total_posts": 496,
+  "threads_total_posts": 497,
   "ig_history": [
     {
       "date": "2026-09-08",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-08",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-07T21:39:14.742Z"
+    },
+    {
+      "date": "2026-09-08",
       "postId": "threads-publish-success",
       "topic": "Why natural language is actually a terrible programming language",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-05T01:11:36.242Z"
-    },
-    {
-      "date": "2026-09-05",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-04T23:08:23.119Z"
     }
   ],
   "ig_total_posts_life_quotes": 111,
