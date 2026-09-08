@@ -432,8 +432,15 @@
       "timestamp": "2026-09-05T16:43:02.403Z"
     }
   ],
-  "ig_total_posts_life_quotes": 112,
+  "ig_total_posts_life_quotes": 113,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-08",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Peter Drucker",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-08T17:54:51.197Z"
+    },
     {
       "date": "2026-09-08",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Socrates",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-22T14:36:52.965Z"
-    },
-    {
-      "date": "2026-08-22",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Koji Tanaka",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-22T04:48:12.173Z"
     }
   ],
   "replied_comment_ids": [
