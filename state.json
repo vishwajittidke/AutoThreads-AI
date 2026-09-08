@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 112,
+  "ig_total_posts": 113,
   "threads_total_posts": 499,
   "ig_history": [
+    {
+      "date": "2026-09-08",
+      "postId": "ig-publish-success",
+      "topic": "Albert Einstein",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-08T07:14:44.656Z"
+    },
     {
       "date": "2026-09-08",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Lao Tzu",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-19T14:53:46.283Z"
-    },
-    {
-      "date": "2026-08-19",
-      "postId": "ig-publish-success",
-      "topic": "George Santayana",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-19T03:11:10.020Z"
     }
   ],
   "threads_history": [
