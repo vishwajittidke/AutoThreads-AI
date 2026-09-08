@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 113,
-  "threads_total_posts": 504,
+  "threads_total_posts": 505,
   "ig_history": [
     {
       "date": "2026-09-08",
@@ -222,6 +222,13 @@
   ],
   "threads_history": [
     {
+      "date": "2026-09-09",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-08T20:01:01.561Z"
+    },
+    {
       "date": "2026-09-08",
       "postId": "threads-publish-success",
       "topic": "Why natural language is actually a terrible programming language",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-05T16:53:26.722Z"
-    },
-    {
-      "date": "2026-09-05",
-      "postId": "threads-publish-success",
-      "topic": "The exact reason why your AI agent keeps hallucinating",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-05T16:52:33.919Z"
     }
   ],
   "ig_total_posts_life_quotes": 113,
