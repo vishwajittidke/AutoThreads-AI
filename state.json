@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 113,
-  "threads_total_posts": 499,
+  "threads_total_posts": 500,
   "ig_history": [
     {
       "date": "2026-09-08",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-08",
+      "postId": "threads-publish-success",
+      "topic": "The uncomfortable truth about Prompt Engineering as a career",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-08T07:17:04.581Z"
+    },
+    {
+      "date": "2026-09-08",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-05T10:48:12.024Z"
-    },
-    {
-      "date": "2026-09-05",
-      "postId": "threads-publish-success",
-      "topic": "Why everyone is pivoting to AI agents but no one has cracked it",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-05T06:58:10.516Z"
     }
   ],
   "ig_total_posts_life_quotes": 111,
