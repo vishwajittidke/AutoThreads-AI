@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 115,
-  "threads_total_posts": 511,
+  "threads_total_posts": 512,
   "ig_history": [
     {
       "date": "2026-09-09",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-09",
+      "postId": "threads-publish-success",
+      "topic": "Why junior developers shouldn't rely entirely on AI coding assistants",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-09T17:51:35.939Z"
+    },
+    {
+      "date": "2026-09-09",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-06T11:10:18.859Z"
-    },
-    {
-      "date": "2026-09-06",
-      "postId": "threads-publish-success",
-      "topic": "Why we need to stop romanticizing Artificial General Intelligence (AGI)",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-06T07:10:00.847Z"
     }
   ],
   "ig_total_posts_life_quotes": 115,
