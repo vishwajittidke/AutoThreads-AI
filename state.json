@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 113,
+  "ig_total_posts": 114,
   "threads_total_posts": 508,
   "ig_history": [
+    {
+      "date": "2026-09-09",
+      "postId": "ig-publish-success",
+      "topic": "T.S. Eliot",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-09T07:23:12.659Z"
+    },
     {
       "date": "2026-09-08",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Rainer Maria Rilke",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-20T03:10:08.248Z"
-    },
-    {
-      "date": "2026-08-19",
-      "postId": "ig-publish-success",
-      "topic": "Lao Tzu",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-19T14:53:46.283Z"
     }
   ],
   "threads_history": [
