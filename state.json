@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 114,
+  "ig_total_posts": 115,
   "threads_total_posts": 511,
   "ig_history": [
+    {
+      "date": "2026-09-09",
+      "postId": "ig-publish-success",
+      "topic": "Ralph Waldo Emerson",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-09T17:50:29.260Z"
+    },
     {
       "date": "2026-09-09",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Ovid",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-21T03:16:23.836Z"
-    },
-    {
-      "date": "2026-08-20",
-      "postId": "ig-publish-success",
-      "topic": "Rainer Maria Rilke",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-20T03:10:08.248Z"
     }
   ],
   "threads_history": [
