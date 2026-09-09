@@ -432,8 +432,15 @@
       "timestamp": "2026-09-06T01:09:36.398Z"
     }
   ],
-  "ig_total_posts_life_quotes": 113,
+  "ig_total_posts_life_quotes": 114,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-09",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Seneca",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-09T08:57:50.056Z"
+    },
     {
       "date": "2026-09-08",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Eleanor Roosevelt",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-23T04:51:18.235Z"
-    },
-    {
-      "date": "2026-08-22",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Socrates",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-22T14:36:52.965Z"
     }
   ],
   "replied_comment_ids": [
