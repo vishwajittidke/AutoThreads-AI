@@ -432,8 +432,15 @@
       "timestamp": "2026-09-06T07:10:00.847Z"
     }
   ],
-  "ig_total_posts_life_quotes": 114,
+  "ig_total_posts_life_quotes": 115,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-09",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Unknown",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-09T17:49:45.368Z"
+    },
     {
       "date": "2026-09-09",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Betty Smith",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-23T14:37:53.512Z"
-    },
-    {
-      "date": "2026-08-23",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Eleanor Roosevelt",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-23T04:51:18.235Z"
     }
   ],
   "replied_comment_ids": [
