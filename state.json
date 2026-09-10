@@ -432,8 +432,15 @@
       "timestamp": "2026-09-06T21:30:03.338Z"
     }
   ],
-  "ig_total_posts_life_quotes": 116,
+  "ig_total_posts_life_quotes": 117,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-10",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Will Durant",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-10T17:41:58.346Z"
+    },
     {
       "date": "2026-09-10",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Maya Angelou",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-24T14:58:59.177Z"
-    },
-    {
-      "date": "2026-08-24",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Mary Engelbreit",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-24T05:00:04.229Z"
     }
   ],
   "replied_comment_ids": [
