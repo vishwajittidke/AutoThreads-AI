@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 116,
+  "ig_total_posts": 117,
   "threads_total_posts": 518,
   "ig_history": [
+    {
+      "date": "2026-09-10",
+      "postId": "ig-publish-success",
+      "topic": "Rumi",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-10T17:42:44.993Z"
+    },
     {
       "date": "2026-09-10",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Lao Tzu",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-22T03:07:26.192Z"
-    },
-    {
-      "date": "2026-08-21",
-      "postId": "ig-publish-success",
-      "topic": "Ralph Waldo Emerson",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-21T14:53:36.952Z"
     }
   ],
   "threads_history": [
