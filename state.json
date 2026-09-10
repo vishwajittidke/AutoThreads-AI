@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 117,
-  "threads_total_posts": 519,
+  "threads_total_posts": 520,
   "ig_history": [
     {
       "date": "2026-09-10",
@@ -222,6 +222,13 @@
   ],
   "threads_history": [
     {
+      "date": "2026-09-11",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-10T19:54:39.353Z"
+    },
+    {
       "date": "2026-09-10",
       "postId": "threads-publish-success",
       "topic": "Why Small Language Models (SLMs) will beat giant models in production",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-07T01:10:01.135Z"
-    },
-    {
-      "date": "2026-09-07",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-06T23:02:08.554Z"
     }
   ],
   "ig_total_posts_life_quotes": 117,
