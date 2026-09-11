@@ -432,8 +432,15 @@
       "timestamp": "2026-09-07T18:18:52.674Z"
     }
   ],
-  "ig_total_posts_life_quotes": 117,
+  "ig_total_posts_life_quotes": 118,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-11",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Thich Nhat Hanh",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-11T08:54:32.081Z"
+    },
     {
       "date": "2026-09-10",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Robert Frost",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-25T04:52:49.463Z"
-    },
-    {
-      "date": "2026-08-24",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Maya Angelou",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-24T14:58:59.177Z"
     }
   ],
   "replied_comment_ids": [
