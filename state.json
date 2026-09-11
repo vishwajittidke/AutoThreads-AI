@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 117,
+  "ig_total_posts": 118,
   "threads_total_posts": 523,
   "ig_history": [
+    {
+      "date": "2026-09-11",
+      "postId": "ig-publish-success",
+      "topic": "Ralph Waldo Emerson",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-11T07:17:31.793Z"
+    },
     {
       "date": "2026-09-10",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Paramahansa Yogananda",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-22T14:37:54.184Z"
-    },
-    {
-      "date": "2026-08-22",
-      "postId": "ig-publish-success",
-      "topic": "Lao Tzu",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-22T03:07:26.192Z"
     }
   ],
   "threads_history": [
