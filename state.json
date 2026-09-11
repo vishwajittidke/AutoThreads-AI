@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 118,
-  "threads_total_posts": 528,
+  "threads_total_posts": 529,
   "ig_history": [
     {
       "date": "2026-09-11",
@@ -226,6 +226,13 @@
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
+      "timestamp": "2026-09-11T22:41:50.015Z"
+    },
+    {
+      "date": "2026-09-12",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
       "timestamp": "2026-09-11T19:54:26.406Z"
     },
     {
@@ -423,13 +430,6 @@
       "topic": "The uncomfortable truth about Prompt Engineering as a career",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-08T07:17:04.581Z"
-    },
-    {
-      "date": "2026-09-08",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-08T06:09:01.046Z"
     }
   ],
   "ig_total_posts_life_quotes": 119,
