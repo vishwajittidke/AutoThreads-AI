@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 118,
-  "threads_total_posts": 524,
+  "threads_total_posts": 525,
   "ig_history": [
     {
       "date": "2026-09-11",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-11",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 1 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-11T11:39:39.716Z"
+    },
+    {
+      "date": "2026-09-11",
       "postId": "threads-publish-success",
       "topic": "Why everyone is pivoting to AI agents but no one has cracked it",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Why natural language is actually a terrible programming language",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-07T18:45:25.063Z"
-    },
-    {
-      "date": "2026-09-07",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-07T18:18:52.674Z"
     }
   ],
   "ig_total_posts_life_quotes": 118,
@@ -671,6 +671,7 @@
     "18037221611828127",
     "18074959016385072",
     "18352265044173004",
-    "18104226137601762"
+    "18104226137601762",
+    "18334764268285145"
   ]
 }
