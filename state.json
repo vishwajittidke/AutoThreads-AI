@@ -432,8 +432,15 @@
       "timestamp": "2026-09-08T22:50:06.704Z"
     }
   ],
-  "ig_total_posts_life_quotes": 120,
+  "ig_total_posts_life_quotes": 121,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-12",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Margaret Lee Runbeck",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-12T17:08:19.671Z"
+    },
     {
       "date": "2026-09-12",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Elizabeth Gilbert",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-27T15:14:18.387Z"
-    },
-    {
-      "date": "2026-08-26",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Robin Wall Kimmerer",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-26T15:51:58.262Z"
     }
   ],
   "replied_comment_ids": [
