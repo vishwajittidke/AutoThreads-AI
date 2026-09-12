@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 119,
-  "threads_total_posts": 533,
+  "threads_total_posts": 534,
   "ig_history": [
     {
       "date": "2026-09-12",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-12",
+      "postId": "threads-publish-success",
+      "topic": "The one skill software engineers need in the age of generative AI",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-12T11:38:18.419Z"
+    },
+    {
+      "date": "2026-09-12",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-08T20:01:01.561Z"
-    },
-    {
-      "date": "2026-09-08",
-      "postId": "threads-publish-success",
-      "topic": "Why natural language is actually a terrible programming language",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-08T17:57:01.553Z"
     }
   ],
   "ig_total_posts_life_quotes": 120,
