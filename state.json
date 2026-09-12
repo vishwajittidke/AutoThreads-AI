@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 120,
-  "threads_total_posts": 535,
+  "threads_total_posts": 536,
   "ig_history": [
     {
       "date": "2026-09-12",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-12",
+      "postId": "threads-publish-success",
+      "topic": "Why most AI wrappers will fail in the next 12 months",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-12T17:13:52.238Z"
+    },
+    {
+      "date": "2026-09-12",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-09T01:20:56.819Z"
-    },
-    {
-      "date": "2026-09-09",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-08T22:50:06.704Z"
     }
   ],
   "ig_total_posts_life_quotes": 121,
