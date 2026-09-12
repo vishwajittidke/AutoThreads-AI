@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 119,
+  "ig_total_posts": 120,
   "threads_total_posts": 535,
   "ig_history": [
+    {
+      "date": "2026-09-12",
+      "postId": "ig-publish-success",
+      "topic": "Kate Chopin",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-12T17:09:39.305Z"
+    },
     {
       "date": "2026-09-12",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Ralph Waldo Emerson",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-23T14:39:09.963Z"
-    },
-    {
-      "date": "2026-08-23",
-      "postId": "ig-publish-success",
-      "topic": "W.B. Yeats",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-23T03:15:27.033Z"
     }
   ],
   "threads_history": [
