@@ -432,8 +432,15 @@
       "timestamp": "2026-09-09T19:55:13.985Z"
     }
   ],
-  "ig_total_posts_life_quotes": 121,
+  "ig_total_posts_life_quotes": 122,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-13",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: John Assaraf",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-13T09:31:51.706Z"
+    },
     {
       "date": "2026-09-12",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Ram Dass",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-28T16:37:11.569Z"
-    },
-    {
-      "date": "2026-08-27",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Elizabeth Gilbert",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-27T15:14:18.387Z"
     }
   ],
   "replied_comment_ids": [
