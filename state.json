@@ -432,8 +432,15 @@
       "timestamp": "2026-09-12T06:03:58.265Z"
     }
   ],
-  "ig_total_posts_life_quotes": 125,
+  "ig_total_posts_life_quotes": 126,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-15",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Dolly Parton",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-15T18:10:53.130Z"
+    },
     {
       "date": "2026-09-15",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Robert Frost",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-30T18:04:10.951Z"
-    },
-    {
-      "date": "2026-08-30",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Rumi",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-30T09:56:10.490Z"
     }
   ],
   "replied_comment_ids": [
