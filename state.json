@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 124,
-  "threads_total_posts": 561,
+  "threads_total_posts": 562,
   "ig_history": [
     {
       "date": "2026-09-15",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-15",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-15T18:20:09.525Z"
+    },
+    {
+      "date": "2026-09-15",
       "postId": "threads-publish-success",
       "topic": "Why natural language is actually a terrible programming language",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-12T11:02:13.014Z"
-    },
-    {
-      "date": "2026-09-12",
-      "postId": "threads-publish-success",
-      "topic": "Why UX is suddenly the most important part of AI development",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-12T07:11:54.178Z"
     }
   ],
   "ig_total_posts_life_quotes": 126,
