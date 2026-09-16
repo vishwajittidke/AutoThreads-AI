@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 124,
+  "ig_total_posts": 125,
   "threads_total_posts": 565,
   "ig_history": [
+    {
+      "date": "2026-09-16",
+      "postId": "ig-publish-success",
+      "topic": "Lao Tzu",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-16T07:41:32.290Z"
+    },
     {
       "date": "2026-09-15",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Fritjof Capra",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-26T03:18:14.841Z"
-    },
-    {
-      "date": "2026-08-25",
-      "postId": "ig-publish-success",
-      "topic": "Ram Dass",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-25T15:05:46.454Z"
     }
   ],
   "threads_history": [
