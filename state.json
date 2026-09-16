@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 125,
-  "threads_total_posts": 569,
+  "threads_total_posts": 570,
   "ig_history": [
     {
       "date": "2026-09-16",
@@ -222,6 +222,13 @@
   ],
   "threads_history": [
     {
+      "date": "2026-09-17",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-16T20:18:26.732Z"
+    },
+    {
       "date": "2026-09-16",
       "postId": "threads-publish-success",
       "topic": "Why we need to stop romanticizing Artificial General Intelligence (AGI)",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-13T05:04:31.857Z"
-    },
-    {
-      "date": "2026-09-13",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-13T00:06:26.548Z"
     }
   ],
   "ig_total_posts_life_quotes": 127,
