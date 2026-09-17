@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 125,
-  "threads_total_posts": 571,
+  "threads_total_posts": 572,
   "ig_history": [
     {
       "date": "2026-09-16",
@@ -226,6 +226,13 @@
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
+      "timestamp": "2026-09-17T01:34:33.487Z"
+    },
+    {
+      "date": "2026-09-17",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
       "timestamp": "2026-09-16T23:05:54.829Z"
     },
     {
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-13T10:25:40.145Z"
-    },
-    {
-      "date": "2026-09-13",
-      "postId": "threads-publish-success",
-      "topic": "The one skill software engineers need in the age of generative AI",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-13T07:30:55.107Z"
     }
   ],
   "ig_total_posts_life_quotes": 127,
