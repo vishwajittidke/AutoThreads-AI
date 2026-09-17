@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 126,
-  "threads_total_posts": 572,
+  "threads_total_posts": 573,
   "ig_history": [
     {
       "date": "2026-09-17",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-17",
+      "postId": "threads-publish-success",
+      "topic": "The unspoken challenge of testing and evaluating LLM outputs",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-17T07:44:22.513Z"
+    },
+    {
+      "date": "2026-09-17",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-13T14:31:21.714Z"
-    },
-    {
-      "date": "2026-09-13",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-13T10:25:40.145Z"
     }
   ],
   "ig_total_posts_life_quotes": 127,
