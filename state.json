@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 127,
+  "ig_total_posts": 128,
   "threads_total_posts": 580,
   "ig_history": [
+    {
+      "date": "2026-09-18",
+      "postId": "ig-publish-success",
+      "topic": "Kahlil Gibran",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-18T07:24:17.745Z"
+    },
     {
       "date": "2026-09-17",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Ram Dass",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-28T14:21:20.538Z"
-    },
-    {
-      "date": "2026-08-28",
-      "postId": "ig-publish-success",
-      "topic": "George Santayana",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-27T23:47:38.581Z"
     }
   ],
   "threads_history": [
