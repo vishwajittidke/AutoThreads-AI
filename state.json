@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 128,
-  "threads_total_posts": 580,
+  "threads_total_posts": 581,
   "ig_history": [
     {
       "date": "2026-09-18",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-18",
+      "postId": "threads-publish-success",
+      "topic": "Why we need to stop romanticizing Artificial General Intelligence (AGI)",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-18T07:26:56.195Z"
+    },
+    {
+      "date": "2026-09-18",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-14T14:18:13.617Z"
-    },
-    {
-      "date": "2026-09-14",
-      "postId": "threads-publish-success",
-      "topic": "The harsh reality of scaling AI products to thousands of users",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-14T07:56:35.113Z"
     }
   ],
   "ig_total_posts_life_quotes": 128,
