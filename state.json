@@ -432,8 +432,15 @@
       "timestamp": "2026-09-15T14:42:45.889Z"
     }
   ],
-  "ig_total_posts_life_quotes": 129,
+  "ig_total_posts_life_quotes": 130,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-19",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Laurie Jean Sennott",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-19T08:47:31.158Z"
+    },
     {
       "date": "2026-09-18",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Ralph Waldo Emerson",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-01T17:49:11.344Z"
-    },
-    {
-      "date": "2026-09-01",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Anne Frank",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-01T09:23:52.201Z"
     }
   ],
   "replied_comment_ids": [
