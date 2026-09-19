@@ -1,13 +1,13 @@
 {
-  "last_error": "[Instagram] IG: Pollinations failed and HF_TOKEN is not configured for the fallback API.",
-  "last_error_date": "2026-09-19T07:20:50.602Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 128,
-  "threads_total_posts": 588,
+  "threads_total_posts": 589,
   "ig_history": [
     {
       "date": "2026-09-18",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-19",
+      "postId": "threads-publish-success",
+      "topic": "The one skill software engineers need in the age of generative AI",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-19T07:22:50.810Z"
+    },
+    {
+      "date": "2026-09-19",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 1 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-15T14:42:45.889Z"
-    },
-    {
-      "date": "2026-09-15",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-15T13:44:02.788Z"
     }
   ],
   "ig_total_posts_life_quotes": 129,
