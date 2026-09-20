@@ -1,13 +1,13 @@
 {
-  "last_error": "[Instagram] IG Life Quotes: Meta API Error (Publishing): Media ID is not available",
-  "last_error_date": "2026-09-20T17:28:37.414Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 128,
-  "threads_total_posts": 600,
+  "threads_total_posts": 601,
   "ig_history": [
     {
       "date": "2026-09-18",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-20",
+      "postId": "threads-publish-success",
+      "topic": "Why local AI running on your laptop is the next big shift",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-20T17:30:34.390Z"
+    },
+    {
+      "date": "2026-09-20",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-17T01:34:33.487Z"
-    },
-    {
-      "date": "2026-09-17",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-16T23:05:54.829Z"
     }
   ],
   "ig_total_posts_life_quotes": 130,
