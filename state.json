@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 128,
-  "threads_total_posts": 601,
+  "threads_total_posts": 602,
   "ig_history": [
     {
       "date": "2026-09-18",
@@ -222,6 +222,13 @@
   ],
   "threads_history": [
     {
+      "date": "2026-09-21",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 1 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-20T19:35:48.874Z"
+    },
+    {
       "date": "2026-09-20",
       "postId": "threads-publish-success",
       "topic": "Why local AI running on your laptop is the next big shift",
@@ -423,13 +430,6 @@
       "topic": "The unspoken challenge of testing and evaluating LLM outputs",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-17T07:44:22.513Z"
-    },
-    {
-      "date": "2026-09-17",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-17T01:34:33.487Z"
     }
   ],
   "ig_total_posts_life_quotes": 130,
@@ -674,6 +674,7 @@
     "18104226137601762",
     "18334764268285145",
     "17899259715665972",
-    "17908280466310889"
+    "17908280466310889",
+    "17910402279549561"
   ]
 }
