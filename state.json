@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 130,
+  "ig_total_posts": 131,
   "threads_total_posts": 614,
   "ig_history": [
+    {
+      "date": "2026-09-22",
+      "postId": "ig-publish-success",
+      "topic": "John Muir",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-22T18:05:29.810Z"
+    },
     {
       "date": "2026-09-22",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Ram Dass",
       "contentPreview": "Published to platform",
       "timestamp": "2026-08-31T08:39:19.089Z"
-    },
-    {
-      "date": "2026-08-30",
-      "postId": "ig-publish-success",
-      "topic": "Ralph Waldo Emerson",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-30T08:18:56.859Z"
     }
   ],
   "threads_history": [
