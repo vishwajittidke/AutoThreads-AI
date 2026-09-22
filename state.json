@@ -432,8 +432,15 @@
       "timestamp": "2026-09-18T19:49:52.811Z"
     }
   ],
-  "ig_total_posts_life_quotes": 132,
+  "ig_total_posts_life_quotes": 133,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-22",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: James Clear",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-22T18:04:33.665Z"
+    },
     {
       "date": "2026-09-22",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Lailah Gifty Akita",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-03T08:55:42.444Z"
-    },
-    {
-      "date": "2026-09-02",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Confucius",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-02T17:53:49.507Z"
     }
   ],
   "replied_comment_ids": [
