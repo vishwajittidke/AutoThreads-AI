@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 130,
-  "threads_total_posts": 612,
+  "threads_total_posts": 613,
   "ig_history": [
     {
       "date": "2026-09-22",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-22",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-22T07:50:33.032Z"
+    },
+    {
+      "date": "2026-09-22",
       "postId": "threads-publish-success",
       "topic": "Why vector databases aren't always the answer",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Why open-source AI is terrifying proprietary tech giants",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-18T17:43:07.573Z"
-    },
-    {
-      "date": "2026-09-18",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-18T16:36:20.957Z"
     }
   ],
   "ig_total_posts_life_quotes": 131,
