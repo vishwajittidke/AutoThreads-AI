@@ -135,13 +135,13 @@ export class DirectorEngine {
    */
   async generateQuoteAndScene(retries = 0) {
     const state = readState();
-    const history = state.history || [];
+    const history = state.ig_history || [];
     
     // Extract previously used authors from history to prevent repetition
     const usedAuthors = history
       .map(h => h.topic)
-      .filter(t => t && t.startsWith("IG:"))
-      .map(t => t.split("|")[0].replace("IG:", "").trim())
+      .filter(t => t) // Ignore empty topics
+      .map(t => t.trim())
       .filter(a => a)
       .join(", ");
 

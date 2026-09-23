@@ -20,7 +20,9 @@ export async function overlayTypography(imageBase64, quoteText, authorName) {
   const ctx = canvas.getContext('2d');
   
   // 1. Draw base image
-  ctx.drawImage(img, 0, 0, width, height);
+  // Crop the bottom 45 pixels to remove the pollinations.ai watermark,
+  // and scale the remaining portion to fill the 1080x1350 canvas.
+  ctx.drawImage(img, 0, 0, img.width, img.height - 45, 0, 0, width, height);
   
   // 2. Add subtle cinematic dark gradient overlay for text legibility
   // Darker at center and bottom where text is

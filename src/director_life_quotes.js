@@ -131,7 +131,7 @@ export class DirectorLifeQuotesEngine {
    */
   async generateQuoteAndScene(retries = 0) {
     const state = readState();
-    const history = state.history || [];
+    const history = state.ig_history_life_quotes || [];
     
     // Extract previously used authors from history to prevent repetition
     const usedAuthors = history

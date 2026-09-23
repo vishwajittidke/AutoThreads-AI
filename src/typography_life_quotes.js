@@ -20,7 +20,9 @@ export async function overlayTypography(imageBase64, quoteText, authorName) {
   const ctx = canvas.getContext('2d');
   
   // 1. Draw base image
-  ctx.drawImage(img, 0, 0, width, height);
+  // Crop the bottom 45 pixels to remove the pollinations.ai watermark,
+  // and scale the remaining portion to fill the 1080x1350 canvas.
+  ctx.drawImage(img, 0, 0, img.width, img.height - 45, 0, 0, width, height);
   
   // 2. Add ultra-subtle cinematic dark gradient overlay (only at the very bottom for the handle)
   // The AI prompt already enforces dark centers, so we don't need a heavy black mask.
