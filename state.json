@@ -432,8 +432,15 @@
       "timestamp": "2026-09-19T14:35:20.402Z"
     }
   ],
-  "ig_total_posts_life_quotes": 133,
+  "ig_total_posts_life_quotes": 134,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-23",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: Lao Tzu",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-23T09:18:11.577Z"
+    },
     {
       "date": "2026-09-22",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Japanese Proverb",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-04T08:57:14.798Z"
-    },
-    {
-      "date": "2026-09-03",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Lailah Gifty Akita",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-03T08:55:42.444Z"
     }
   ],
   "replied_comment_ids": [
