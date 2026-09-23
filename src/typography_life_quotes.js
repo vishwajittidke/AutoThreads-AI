@@ -2,97 +2,111 @@ import { createCanvas, loadImage } from "canvas";
 
 /**
  * AutoThreads-AI: Phase 7 - Typography Integration
- * Overlays high-end editorial canvas typography matching @the.ace___ aesthetic.
+ * Overlays Gen Z "Notes App" style typography matching raw aesthetic.
  */
-export async function overlayTypography(imageBase64, quoteText, authorName) {
-  console.log("[Typography] 🔠 Phase 7: Overlaying high-end canvas typography...");
+export async function overlayTypography(quoteText, authorName) {
+  console.log("[Typography] 🔠 Phase 7: Generating Notes App style image...");
   
-  // Clean quote: Strip surrounding quotes, markdown asterisks, and convert to lowercase
-  const cleanQuote = quoteText.replace(/^["']|["']$/g, '').replace(/\*/g, '').toLowerCase().trim();
+  // Clean quote
+  const cleanQuote = quoteText.replace(/^["']|["']$/g, '').toLowerCase().trim();
   
-  const imageBuffer = Buffer.from(imageBase64, "base64");
-  const img = await loadImage(imageBuffer);
-  
-  const width = img.width;
-  const height = img.height;
+  const width = 1080;
+  const height = 1350;
   
   const canvas = createCanvas(width, height);
   const ctx = canvas.getContext('2d');
   
-  // 1. Draw base image
-  // Crop the bottom 45 pixels to remove the pollinations.ai watermark,
-  // and scale the remaining portion to fill the 1080x1350 canvas.
-  ctx.drawImage(img, 0, 0, img.width, img.height - 45, 0, 0, width, height);
-  
-  // 2. Add ultra-subtle cinematic dark gradient overlay (only at the very bottom for the handle)
-  // The AI prompt already enforces dark centers, so we don't need a heavy black mask.
-  const gradient = ctx.createLinearGradient(0, 0, 0, height);
-  gradient.addColorStop(0, 'rgba(0,0,0,0)');
-  gradient.addColorStop(0.7, 'rgba(0,0,0,0)');
-  gradient.addColorStop(1, 'rgba(0,0,0,0.5)');
+  // Background: Soft gradient or plain off-white
+  const gradient = ctx.createLinearGradient(0, 0, width, height);
+  gradient.addColorStop(0, '#e0e5ec');
+  gradient.addColorStop(1, '#f7f9fc');
   ctx.fillStyle = gradient;
   ctx.fillRect(0, 0, width, height);
+
+  // Draw "Notes App" container
+  const padding = 80;
+  const boxX = padding;
+  const boxY = height / 3;
+  const boxW = width - (padding * 2);
   
-  // 3. Configure typography context
-  ctx.textAlign = 'center';
-  ctx.textBaseline = 'middle';
+  // Approximate height based on text length
+  const linesCount = cleanQuote.split('\n').length + (cleanQuote.length / 30);
+  const boxH = Math.max(400, linesCount * 60 + 150);
+
+  ctx.shadowColor = 'rgba(0, 0, 0, 0.1)';
+  ctx.shadowBlur = 40;
+  ctx.shadowOffsetY = 20;
   
-  // Utility to wrap text beautifully
+  ctx.fillStyle = '#ffffff';
+  ctx.beginPath();
+  ctx.roundRect(boxX, boxY, boxW, boxH, 40);
+  ctx.fill();
+
+  // Reset shadow
+  ctx.shadowColor = 'transparent';
+
+  // Draw Text
+  ctx.fillStyle = '#1c1c1e';
+  ctx.font = 'bold 50px "Arial", sans-serif';
+  ctx.textAlign = 'left';
+  ctx.textBaseline = 'top';
+
   const wrapText = (context, text, x, y, maxWidth, lineHeight) => {
     const words = text.split(' ');
     let line = '';
-    const lines = [];
+    let currentY = y;
+    
+    for (let n = 0; n < words.length; n++) {
+      // Handle explicit newlines
+      if (words[n].includes('\n')) {
+        const parts = words[n].split('\n');
+        for (let p = 0; p < parts.length; p++) {
+          const testLine = line + parts[p] + ' ';
+          if (context.measureText(testLine).width > maxWidth && line !== '') {
+            context.fillText(line.trim(), x, currentY);
+            line = parts[p] + ' ';
+            currentY += lineHeight;
+          } else {
+            context.fillText(testLine.trim(), x, currentY);
+            line = '';
+            currentY += lineHeight;
+          }
+        }
+        continue;
+      }
 
-    for(let n = 0; n < words.length; n++) {
       const testLine = line + words[n] + ' ';
       const metrics = context.measureText(testLine);
       const testWidth = metrics.width;
-      if (testWidth > maxWidth && n > 0) {
-        lines.push(line.trim());
+      
+      if (testWidth > maxWidth && line !== '') {
+        context.fillText(line.trim(), x, currentY);
         line = words[n] + ' ';
+        currentY += lineHeight;
       } else {
         line = testLine;
       }
     }
-    lines.push(line.trim());
-    
-    // Draw lines centered vertically
-    const totalHeight = lines.length * lineHeight;
-    let startY = y - (totalHeight / 2) + (lineHeight / 2);
-    
-    for(let i = 0; i < lines.length; i++) {
-      context.fillText(lines[i], x, startY + (i * lineHeight));
-    }
+    context.fillText(line.trim(), x, currentY);
+    return currentY + lineHeight;
   };
 
-  // 4. Draw Quote (Elegant Lowercase Upright Serif)
-  ctx.fillStyle = 'rgba(255, 255, 255, 0.95)';
-  // The grid uses a classic, upright serif (like Times New Roman or Garamond), NOT italic.
-  ctx.font = '34px "Times New Roman", "Garamond", "Georgia", serif';
-  
-  // Add a soft elegant drop shadow to guarantee legibility against any background
-  ctx.shadowColor = 'rgba(0, 0, 0, 0.8)';
-  ctx.shadowBlur = 12;
-  ctx.shadowOffsetX = 0;
-  ctx.shadowOffsetY = 4;
-  
-  // Max width with luxurious padding
-  const maxTextWidth = width - 240; 
-  
-  // Center slightly above exact middle for visual balance
-  wrapText(ctx, cleanQuote, width / 2, height / 2 - 40, maxTextWidth, 54);
-  
-  // Disable shadow for the handle
-  ctx.shadowColor = 'transparent';
-  ctx.shadowBlur = 0;
-  
-  // Tiny handle at the very bottom
-  ctx.fillStyle = 'rgba(255, 255, 255, 0.4)';
-  ctx.font = '16px "Arial", sans-serif';
-  ctx.fillText("@life.quotes__98", width / 2, height - 80);
-  
-  console.log("[Typography] ✅ Typography perfectly integrated.");
+  const endY = wrapText(ctx, cleanQuote, boxX + 80, boxY + 80, boxW - 160, 70);
 
-  // Export to buffer
+  // Draw Handle/Time
+  ctx.fillStyle = '#8e8e93';
+  ctx.font = '30px "Arial", sans-serif';
+  
+  const now = new Date();
+  const timeStr = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + " at " + now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+  ctx.fillText(timeStr, boxX + 80, endY + 20);
+  
+  // Footer handle
+  ctx.fillStyle = '#8e8e93';
+  ctx.textAlign = 'center';
+  ctx.font = '30px "Arial", sans-serif';
+  ctx.fillText("@life.quotes__98", width / 2, height - 100);
+
+  console.log("[Typography] ✅ Gen Z Typography perfectly integrated.");
   return canvas.toBuffer('image/jpeg', { quality: 0.95 });
 }
