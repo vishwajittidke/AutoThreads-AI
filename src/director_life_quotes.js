@@ -66,7 +66,8 @@ Write TWO raw, authentic, relatable thoughts that feel like real journal entries
 
 TASK 2: ALGORITHMIC CAPTION (caption)
 Write an Instagram-optimized caption for this 2-slide carousel photo dump.
-- The caption must casually reference both topics (e.g., "slide 1 is me every night, slide 2 is me all weekend").
+- The caption MUST directly reference the exact scenarios described in the quotes (e.g., "slide 1 is me every night, slide 2 is me all weekend").
+- You MUST use line breaks (\n\n) to separate the hook, the context for slide 1, and the context for slide 2. Do not write a wall of text.
 - Keep the tone heavily Gen-Z, slightly unhinged, and very casual. 
 - You MUST end the caption with a highly cynical or ironic statement (e.g., "it is what it is", "im so tired", or "we're cooked").
 - NEVER use upbeat or supportive phrases like "virtual hug", "you're not alone", or "send this to a friend".

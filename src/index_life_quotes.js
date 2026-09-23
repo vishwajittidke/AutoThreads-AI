@@ -68,7 +68,7 @@ async function main() {
       
       const finalBuffer1 = await overlayTypography(data.quotes[0], data.author, 'notes');
       const finalBuffer2 = await overlayTypography(data.quotes[1] || data.quotes[0], data.author, 'dark');
-      const finalBuffer3 = await overlayTypography("send this to someone who needs a reminder.", "", 'dark');
+      const finalBuffer3 = await overlayTypography("send this to someone who needs a reminder", "", 'cta');
 
       const imagePath1 = "outputs/today_post_1.jpg";
       const imagePath2 = "outputs/today_post_2.jpg";

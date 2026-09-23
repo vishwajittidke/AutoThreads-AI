@@ -94,6 +94,23 @@ export async function overlayTypography(quoteText, authorName, forcedStyle = nul
     
     drawHandle(ctx, width, height, "@the.ace___", '#555555');
 
+  } else if (style === 'cta') {
+    // Distinct CTA Style (larger font, pure black with noise)
+    ctx.fillStyle = '#050505';
+    ctx.fillRect(0, 0, width, height);
+    
+    addNoise(20); // heavier grain
+
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'italic 52px "Arial", sans-serif'; // larger, italic for urgency
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    
+    wrapTextCentered(ctx, cleanQuote, width/2, height/2, width - 150, 70);
+    
+    // Draw a small share icon representation or simple handle
+    drawHandle(ctx, width, height, "@the.ace___", '#444444');
+
   } else if (style === 'twitter') {
     // 3. Twitter Screenshot Style
     ctx.fillStyle = '#15202b'; // Twitter dark mode background
