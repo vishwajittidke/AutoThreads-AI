@@ -29,10 +29,11 @@ export class DirectorLifeQuotesEngine {
     const directorPrompt = `
 You are a Gen Z social media strategist running the account @life.quotes__98.
 
-TASK 1: VISUAL QUOTE (quote_text)
-Write a raw, authentic, relatable "late-night thought" or "shower thought" that feels like a real journal entry or a casual text message to a friend.
-Use internet culture tone, lowercase letters, no hashtags, and keep it under 100 characters.
-It should be highly relatable, slightly vulnerable, or ironic (e.g., "not to be dramatic but...", "it is what it is", "me when...").
+TASK 1: VISUAL QUOTES (quotes array)
+Write TWO raw, authentic, relatable "late-night thoughts" or "shower thoughts" that feel like real journal entries or casual text messages.
+- They must be on completely different topics (e.g., one about sleep, one about social anxiety).
+- Use internet culture tone, lowercase letters, no hashtags, and keep each under 100 characters.
+- They should be highly relatable, slightly vulnerable, or ironic (e.g., "not to be dramatic but...", "it is what it is", "me when...").
 
 TASK 2: ALGORITHMIC CAPTION (caption)
 Write an Instagram-optimized caption using the 'social-captions' algorithm skill:
@@ -47,7 +48,7 @@ CRITICAL: DO NOT use quotes from any of these previously used authors or topics:
 OUTPUT FORMAT:
 You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it in markdown backticks.
 {
-  "quote_text": "The exact quote text for the image (without quotes, lowercase).",
+  "quotes": ["First short relatable quote here.", "Second entirely different short quote here."],
   "caption": "The full Instagram caption including the hook, body, CTA, and 3-5 niche hashtags.",
   "author": "Anonymous or a relatable persona name"
 }

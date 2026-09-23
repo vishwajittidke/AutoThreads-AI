@@ -63,12 +63,12 @@ async function main() {
       const director = new DirectorEngine(apiKeys);
       
       const data = await director.generateQuoteAndScene();
-      console.log(`\n💭 IG Quote: "${data.quote_text}"`);
+      console.log(`\n💭 IG Quotes: ${JSON.stringify(data.quotes)}`);
       console.log(`✍️  Author: ${data.author}\n`);
       finalTopic = data.author;
       
-      const finalBuffer1 = await overlayTypography(data.quote_text, data.author, 'notes');
-      const finalBuffer2 = await overlayTypography(data.quote_text, data.author, 'dark');
+      const finalBuffer1 = await overlayTypography(data.quotes[0], data.author, 'notes');
+      const finalBuffer2 = await overlayTypography(data.quotes[1] || data.quotes[0], data.author, 'dark');
 
       const imagePath1 = "outputs/today_post_1.jpg";
       const imagePath2 = "outputs/today_post_2.jpg";
