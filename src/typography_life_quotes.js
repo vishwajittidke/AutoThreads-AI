@@ -7,9 +7,9 @@ import { createCanvas, loadImage } from "canvas";
  * 2. Dark Mode / Neon
  * 3. Fake Twitter Screenshot
  */
-export async function overlayTypography(quoteText, authorName) {
+export async function overlayTypography(quoteText, authorName, forcedStyle = null) {
   const styles = ['notes', 'dark', 'twitter'];
-  const style = styles[Math.floor(Math.random() * styles.length)];
+  const style = forcedStyle || styles[Math.floor(Math.random() * styles.length)];
   console.log(`[Typography] 🔠 Selected Aesthetic: ${style}`);
   
   const cleanQuote = quoteText.replace(/^["']|["']$/g, '').toLowerCase().trim();

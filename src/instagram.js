@@ -14,22 +14,40 @@ export class InstagramPublisher {
     this.baseUrl = `https://graph.facebook.com/v19.0/${this.userId}`;
   }
 
-  /**
-   * Publishes an image to Instagram using a public URL.
-   */
   async publishImage(imageUrl, caption) {
-    console.log(`[Instagram] 🚀 Starting publication for URL: ${imageUrl}`);
+    console.log(`[Instagram] 🚀 Starting single-image publication for URL: ${imageUrl}`);
 
-    // 1. Create Media Container
     const containerId = await this.createMediaContainer(imageUrl, caption);
-    
-    // 2. Poll Status (Images process quickly, but polling is safe)
     await this.pollContainerStatus(containerId);
-
-    // 3. Publish Container
     const postId = await this.publishContainer(containerId);
     
     console.log(`[Instagram] 🎉 Post published successfully! Post ID: ${postId}`);
+    return postId;
+  }
+
+  /**
+   * Publishes a carousel (photo dump) using an array of public URLs.
+   */
+  async publishCarousel(imageUrls, caption) {
+    console.log(`[Instagram] 🚀 Starting carousel publication with ${imageUrls.length} items`);
+    
+    // 1. Create item containers
+    const itemIds = [];
+    for (const url of imageUrls) {
+      const itemId = await this.createCarouselItem(url);
+      itemIds.push(itemId);
+    }
+    
+    // 2. Create parent container
+    const parentContainerId = await this.createCarouselContainer(itemIds, caption);
+    
+    // 3. Poll status
+    await this.pollContainerStatus(parentContainerId);
+    
+    // 4. Publish
+    const postId = await this.publishContainer(parentContainerId);
+    
+    console.log(`[Instagram] 🎉 Carousel published successfully! Post ID: ${postId}`);
     return postId;
   }
 
@@ -45,11 +63,40 @@ export class InstagramPublisher {
     const response = await fetch(`${url}?${params.toString()}`, { method: "POST" });
     const data = await response.json();
 
-    if (data.error) {
-      throw new Error(`Meta API Error (Container): ${data.error.message}`);
-    }
+    if (data.error) throw new Error(`Meta API Error (Container): ${data.error.message}`);
+    return data.id;
+  }
 
-    console.log(`[Instagram] 📦 Container created: ${data.id}`);
+  async createCarouselItem(imageUrl) {
+    console.log(`[Instagram] ── Stage 1a: Carousel Item Creation: ${imageUrl}`);
+    const url = `${this.baseUrl}/media`;
+    const params = new URLSearchParams({
+      image_url: imageUrl,
+      is_carousel_item: 'true',
+      access_token: this.accessToken
+    });
+
+    const response = await fetch(`${url}?${params.toString()}`, { method: "POST" });
+    const data = await response.json();
+
+    if (data.error) throw new Error(`Meta API Error (Carousel Item): ${data.error.message}`);
+    return data.id;
+  }
+
+  async createCarouselContainer(childrenIds, caption) {
+    console.log("[Instagram] ── Stage 1b: Parent Carousel Creation ──");
+    const url = `${this.baseUrl}/media`;
+    const params = new URLSearchParams({
+      media_type: 'CAROUSEL',
+      children: childrenIds.join(','),
+      caption: caption,
+      access_token: this.accessToken
+    });
+
+    const response = await fetch(`${url}?${params.toString()}`, { method: "POST" });
+    const data = await response.json();
+
+    if (data.error) throw new Error(`Meta API Error (Carousel Parent): ${data.error.message}`);
     return data.id;
   }
 

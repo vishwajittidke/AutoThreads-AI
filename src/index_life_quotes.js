@@ -66,13 +66,16 @@ async function main() {
       console.log(`✍️  Author: ${data.author}\n`);
       finalTopic = "LifeQuotes: " + data.author;
       
-      const finalBuffer = await overlayTypography(data.quote_text, data.author);
+      const finalBuffer1 = await overlayTypography(data.quote_text, data.author, 'notes');
+      const finalBuffer2 = await overlayTypography(data.quote_text, data.author, 'dark');
 
-      const imagePath = "outputs/today_post.jpg";
+      const imagePath1 = "outputs/today_post_1.jpg";
+      const imagePath2 = "outputs/today_post_2.jpg";
       await fs.mkdir("outputs", { recursive: true });
-      await fs.writeFile(imagePath, finalBuffer);
+      await fs.writeFile(imagePath1, finalBuffer1);
+      await fs.writeFile(imagePath2, finalBuffer2);
       
-      console.log("   📤 Uploading image securely to AWS S3...");
+      console.log("   📤 Uploading carousel images securely to AWS S3...");
       const s3Client = new S3Client({
         region: process.env.AWS_REGION,
         credentials: {
@@ -81,32 +84,34 @@ async function main() {
         }
       });
       const bucketName = process.env.AWS_BUCKET_NAME;
-      const objectKey = `ig-posts/post-${Date.now()}.jpg`;
-
-      const putCommand = new PutObjectCommand({
-        Bucket: bucketName,
-        Key: objectKey,
-        Body: finalBuffer,
-        ContentType: 'image/jpeg'
-      });
-      await s3Client.send(putCommand);
-
-      console.log("   🔗 Generating 1-hour secure pre-signed URL...");
-      // Generate a presigned URL that expires in 1 hour (3600 seconds)
+      
       const { GetObjectCommand } = await import("@aws-sdk/client-s3");
-      const getCommand = new GetObjectCommand({
-        Bucket: bucketName,
-        Key: objectKey
-      });
-      const publicImageUrl = await getSignedUrl(s3Client, getCommand, { expiresIn: 3600 });
+      const publicUrls = [];
+
+      for (const [index, buffer] of [finalBuffer1, finalBuffer2].entries()) {
+        const objectKey = `ig-posts/post-${Date.now()}-${index}.jpg`;
+        const putCommand = new PutObjectCommand({
+          Bucket: bucketName,
+          Key: objectKey,
+          Body: buffer,
+          ContentType: 'image/jpeg'
+        });
+        await s3Client.send(putCommand);
+        
+        const getCommand = new GetObjectCommand({
+          Bucket: bucketName,
+          Key: objectKey
+        });
+        const url = await getSignedUrl(s3Client, getCommand, { expiresIn: 3600 });
+        publicUrls.push(url);
+      }
+
+      console.log("   🔗 Generated secure pre-signed URLs for carousel items.");
 
       const publisher = new InstagramPublisher(igUserId, igToken);
-      // Clean quote to lowercase for caption
-      const lowerQuote = data.quote_text.toLowerCase().replace(/^["']|["']$/g, '').replace(/\\*/g, '').trim();
-      
       const caption = data.caption;
 
-      await publisher.publishImage(publicImageUrl, caption);
+      await publisher.publishCarousel(publicUrls, caption);
       
     } catch (error) {
       console.error(`\n❌ IG PIPELINE ERROR: ${error.message}`);
