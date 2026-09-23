@@ -28,17 +28,26 @@ export class DirectorEngine {
 
     const directorPrompt = `
 You are a Gen Z social media strategist running the account @the.ace___.
+
+TASK 1: VISUAL QUOTE (quote_text)
 Write a raw, authentic, relatable "late-night thought" or "shower thought" that feels like a real journal entry or a casual text message to a friend.
 Use internet culture tone, lowercase letters, no hashtags, and keep it under 100 characters.
 It should be highly relatable, slightly vulnerable, or ironic (e.g., "not to be dramatic but...", "it is what it is", "me when...").
 
+TASK 2: ALGORITHMIC CAPTION (caption)
+Write an Instagram-optimized caption using the 'social-captions' algorithm skill:
+- Hook in the first 125 characters that stops the scroll (e.g., a bold claim or relatable hook).
+- 1-2 short sentences of body text expanding on the feeling.
+- One strong CTA optimizing for Saves or Shares (e.g., "save this to remind yourself later" or "send this to a friend who overthinks").
+- Exactly 3-5 highly niche SEO keywords/hashtags (NO generic tags like #fyp or #viral).
+
 CRITICAL: DO NOT use quotes from any of these previously used authors or topics: ${usedAuthors || 'None yet'}.
-DO NOT generate any hashtags.
 
 OUTPUT FORMAT:
-You MUST output ONLY a valid JSON object with exactly two keys. Do NOT wrap it in markdown backticks.
+You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it in markdown backticks.
 {
-  "quote_text": "The exact quote text (without quotes, lowercase).",
+  "quote_text": "The exact quote text for the image (without quotes, lowercase).",
+  "caption": "The full Instagram caption including the hook, body, CTA, and 3-5 niche hashtags.",
   "author": "Anonymous or a relatable persona name"
 }
 `;

@@ -104,8 +104,7 @@ async function main() {
       // Clean quote to lowercase for caption
       const lowerQuote = data.quote_text.toLowerCase().replace(/^["']|["']$/g, '').replace(/\\*/g, '').trim();
       
-      // Create the exact aesthetic caption requested
-      const caption = `♠️ Drop ❤ if you believe\n\n${lowerQuote}\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n.\n#likes #like #follow #likeforlikes #love #l #instagood #instagram #likeforlike #followme #followforfollowback #likeforfollow #f #followers #photooftheday #instalike #followback #likesforlikes #photography #followforfollow #comment #picoftheday #fashion #liker #bhfyp #likesforlike #likeback #me #beautiful #bhfyp`;
+      const caption = data.caption;
 
       await publisher.publishImage(publicImageUrl, caption);
       
