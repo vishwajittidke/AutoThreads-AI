@@ -38,9 +38,10 @@ Write TWO raw, authentic, relatable "late-night thoughts" or "shower thoughts" t
 TASK 2: ALGORITHMIC CAPTION (caption)
 Write an Instagram-optimized caption for this 2-slide carousel photo dump.
 - The caption must casually reference both topics (e.g., "slide 1 is me every night, slide 2 is me all weekend").
-- Keep the tone heavily Gen-Z, slightly unhinged, and very casual.
-- Do NOT use millennial phrasing like "Why do our minds do this to us?" or "Send this to your friend".
-- EMOJI RULE: NEVER use millennial emojis like 😂, 😫, 🤣, 😍, 🤯 or 💯. Use ONLY Gen Z emojis like 💀, 😭, ✨, or no emojis at all.
+- Keep the tone heavily Gen-Z, slightly unhinged, and very casual. 
+- You MUST end the caption with a highly cynical or ironic statement (e.g., "it is what it is", "im so tired", or "we're cooked").
+- NEVER use upbeat or supportive phrases like "virtual hug", "you're not alone", or "send this to a friend".
+- Only output 💀, 😭, ✨, or no emojis. 
 - Include 3-5 hyper-niche aesthetic hashtags at the bottom.
 
 CRITICAL: DO NOT use quotes from any of these previously used authors or topics: ${usedAuthors || 'None yet'}.
@@ -73,9 +74,12 @@ You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it
         }
       }
       
-      // Force sanitize millennial emojis that the LLM stubbornly adds, using the 'u' flag to prevent surrogate pair corruption
+      // Force sanitize millennial emojis that the LLM stubbornly adds using split/join to avoid surrogate pair regex bugs
       if (parsed.caption) {
-        parsed.caption = parsed.caption.replace(/[😂🤣😫😩🤯💯🔥🙌👏]/gu, '');
+        const badEmojis = ['😂','🤣','😫','😩','🤯','💯','🔥','🙌','👏','🥺','🥺','🥺'];
+        for (const emoji of badEmojis) {
+          parsed.caption = parsed.caption.split(emoji).join('');
+        }
       }
       
       return parsed;
