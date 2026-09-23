@@ -65,6 +65,9 @@ You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it
         throw new Error("Missing 'quotes' array in JSON.");
       }
       for (const q of parsed.quotes) {
+        if (!q || typeof q !== 'string') {
+          throw new Error("Invalid quote element in quotes array.");
+        }
         if (q.length > 200) {
           throw new Error(`QuoteTooLongError: A quote is ${q.length} characters.`);
         }
