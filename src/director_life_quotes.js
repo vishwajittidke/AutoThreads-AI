@@ -36,12 +36,12 @@ Write TWO raw, authentic, relatable "late-night thoughts" or "shower thoughts" t
 - They should be highly relatable, slightly vulnerable, or ironic (e.g., "not to be dramatic but...", "it is what it is", "me when...").
 
 TASK 2: ALGORITHMIC CAPTION (caption)
-Write an Instagram-optimized caption using the 'social-captions' algorithm skill:
-- Hook in the first 125 characters that stops the scroll (e.g., a bold claim or relatable hook).
-- 1-2 short sentences of body text expanding on the feeling.
-- One strong CTA optimizing for Saves or Shares (e.g., "save this to remind yourself later" or "send this to a friend who overthinks").
-- Exactly 3-5 highly niche SEO keywords/hashtags (NO generic tags like #fyp or #viral).
-- EMOJI RULE: NEVER use millennial emojis like 😂, 😫, 🤣, 😍, or 💯. Use ONLY Gen Z emojis like 💀, 😭, ✨, or no emojis at all.
+Write an Instagram-optimized caption for this 2-slide carousel photo dump.
+- The caption must casually reference both topics (e.g., "slide 1 is me every night, slide 2 is me all weekend").
+- Keep the tone heavily Gen-Z, slightly unhinged, and very casual.
+- Do NOT use millennial phrasing like "Why do our minds do this to us?" or "Send this to your friend".
+- EMOJI RULE: NEVER use millennial emojis like 😂, 😫, 🤣, 😍, 🤯 or 💯. Use ONLY Gen Z emojis like 💀, 😭, ✨, or no emojis at all.
+- Include 3-5 hyper-niche aesthetic hashtags at the bottom.
 
 CRITICAL: DO NOT use quotes from any of these previously used authors or topics: ${usedAuthors || 'None yet'}.
 
@@ -73,9 +73,9 @@ You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it
         }
       }
       
-      // Force sanitize millennial emojis that the LLM stubbornly adds
+      // Force sanitize millennial emojis that the LLM stubbornly adds, using the 'u' flag to prevent surrogate pair corruption
       if (parsed.caption) {
-        parsed.caption = parsed.caption.replace(/[😂🤣😫😩🤯💯🔥🙌👏]/g, '');
+        parsed.caption = parsed.caption.replace(/[😂🤣😫😩🤯💯🔥🙌👏]/gu, '');
       }
       
       return parsed;
