@@ -70,18 +70,24 @@ export async function overlayTypography(quoteText, authorName, forcedStyle = nul
     addNoise(12);
 
   } else if (style === 'dark') {
-    // 2. Dark Mode Style
-    ctx.fillStyle = '#0a0a0a';
+    // 2. Aurora / Lo-Fi Blur Style
+    ctx.fillStyle = '#050508'; // Deep space black/blue
     ctx.fillRect(0, 0, width, height);
     
-    // Add subtle noise/grain or glow
-    const cx = width/2;
-    const cy = height/2;
-    const radGrd = ctx.createRadialGradient(cx, cy, 0, cx, cy, 700);
-    radGrd.addColorStop(0, 'rgba(40, 40, 50, 1)');
-    radGrd.addColorStop(1, 'rgba(10, 10, 10, 1)');
-    ctx.fillStyle = radGrd;
-    ctx.fillRect(0, 0, width, height);
+    // Draw 3 massive soft orbs to simulate a heavily blurred photo
+    const orbs = [
+      { x: width * 0.2, y: height * 0.2, r: 800, c: 'rgba(70, 20, 100, 0.3)' }, // Deep Purple
+      { x: width * 0.8, y: height * 0.8, r: 900, c: 'rgba(10, 50, 120, 0.25)' }, // Deep Blue
+      { x: width * 0.5, y: height * 0.5, r: 600, c: 'rgba(20, 90, 90, 0.2)' } // Teal
+    ];
+    
+    for (const orb of orbs) {
+      const grad = ctx.createRadialGradient(orb.x, orb.y, 0, orb.x, orb.y, orb.r);
+      grad.addColorStop(0, orb.c);
+      grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
+      ctx.fillStyle = grad;
+      ctx.fillRect(0, 0, width, height);
+    }
     
     addNoise(15);
 

@@ -66,17 +66,34 @@ async function main() {
       console.log(`✍️  Author: ${data.author}\n`);
       finalTopic = "LifeQuotes: " + data.author;
       
-      const finalBuffer1 = await overlayTypography(data.quotes[0], data.author, 'notes');
-      const finalBuffer2 = await overlayTypography(data.quotes[1] || data.quotes[0], data.author, 'dark');
-      const finalBuffer3 = await overlayTypography("send this to someone who needs a reminder", "", 'cta');
-
-      const imagePath1 = "outputs/today_post_1.jpg";
-      const imagePath2 = "outputs/today_post_2.jpg";
-      const imagePath3 = "outputs/today_post_3.jpg";
+      const styles = ['notes', 'dark', 'twitter'];
+      let lastStyle = null;
+      
+      const buffers = [];
+      const imagePaths = [];
+      
       await fs.mkdir("outputs", { recursive: true });
-      await fs.writeFile(imagePath1, finalBuffer1);
-      await fs.writeFile(imagePath2, finalBuffer2);
-      await fs.writeFile(imagePath3, finalBuffer3);
+      
+      for (let i = 0; i < data.quotes.length; i++) {
+        // Pick a random style different from the last one
+        let availableStyles = styles.filter(s => s !== lastStyle);
+        let selectedStyle = availableStyles[Math.floor(Math.random() * availableStyles.length)];
+        lastStyle = selectedStyle;
+        
+        const buffer = await overlayTypography(data.quotes[i], data.author, selectedStyle);
+        buffers.push(buffer);
+        
+        const path = `outputs/today_post_${i + 1}.jpg`;
+        imagePaths.push(path);
+        await fs.writeFile(path, buffer);
+      }
+      
+      // CTA Slide
+      const ctaBuffer = await overlayTypography("send this to someone who needs a reminder", "", 'cta');
+      buffers.push(ctaBuffer);
+      const ctaPath = `outputs/today_post_${data.quotes.length + 1}.jpg`;
+      imagePaths.push(ctaPath);
+      await fs.writeFile(ctaPath, ctaBuffer);
       
       console.log("   📤 Uploading carousel images securely to AWS S3...");
       const s3Client = new S3Client({
@@ -91,7 +108,7 @@ async function main() {
       const { GetObjectCommand } = await import("@aws-sdk/client-s3");
       const publicUrls = [];
 
-      for (const [index, buffer] of [finalBuffer1, finalBuffer2, finalBuffer3].entries()) {
+      for (const [index, buffer] of buffers.entries()) {
         const objectKey = `ig-posts/post-${Date.now()}-${index}.jpg`;
         const putCommand = new PutObjectCommand({
           Bucket: bucketName,
