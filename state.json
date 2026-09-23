@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 132,
-  "threads_total_posts": 621,
+  "threads_total_posts": 622,
   "ig_history": [
     {
       "date": "2026-09-23",
@@ -222,6 +222,13 @@
   ],
   "threads_history": [
     {
+      "date": "2026-09-24",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-23T20:34:49.295Z"
+    },
+    {
       "date": "2026-09-23",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-19T18:08:49.543Z"
-    },
-    {
-      "date": "2026-09-19",
-      "postId": "threads-publish-success",
-      "topic": "Why tech debt is accelerating faster than ever with AI tools",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-19T17:19:16.001Z"
     }
   ],
   "ig_total_posts_life_quotes": 136,
