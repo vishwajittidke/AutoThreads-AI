@@ -68,12 +68,15 @@ async function main() {
       
       const finalBuffer1 = await overlayTypography(data.quotes[0], data.author, 'notes');
       const finalBuffer2 = await overlayTypography(data.quotes[1] || data.quotes[0], data.author, 'dark');
+      const finalBuffer3 = await overlayTypography("send this to someone who needs a reminder.", "", 'dark');
 
       const imagePath1 = "outputs/today_post_1.jpg";
       const imagePath2 = "outputs/today_post_2.jpg";
+      const imagePath3 = "outputs/today_post_3.jpg";
       await fs.mkdir("outputs", { recursive: true });
       await fs.writeFile(imagePath1, finalBuffer1);
       await fs.writeFile(imagePath2, finalBuffer2);
+      await fs.writeFile(imagePath3, finalBuffer3);
       
       console.log("   📤 Uploading carousel images securely to AWS S3...");
       const s3Client = new S3Client({
@@ -88,7 +91,7 @@ async function main() {
       const { GetObjectCommand } = await import("@aws-sdk/client-s3");
       const publicUrls = [];
 
-      for (const [index, buffer] of [finalBuffer1, finalBuffer2].entries()) {
+      for (const [index, buffer] of [finalBuffer1, finalBuffer2, finalBuffer3].entries()) {
         const objectKey = `ig-posts/post-${Date.now()}-${index}.jpg`;
         const putCommand = new PutObjectCommand({
           Bucket: bucketName,
