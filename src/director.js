@@ -61,8 +61,13 @@ You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it
       const jsonStr = rawOutput.replace(/```json/g, "").replace(/```/g, "").trim();
       const parsed = JSON.parse(jsonStr);
       
-      if (parsed.quote_text.length > 200) {
-        throw new Error(`QuoteTooLongError: Quote is ${parsed.quote_text.length} characters.`);
+      if (!parsed.quotes || !Array.isArray(parsed.quotes) || parsed.quotes.length === 0) {
+        throw new Error("Missing 'quotes' array in JSON.");
+      }
+      for (const q of parsed.quotes) {
+        if (q.length > 200) {
+          throw new Error(`QuoteTooLongError: A quote is ${q.length} characters.`);
+        }
       }
       
       return parsed;
