@@ -73,6 +73,11 @@ You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it
         }
       }
       
+      // Force sanitize millennial emojis that the LLM stubbornly adds
+      if (parsed.caption) {
+        parsed.caption = parsed.caption.replace(/[😂🤣😫😩🤯💯🔥🙌👏]/g, '');
+      }
+      
       return parsed;
     } catch (err) {
       console.error(`[Director] ⚠️ Validation/Parsing failed: ${err.message}`);

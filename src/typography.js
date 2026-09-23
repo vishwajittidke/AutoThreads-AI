@@ -55,7 +55,7 @@ export async function overlayTypography(quoteText, authorName, forcedStyle = nul
     ctx.shadowColor = 'transparent';
 
     ctx.fillStyle = '#1c1c1e';
-    ctx.font = 'bold 44px "Arial", sans-serif';
+    ctx.font = '42px "Arial", sans-serif'; // Removed bold, slightly smaller
     ctx.textAlign = 'left';
     ctx.textBaseline = 'top';
     const endY = wrapText(ctx, cleanQuote, boxX + 80, boxY + 80, boxW - 160, 65);
