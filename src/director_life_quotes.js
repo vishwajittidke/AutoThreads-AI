@@ -26,14 +26,43 @@ export class DirectorLifeQuotesEngine {
       .filter(a => a)
       .join(", ");
 
+    const availableTopics = [
+      "the sudden urge to change your entire life at 2am",
+      "imposter syndrome kicking in at the worst times",
+      "hating small talk but being terrified of deep conversations",
+      "spending money you don't have to fix a bad mood",
+      "the specific anxiety of sending an email and waiting for a reply",
+      "overanalyzing a text message from 3 years ago",
+      "wanting to be invited out but not actually wanting to go",
+      "the dread of Sunday evening",
+      "forgetting why you walked into a room and questioning your reality",
+      "the fake scenarios you make up before falling asleep",
+      "hyper-fixating on a new hobby for 3 days then dropping it",
+      "feeling like an NPC in your own life",
+      "the sheer exhaustion of being perceived by others",
+      "scrolling reels for 4 hours while your to-do list cries",
+      "the existential dread of picking a career path",
+      "romanticizing your life for 5 minutes then giving up",
+      "the fear of running into someone you vaguely know in public",
+      "listening to the same song on loop until you hate it",
+      "creating a detailed 5-year plan then forgetting to eat lunch",
+      "the specific rage of your earphones getting caught on a doorknob"
+    ];
+
+    // Pick 2 random unique topics
+    const shuffled = availableTopics.sort(() => 0.5 - Math.random());
+    const topic1 = shuffled[0];
+    const topic2 = shuffled[1];
+
     const directorPrompt = `
 You are a Gen Z social media strategist running the account @life.quotes__98.
 
 TASK 1: VISUAL QUOTES (quotes array)
-Write TWO raw, authentic, relatable "late-night thoughts" or "shower thoughts" that feel like real journal entries or casual text messages.
-- They must be on completely different topics (e.g., one about sleep, one about social anxiety).
+Write TWO raw, authentic, relatable thoughts that feel like real journal entries or casual text messages.
+- Topic 1 MUST BE about: "${topic1}"
+- Topic 2 MUST BE about: "${topic2}"
 - Use internet culture tone, lowercase letters, no hashtags, and keep each under 100 characters.
-- They should be highly relatable, slightly vulnerable, or ironic (e.g., "not to be dramatic but...", "it is what it is", "me when...").
+- They should be highly relatable, slightly vulnerable, or ironic.
 
 TASK 2: ALGORITHMIC CAPTION (caption)
 Write an Instagram-optimized caption for this 2-slide carousel photo dump.
@@ -51,7 +80,7 @@ You MUST output ONLY a valid JSON object with exactly three keys. Do NOT wrap it
 {
   "quotes": ["First short relatable quote here.", "Second entirely different short quote here."],
   "caption": "The full Instagram caption including the hook, body, CTA, and 3-5 niche hashtags.",
-  "author": "Anonymous or a relatable persona name"
+  "author": "topic: ${topic1} / ${topic2}"
 }
 `;
 
