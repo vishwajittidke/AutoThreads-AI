@@ -18,6 +18,18 @@ export async function overlayTypography(quoteText, authorName) {
   const canvas = createCanvas(width, height);
   const ctx = canvas.getContext('2d');
   
+  function addNoise(opacity) {
+    const imgData = ctx.getImageData(0, 0, width, height);
+    const data = imgData.data;
+    for (let i = 0; i < data.length; i += 4) {
+      const val = (Math.random() - 0.5) * opacity;
+      data[i] += val;
+      data[i + 1] += val;
+      data[i + 2] += val;
+    }
+    ctx.putImageData(imgData, 0, 0);
+  }
+  
   if (style === 'notes') {
     // 1. Notes App Style
     const gradient = ctx.createLinearGradient(0, 0, width, height);
@@ -43,18 +55,19 @@ export async function overlayTypography(quoteText, authorName) {
     ctx.shadowColor = 'transparent';
 
     ctx.fillStyle = '#1c1c1e';
-    ctx.font = 'bold 50px "Arial", sans-serif';
+    ctx.font = 'bold 44px "Arial", sans-serif';
     ctx.textAlign = 'left';
     ctx.textBaseline = 'top';
-    const endY = wrapText(ctx, cleanQuote, boxX + 80, boxY + 80, boxW - 160, 70);
+    const endY = wrapText(ctx, cleanQuote, boxX + 80, boxY + 80, boxW - 160, 65);
 
     ctx.fillStyle = '#8e8e93';
-    ctx.font = '30px "Arial", sans-serif';
+    ctx.font = '28px "Arial", sans-serif';
     const now = new Date();
     const timeStr = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + " at " + now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
-    ctx.fillText(timeStr, boxX + 80, endY + 20);
+    ctx.fillText(timeStr, boxX + 80, endY + 30);
     
     drawHandle(ctx, width, height, "@the.ace___", '#8e8e93');
+    addNoise(12);
 
   } else if (style === 'dark') {
     // 2. Dark Mode Style
@@ -64,20 +77,22 @@ export async function overlayTypography(quoteText, authorName) {
     // Add subtle noise/grain or glow
     const cx = width/2;
     const cy = height/2;
-    const radGrd = ctx.createRadialGradient(cx, cy, 0, cx, cy, 600);
-    radGrd.addColorStop(0, 'rgba(30, 30, 40, 1)');
+    const radGrd = ctx.createRadialGradient(cx, cy, 0, cx, cy, 700);
+    radGrd.addColorStop(0, 'rgba(40, 40, 50, 1)');
     radGrd.addColorStop(1, 'rgba(10, 10, 10, 1)');
     ctx.fillStyle = radGrd;
     ctx.fillRect(0, 0, width, height);
+    
+    addNoise(15);
 
-    ctx.fillStyle = '#ffffff';
-    ctx.font = '55px "Times New Roman", serif';
+    ctx.fillStyle = '#f5f5f5';
+    ctx.font = '40px "Arial", sans-serif'; // smaller font, more negative space
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     
-    wrapTextCentered(ctx, cleanQuote, width/2, height/2 - 100, width - 160, 80);
+    wrapTextCentered(ctx, cleanQuote, width/2, height/2 - 50, width - 200, 60);
     
-    drawHandle(ctx, width, height, "@the.ace___", '#444444');
+    drawHandle(ctx, width, height, "@the.ace___", '#555555');
 
   } else if (style === 'twitter') {
     // 3. Twitter Screenshot Style
@@ -113,10 +128,11 @@ export async function overlayTypography(quoteText, authorName) {
 
     // Tweet Text
     ctx.fillStyle = '#ffffff';
-    ctx.font = '45px "Arial", sans-serif';
-    wrapText(ctx, cleanQuote, boxX + 50, boxY + 180, boxW - 100, 60);
+    ctx.font = '42px "Arial", sans-serif';
+    wrapText(ctx, cleanQuote, boxX + 50, boxY + 180, boxW - 100, 55);
     
     drawHandle(ctx, width, height, "@the.ace___", '#8899a6');
+    addNoise(8);
   }
 
   return canvas.toBuffer('image/jpeg', { quality: 0.95 });

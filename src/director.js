@@ -40,6 +40,7 @@ Write an Instagram-optimized caption using the 'social-captions' algorithm skill
 - 1-2 short sentences of body text expanding on the feeling.
 - One strong CTA optimizing for Saves or Shares (e.g., "save this to remind yourself later" or "send this to a friend who overthinks").
 - Exactly 3-5 highly niche SEO keywords/hashtags (NO generic tags like #fyp or #viral).
+- EMOJI RULE: NEVER use millennial emojis like 😂, 😫, 🤣, 😍, or 💯. Use ONLY Gen Z emojis like 💀, 😭, ✨, or no emojis at all.
 
 CRITICAL: DO NOT use quotes from any of these previously used authors or topics: ${usedAuthors || 'None yet'}.
 
