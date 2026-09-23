@@ -1,112 +1,188 @@
 import { createCanvas, loadImage } from "canvas";
 
 /**
- * AutoThreads-AI: Phase 7 - Typography Integration
- * Overlays Gen Z "Notes App" style typography matching raw aesthetic.
+ * AutoThreads-AI: Typography Integration
+ * Randomly generates one of three Gen Z viral aesthetics:
+ * 1. Notes App
+ * 2. Dark Mode / Neon
+ * 3. Fake Twitter Screenshot
  */
 export async function overlayTypography(quoteText, authorName) {
-  console.log("[Typography] 🔠 Phase 7: Generating Notes App style image...");
+  const styles = ['notes', 'dark', 'twitter'];
+  const style = styles[Math.floor(Math.random() * styles.length)];
+  console.log(`[Typography] 🔠 Selected Aesthetic: ${style}`);
   
-  // Clean quote
   const cleanQuote = quoteText.replace(/^["']|["']$/g, '').toLowerCase().trim();
-  
   const width = 1080;
   const height = 1350;
-  
   const canvas = createCanvas(width, height);
   const ctx = canvas.getContext('2d');
   
-  // Background: Soft gradient or plain off-white
-  const gradient = ctx.createLinearGradient(0, 0, width, height);
-  gradient.addColorStop(0, '#e0e5ec');
-  gradient.addColorStop(1, '#f7f9fc');
-  ctx.fillStyle = gradient;
-  ctx.fillRect(0, 0, width, height);
+  if (style === 'notes') {
+    // 1. Notes App Style
+    const gradient = ctx.createLinearGradient(0, 0, width, height);
+    gradient.addColorStop(0, '#e0e5ec');
+    gradient.addColorStop(1, '#f7f9fc');
+    ctx.fillStyle = gradient;
+    ctx.fillRect(0, 0, width, height);
 
-  // Draw "Notes App" container
-  const padding = 80;
-  const boxX = padding;
-  const boxY = height / 3;
-  const boxW = width - (padding * 2);
-  
-  // Approximate height based on text length
-  const linesCount = cleanQuote.split('\n').length + (cleanQuote.length / 30);
-  const boxH = Math.max(400, linesCount * 60 + 150);
+    const padding = 80;
+    const boxX = padding;
+    const boxY = height / 3;
+    const boxW = width - (padding * 2);
+    const linesCount = cleanQuote.split('\n').length + (cleanQuote.length / 30);
+    const boxH = Math.max(400, linesCount * 60 + 150);
 
-  ctx.shadowColor = 'rgba(0, 0, 0, 0.1)';
-  ctx.shadowBlur = 40;
-  ctx.shadowOffsetY = 20;
-  
-  ctx.fillStyle = '#ffffff';
-  ctx.beginPath();
-  ctx.roundRect(boxX, boxY, boxW, boxH, 40);
-  ctx.fill();
+    ctx.shadowColor = 'rgba(0, 0, 0, 0.05)';
+    ctx.shadowBlur = 30;
+    ctx.shadowOffsetY = 15;
+    ctx.fillStyle = '#ffffff';
+    ctx.beginPath();
+    ctx.roundRect(boxX, boxY, boxW, boxH, 40);
+    ctx.fill();
+    ctx.shadowColor = 'transparent';
 
-  // Reset shadow
-  ctx.shadowColor = 'transparent';
+    ctx.fillStyle = '#1c1c1e';
+    ctx.font = 'bold 50px "Arial", sans-serif';
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'top';
+    const endY = wrapText(ctx, cleanQuote, boxX + 80, boxY + 80, boxW - 160, 70);
 
-  // Draw Text
-  ctx.fillStyle = '#1c1c1e';
-  ctx.font = 'bold 50px "Arial", sans-serif';
-  ctx.textAlign = 'left';
-  ctx.textBaseline = 'top';
-
-  const wrapText = (context, text, x, y, maxWidth, lineHeight) => {
-    const words = text.split(' ');
-    let line = '';
-    let currentY = y;
+    ctx.fillStyle = '#8e8e93';
+    ctx.font = '30px "Arial", sans-serif';
+    const now = new Date();
+    const timeStr = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + " at " + now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+    ctx.fillText(timeStr, boxX + 80, endY + 20);
     
-    for (let n = 0; n < words.length; n++) {
-      // Handle explicit newlines
-      if (words[n].includes('\n')) {
-        const parts = words[n].split('\n');
-        for (let p = 0; p < parts.length; p++) {
-          const testLine = line + parts[p] + ' ';
-          if (context.measureText(testLine).width > maxWidth && line !== '') {
-            context.fillText(line.trim(), x, currentY);
-            line = parts[p] + ' ';
-            currentY += lineHeight;
-          } else {
-            context.fillText(testLine.trim(), x, currentY);
-            line = '';
-            currentY += lineHeight;
-          }
+    drawHandle(ctx, width, height, "@life.quotes__98", '#8e8e93');
+
+  } else if (style === 'dark') {
+    // 2. Dark Mode Style
+    ctx.fillStyle = '#0a0a0a';
+    ctx.fillRect(0, 0, width, height);
+    
+    // Add subtle noise/grain or glow
+    const cx = width/2;
+    const cy = height/2;
+    const radGrd = ctx.createRadialGradient(cx, cy, 0, cx, cy, 600);
+    radGrd.addColorStop(0, 'rgba(30, 30, 40, 1)');
+    radGrd.addColorStop(1, 'rgba(10, 10, 10, 1)');
+    ctx.fillStyle = radGrd;
+    ctx.fillRect(0, 0, width, height);
+
+    ctx.fillStyle = '#ffffff';
+    ctx.font = '55px "Times New Roman", serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    
+    wrapTextCentered(ctx, cleanQuote, width/2, height/2 - 100, width - 160, 80);
+    
+    drawHandle(ctx, width, height, "@life.quotes__98", '#444444');
+
+  } else if (style === 'twitter') {
+    // 3. Twitter Screenshot Style
+    ctx.fillStyle = '#15202b'; // Twitter dark mode background
+    ctx.fillRect(0, 0, width, height);
+
+    const boxX = 80;
+    const boxY = height / 3;
+    const boxW = width - 160;
+    const linesCount = cleanQuote.split('\n').length + (cleanQuote.length / 30);
+    const boxH = Math.max(350, linesCount * 60 + 200);
+
+    ctx.fillStyle = '#192734'; // Tweet card background
+    ctx.beginPath();
+    ctx.roundRect(boxX, boxY, boxW, boxH, 30);
+    ctx.fill();
+
+    // Fake Avatar
+    ctx.fillStyle = '#8899a6';
+    ctx.beginPath();
+    ctx.arc(boxX + 80, boxY + 80, 40, 0, Math.PI * 2);
+    ctx.fill();
+
+    // Fake Name & Handle
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'top';
+    ctx.fillStyle = '#ffffff';
+    ctx.font = 'bold 36px "Arial", sans-serif';
+    ctx.fillText("life", boxX + 140, boxY + 50);
+    ctx.fillStyle = '#8899a6';
+    ctx.font = '32px "Arial", sans-serif';
+    ctx.fillText("@life.quotes__98", boxX + 140, boxY + 95);
+
+    // Tweet Text
+    ctx.fillStyle = '#ffffff';
+    ctx.font = '45px "Arial", sans-serif';
+    wrapText(ctx, cleanQuote, boxX + 50, boxY + 180, boxW - 100, 60);
+    
+    drawHandle(ctx, width, height, "@life.quotes__98", '#8899a6');
+  }
+
+  return canvas.toBuffer('image/jpeg', { quality: 0.95 });
+}
+
+function wrapText(context, text, x, y, maxWidth, lineHeight) {
+  const words = text.split(' ');
+  let line = '';
+  let currentY = y;
+  
+  for (let n = 0; n < words.length; n++) {
+    if (words[n].includes('\n')) {
+      const parts = words[n].split('\n');
+      for (let p = 0; p < parts.length; p++) {
+        const testLine = line + parts[p] + ' ';
+        if (context.measureText(testLine).width > maxWidth && line !== '') {
+          context.fillText(line.trim(), x, currentY);
+          line = parts[p] + ' ';
+          currentY += lineHeight;
+        } else {
+          context.fillText(testLine.trim(), x, currentY);
+          line = '';
+          currentY += lineHeight;
         }
-        continue;
       }
-
-      const testLine = line + words[n] + ' ';
-      const metrics = context.measureText(testLine);
-      const testWidth = metrics.width;
-      
-      if (testWidth > maxWidth && line !== '') {
-        context.fillText(line.trim(), x, currentY);
-        line = words[n] + ' ';
-        currentY += lineHeight;
-      } else {
-        line = testLine;
-      }
+      continue;
     }
-    context.fillText(line.trim(), x, currentY);
-    return currentY + lineHeight;
-  };
+    const testLine = line + words[n] + ' ';
+    if (context.measureText(testLine).width > maxWidth && line !== '') {
+      context.fillText(line.trim(), x, currentY);
+      line = words[n] + ' ';
+      currentY += lineHeight;
+    } else {
+      line = testLine;
+    }
+  }
+  context.fillText(line.trim(), x, currentY);
+  return currentY + lineHeight;
+}
 
-  const endY = wrapText(ctx, cleanQuote, boxX + 80, boxY + 80, boxW - 160, 70);
+function wrapTextCentered(context, text, x, y, maxWidth, lineHeight) {
+  const words = text.split(' ');
+  let line = '';
+  let lines = [];
+  
+  for (let n = 0; n < words.length; n++) {
+    const testLine = line + words[n] + ' ';
+    if (context.measureText(testLine).width > maxWidth && line !== '') {
+      lines.push(line.trim());
+      line = words[n] + ' ';
+    } else {
+      line = testLine;
+    }
+  }
+  lines.push(line.trim());
+  
+  let currentY = y - ((lines.length * lineHeight) / 2);
+  for (let i = 0; i < lines.length; i++) {
+    context.fillText(lines[i], x, currentY);
+    currentY += lineHeight;
+  }
+}
 
-  // Draw Handle/Time
-  ctx.fillStyle = '#8e8e93';
-  ctx.font = '30px "Arial", sans-serif';
-  
-  const now = new Date();
-  const timeStr = now.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + " at " + now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
-  ctx.fillText(timeStr, boxX + 80, endY + 20);
-  
-  // Footer handle
-  ctx.fillStyle = '#8e8e93';
+function drawHandle(ctx, width, height, handle, color) {
+  ctx.fillStyle = color;
   ctx.textAlign = 'center';
   ctx.font = '30px "Arial", sans-serif';
-  ctx.fillText("@life.quotes__98", width / 2, height - 100);
-
-  console.log("[Typography] ✅ Gen Z Typography perfectly integrated.");
-  return canvas.toBuffer('image/jpeg', { quality: 0.95 });
+  ctx.fillText(handle, width / 2, height - 100);
 }
