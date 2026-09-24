@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 132,
+  "ig_total_posts": 133,
   "threads_total_posts": 624,
   "ig_history": [
+    {
+      "date": "2026-09-24",
+      "postId": "ig-publish-success",
+      "topic": "topic: forgetting why you walked into a room and questioning your reality / wanting to be invited out but not actually wanting to go",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-24T07:36:43.938Z"
+    },
     {
       "date": "2026-09-23",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Thich Nhat Hanh",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-01T07:49:22.166Z"
-    },
-    {
-      "date": "2026-09-01",
-      "postId": "ig-publish-success",
-      "topic": "Lao Tzu",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-08-31T20:04:55.447Z"
     }
   ],
   "threads_history": [
