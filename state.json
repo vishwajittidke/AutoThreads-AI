@@ -432,8 +432,15 @@
       "timestamp": "2026-09-20T07:46:48.219Z"
     }
   ],
-  "ig_total_posts_life_quotes": 137,
+  "ig_total_posts_life_quotes": 138,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-24",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: spending money you don't have to fix a bad mood / the fake scenarios you make up before falling asleep",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-24T18:26:00.900Z"
+    },
     {
       "date": "2026-09-24",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Confucius",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-06T08:39:44.748Z"
-    },
-    {
-      "date": "2026-09-05",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Neil Barringham",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-05T16:49:49.748Z"
     }
   ],
   "replied_comment_ids": [
