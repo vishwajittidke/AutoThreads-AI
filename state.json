@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 133,
+  "ig_total_posts": 134,
   "threads_total_posts": 631,
   "ig_history": [
+    {
+      "date": "2026-09-25",
+      "postId": "ig-publish-success",
+      "topic": "topic: wanting to be invited out but not actually wanting to go / the existential dread of picking a career path",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-25T07:48:54.227Z"
+    },
     {
       "date": "2026-09-24",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Henry David Thoreau",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-02T07:06:18.397Z"
-    },
-    {
-      "date": "2026-09-01",
-      "postId": "ig-publish-success",
-      "topic": "Thich Nhat Hanh",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-01T07:49:22.166Z"
     }
   ],
   "threads_history": [
