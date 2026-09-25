@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 134,
+  "ig_total_posts": 135,
   "threads_total_posts": 634,
   "ig_history": [
+    {
+      "date": "2026-09-26",
+      "postId": "ig-publish-success",
+      "topic": "topic: overanalyzing a text message from 3 years ago / wanting to be invited out but not actually wanting to go",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-25T18:38:17.996Z"
+    },
     {
       "date": "2026-09-25",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Antoine de Saint-Exupéry",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-03T07:10:41.218Z"
-    },
-    {
-      "date": "2026-09-02",
-      "postId": "ig-publish-success",
-      "topic": "Henry David Thoreau",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-02T07:06:18.397Z"
     }
   ],
   "threads_history": [
