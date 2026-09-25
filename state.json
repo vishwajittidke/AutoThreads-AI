@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 134,
-  "threads_total_posts": 632,
+  "threads_total_posts": 633,
   "ig_history": [
     {
       "date": "2026-09-25",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-25",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-25T08:02:24.233Z"
+    },
+    {
+      "date": "2026-09-25",
       "postId": "threads-publish-success",
       "topic": "The security nightmare of giving AI agents write-access",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-21T01:19:08.401Z"
-    },
-    {
-      "date": "2026-09-21",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-20T22:35:14.754Z"
     }
   ],
   "ig_total_posts_life_quotes": 138,
