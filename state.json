@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 135,
-  "threads_total_posts": 634,
+  "threads_total_posts": 635,
   "ig_history": [
     {
       "date": "2026-09-26",
@@ -222,6 +222,13 @@
   ],
   "threads_history": [
     {
+      "date": "2026-09-26",
+      "postId": "threads-publish-success",
+      "topic": "Why most AI wrappers will fail in the next 12 months",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-25T18:40:43.853Z"
+    },
+    {
       "date": "2026-09-25",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
@@ -423,13 +430,6 @@
       "topic": "Why everyone is pivoting to AI agents but no one has cracked it",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-21T08:00:13.201Z"
-    },
-    {
-      "date": "2026-09-21",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-21T06:41:04.816Z"
     }
   ],
   "ig_total_posts_life_quotes": 140,
