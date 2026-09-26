@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 135,
+  "ig_total_posts": 136,
   "threads_total_posts": 638,
   "ig_history": [
+    {
+      "date": "2026-09-26",
+      "postId": "ig-publish-success",
+      "topic": "topic: the fake scenarios you make up before falling asleep / the specific anxiety of sending an email and waiting for a reply",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-26T07:41:20.890Z"
+    },
     {
       "date": "2026-09-26",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "George Santayana",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-03T17:52:28.718Z"
-    },
-    {
-      "date": "2026-09-03",
-      "postId": "ig-publish-success",
-      "topic": "Antoine de Saint-Exupéry",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-03T07:10:41.218Z"
     }
   ],
   "threads_history": [
