@@ -432,8 +432,15 @@
       "timestamp": "2026-09-22T07:50:33.032Z"
     }
   ],
-  "ig_total_posts_life_quotes": 141,
+  "ig_total_posts_life_quotes": 142,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-26",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: the sudden urge to change your entire life at 2am / imposter syndrome kicking in at the worst times",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-26T17:45:46.037Z"
+    },
     {
       "date": "2026-09-26",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Peter Drucker",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-08T17:54:51.197Z"
-    },
-    {
-      "date": "2026-09-08",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Lao Tzu",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-08T08:51:30.516Z"
     }
   ],
   "replied_comment_ids": [
