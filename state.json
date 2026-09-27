@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 138,
-  "threads_total_posts": 650,
+  "threads_total_posts": 651,
   "ig_history": [
     {
       "date": "2026-09-27",
@@ -222,6 +222,13 @@
   ],
   "threads_history": [
     {
+      "date": "2026-09-28",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-27T18:33:46.721Z"
+    },
+    {
       "date": "2026-09-27",
       "postId": "threads-publish-success",
       "topic": "Why vector databases aren't always the answer",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-23T20:34:49.295Z"
-    },
-    {
-      "date": "2026-09-23",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-23T17:20:10.517Z"
     }
   ],
   "ig_total_posts_life_quotes": 144,
