@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 136,
+  "ig_total_posts": 137,
   "threads_total_posts": 646,
   "ig_history": [
+    {
+      "date": "2026-09-27",
+      "postId": "ig-publish-success",
+      "topic": "topic: feeling like an NPC in your own life / hyper-fixating on a new hobby for 3 days then dropping it",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-27T08:10:19.533Z"
+    },
     {
       "date": "2026-09-26",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Emily Dickinson",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-04T07:15:07.458Z"
-    },
-    {
-      "date": "2026-09-03",
-      "postId": "ig-publish-success",
-      "topic": "George Santayana",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-03T17:52:28.718Z"
     }
   ],
   "threads_history": [
