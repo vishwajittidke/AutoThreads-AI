@@ -432,8 +432,15 @@
       "timestamp": "2026-09-23T06:13:46.334Z"
     }
   ],
-  "ig_total_posts_life_quotes": 142,
+  "ig_total_posts_life_quotes": 143,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-27",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: the sheer exhaustion of being perceived by others / the existential dread of picking a career path",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-27T10:00:26.156Z"
+    },
     {
       "date": "2026-09-26",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Seneca",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-09T08:57:50.056Z"
-    },
-    {
-      "date": "2026-09-08",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Peter Drucker",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-08T17:54:51.197Z"
     }
   ],
   "replied_comment_ids": [
