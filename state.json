@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 137,
+  "ig_total_posts": 138,
   "threads_total_posts": 649,
   "ig_history": [
+    {
+      "date": "2026-09-27",
+      "postId": "ig-publish-success",
+      "topic": "topic: imposter syndrome kicking in at the worst times / wanting to be invited out but not actually wanting to go",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-27T18:24:33.764Z"
+    },
     {
       "date": "2026-09-27",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Isaac Newton",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-05T06:56:23.862Z"
-    },
-    {
-      "date": "2026-09-04",
-      "postId": "ig-publish-success",
-      "topic": "Emily Dickinson",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-04T07:15:07.458Z"
     }
   ],
   "threads_history": [
