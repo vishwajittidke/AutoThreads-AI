@@ -432,8 +432,15 @@
       "timestamp": "2026-09-24T15:20:01.557Z"
     }
   ],
-  "ig_total_posts_life_quotes": 145,
+  "ig_total_posts_life_quotes": 146,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-29",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: the existential dread of picking a career path / the specific anxiety of sending an email and waiting for a reply",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-28T20:33:40.785Z"
+    },
     {
       "date": "2026-09-28",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Will Durant",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-10T17:41:58.346Z"
-    },
-    {
-      "date": "2026-09-10",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Rumi",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-10T08:56:45.989Z"
     }
   ],
   "replied_comment_ids": [
