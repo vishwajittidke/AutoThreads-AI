@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 138,
+  "ig_total_posts": 139,
   "threads_total_posts": 654,
   "ig_history": [
+    {
+      "date": "2026-09-28",
+      "postId": "ig-publish-success",
+      "topic": "topic: the fake scenarios you make up before falling asleep / procrastinating actual work by doing fake productive tasks",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-28T08:42:53.955Z"
+    },
     {
       "date": "2026-09-27",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Ralph Waldo Emerson",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-06T07:07:47.334Z"
-    },
-    {
-      "date": "2026-09-05",
-      "postId": "ig-publish-success",
-      "topic": "Isaac Newton",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-05T06:56:23.862Z"
     }
   ],
   "threads_history": [
