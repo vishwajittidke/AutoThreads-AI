@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 139,
-  "threads_total_posts": 657,
+  "threads_total_posts": 658,
   "ig_history": [
     {
       "date": "2026-09-28",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-09-29",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-28T22:12:37.728Z"
+    },
+    {
+      "date": "2026-09-29",
       "postId": "threads-publish-success",
       "topic": "Why UX is suddenly the most important part of AI development",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-24T19:22:06.424Z"
-    },
-    {
-      "date": "2026-09-24",
-      "postId": "threads-publish-success",
-      "topic": "The quiet death of the 'traditional' software engineer role",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-24T18:27:18.684Z"
     }
   ],
   "ig_total_posts_life_quotes": 146,
