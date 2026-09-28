@@ -432,8 +432,15 @@
       "timestamp": "2026-09-24T10:18:22.705Z"
     }
   ],
-  "ig_total_posts_life_quotes": 144,
+  "ig_total_posts_life_quotes": 145,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-28",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: forgetting why you walked into a room and questioning your reality / the sudden urge to change your entire life at 2am",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-28T10:53:03.592Z"
+    },
     {
       "date": "2026-09-27",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Rumi",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-10T08:56:45.989Z"
-    },
-    {
-      "date": "2026-09-09",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Unknown",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-09T17:49:45.368Z"
     }
   ],
   "replied_comment_ids": [
