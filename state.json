@@ -432,8 +432,15 @@
       "timestamp": "2026-09-25T14:01:24.443Z"
     }
   ],
-  "ig_total_posts_life_quotes": 146,
+  "ig_total_posts_life_quotes": 147,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-09-30",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: the sheer exhaustion of being perceived by others / wanting to be invited out but not actually wanting to go",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-29T19:25:35.504Z"
+    },
     {
       "date": "2026-09-29",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Thich Nhat Hanh",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-11T08:54:32.081Z"
-    },
-    {
-      "date": "2026-09-10",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Will Durant",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-10T17:41:58.346Z"
     }
   ],
   "replied_comment_ids": [
