@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 139,
-  "threads_total_posts": 661,
+  "threads_total_posts": 662,
   "ig_history": [
     {
       "date": "2026-09-28",
@@ -224,6 +224,13 @@
     {
       "date": "2026-09-29",
       "postId": "threads-reply-publish-success",
+      "topic": "Replied to 2 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-29T10:27:11.125Z"
+    },
+    {
+      "date": "2026-09-29",
+      "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-29T08:49:06.309Z"
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-25T08:02:24.233Z"
-    },
-    {
-      "date": "2026-09-25",
-      "postId": "threads-publish-success",
-      "topic": "The security nightmare of giving AI agents write-access",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-25T07:53:52.507Z"
     }
   ],
   "ig_total_posts_life_quotes": 146,
@@ -677,6 +677,8 @@
     "17908280466310889",
     "17910402279549561",
     "18021521057921870",
-    "17959674521998830"
+    "17959674521998830",
+    "18089873600240693",
+    "17971591743167784"
   ]
 }
