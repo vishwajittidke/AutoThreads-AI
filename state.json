@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 139,
-  "threads_total_posts": 663,
+  "threads_total_posts": 664,
   "ig_history": [
     {
       "date": "2026-09-28",
@@ -222,6 +222,13 @@
   ],
   "threads_history": [
     {
+      "date": "2026-09-30",
+      "postId": "threads-publish-success",
+      "topic": "The most overrated AI trend right now",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-29T19:28:22.733Z"
+    },
+    {
       "date": "2026-09-29",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
@@ -423,13 +430,6 @@
       "topic": "Why most AI wrappers will fail in the next 12 months",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-25T18:40:43.853Z"
-    },
-    {
-      "date": "2026-09-25",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-25T14:01:24.443Z"
     }
   ],
   "ig_total_posts_life_quotes": 147,
