@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 140,
+  "ig_total_posts": 141,
   "threads_total_posts": 669,
   "ig_history": [
+    {
+      "date": "2026-10-01",
+      "postId": "ig-publish-success",
+      "topic": "topic: procrastinating actual work by doing fake productive tasks / hating small talk but being terrified of deep conversations",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-09-30T19:20:32.482Z"
+    },
     {
       "date": "2026-09-30",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Ralph Waldo Emerson",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-07T18:44:30.694Z"
-    },
-    {
-      "date": "2026-09-06",
-      "postId": "ig-publish-success",
-      "topic": "Cesare Pavese",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-06T17:02:36.012Z"
     }
   ],
   "threads_history": [
