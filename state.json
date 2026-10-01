@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 141,
+  "ig_total_posts": 142,
   "threads_total_posts": 673,
   "ig_history": [
+    {
+      "date": "2026-10-01",
+      "postId": "ig-publish-success",
+      "topic": "topic: overanalyzing a text message from 3 years ago / the dread of Sunday evening",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-01T08:56:29.716Z"
+    },
     {
       "date": "2026-10-01",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Albert Einstein",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-08T07:14:44.656Z"
-    },
-    {
-      "date": "2026-09-08",
-      "postId": "ig-publish-success",
-      "topic": "Ralph Waldo Emerson",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-07T18:44:30.694Z"
     }
   ],
   "threads_history": [
