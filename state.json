@@ -432,8 +432,15 @@
       "timestamp": "2026-09-27T01:37:48.772Z"
     }
   ],
-  "ig_total_posts_life_quotes": 150,
+  "ig_total_posts_life_quotes": 151,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-10-02",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: imposter syndrome kicking in at the worst times / listening to the same song on loop until you hate it",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-01T19:31:53.768Z"
+    },
     {
       "date": "2026-10-01",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: John Assaraf",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-13T09:31:51.706Z"
-    },
-    {
-      "date": "2026-09-12",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Margaret Lee Runbeck",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-12T17:08:19.671Z"
     }
   ],
   "replied_comment_ids": [
