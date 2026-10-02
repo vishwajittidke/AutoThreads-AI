@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 142,
+  "ig_total_posts": 143,
   "threads_total_posts": 679,
   "ig_history": [
+    {
+      "date": "2026-10-02",
+      "postId": "ig-publish-success",
+      "topic": "topic: the existential dread of picking a career path / hating small talk but being terrified of deep conversations",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-02T08:31:55.985Z"
+    },
     {
       "date": "2026-10-01",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "T.S. Eliot",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-09T07:23:12.659Z"
-    },
-    {
-      "date": "2026-09-08",
-      "postId": "ig-publish-success",
-      "topic": "Albert Einstein",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-08T07:14:44.656Z"
     }
   ],
   "threads_history": [
