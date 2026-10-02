@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 143,
-  "threads_total_posts": 683,
+  "threads_total_posts": 684,
   "ig_history": [
     {
       "date": "2026-10-02",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-10-03",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-02T23:07:03.268Z"
+    },
+    {
+      "date": "2026-10-03",
       "postId": "threads-publish-success",
       "topic": "Why vector databases aren't always the answer",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Why multi-agent AI systems are harder to build than you think",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-28T08:44:35.320Z"
-    },
-    {
-      "date": "2026-09-28",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-28T07:12:03.305Z"
     }
   ],
   "ig_total_posts_life_quotes": 153,
