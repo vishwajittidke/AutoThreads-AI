@@ -432,8 +432,15 @@
       "timestamp": "2026-09-28T00:59:10.903Z"
     }
   ],
-  "ig_total_posts_life_quotes": 152,
+  "ig_total_posts_life_quotes": 153,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-10-03",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: hating small talk but being terrified of deep conversations / overanalyzing a text message from 3 years ago",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-02T19:17:39.230Z"
+    },
     {
       "date": "2026-10-02",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Maya Angelou",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-14T09:50:28.498Z"
-    },
-    {
-      "date": "2026-09-13",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Ram Dass",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-13T17:24:32.486Z"
     }
   ],
   "replied_comment_ids": [
