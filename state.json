@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 143,
+  "ig_total_posts": 144,
   "threads_total_posts": 685,
   "ig_history": [
+    {
+      "date": "2026-10-03",
+      "postId": "ig-publish-success",
+      "topic": "topic: wanting to be invited out but not actually wanting to go / overanalyzing a text message from 3 years ago",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-03T08:06:09.160Z"
+    },
     {
       "date": "2026-10-02",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Ralph Waldo Emerson",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-09T17:50:29.260Z"
-    },
-    {
-      "date": "2026-09-09",
-      "postId": "ig-publish-success",
-      "topic": "T.S. Eliot",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-09T07:23:12.659Z"
     }
   ],
   "threads_history": [
