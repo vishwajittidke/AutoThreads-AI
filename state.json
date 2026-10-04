@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 144,
+  "ig_total_posts": 145,
   "threads_total_posts": 692,
   "ig_history": [
+    {
+      "date": "2026-10-04",
+      "postId": "ig-publish-success",
+      "topic": "topic: hating small talk but being terrified of deep conversations / overanalyzing a text message from 3 years ago",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-04T08:27:41.371Z"
+    },
     {
       "date": "2026-10-03",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "J. Krishnamurti",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-10T07:19:57.410Z"
-    },
-    {
-      "date": "2026-09-09",
-      "postId": "ig-publish-success",
-      "topic": "Ralph Waldo Emerson",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-09T17:50:29.260Z"
     }
   ],
   "threads_history": [
