@@ -432,8 +432,15 @@
       "timestamp": "2026-09-30T00:38:06.880Z"
     }
   ],
-  "ig_total_posts_life_quotes": 156,
+  "ig_total_posts_life_quotes": 157,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-10-04",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: creating a detailed 5-year plan then forgetting to eat lunch / feeling like an NPC in your own life",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-04T18:09:56.268Z"
+    },
     {
       "date": "2026-10-04",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Robert Frost",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-17T18:12:48.222Z"
-    },
-    {
-      "date": "2026-09-16",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: T.S. Eliot",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-16T18:11:32.958Z"
     }
   ],
   "replied_comment_ids": [
