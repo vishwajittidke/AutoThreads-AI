@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 145,
+  "ig_total_posts": 146,
   "threads_total_posts": 700,
   "ig_history": [
+    {
+      "date": "2026-10-05",
+      "postId": "ig-publish-success",
+      "topic": "topic: hating small talk but being terrified of deep conversations / wanting to be invited out but not actually wanting to go",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-05T09:04:39.511Z"
+    },
     {
       "date": "2026-10-04",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Rumi",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-10T17:42:44.993Z"
-    },
-    {
-      "date": "2026-09-10",
-      "postId": "ig-publish-success",
-      "topic": "J. Krishnamurti",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-10T07:19:57.410Z"
     }
   ],
   "threads_history": [
