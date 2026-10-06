@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 147,
-  "threads_total_posts": 709,
+  "threads_total_posts": 710,
   "ig_history": [
     {
       "date": "2026-10-07",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-10-07",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-06T21:46:39.151Z"
+    },
+    {
+      "date": "2026-10-07",
       "postId": "threads-publish-success",
       "topic": "Why everyone is pivoting to AI agents but no one has cracked it",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-02T12:57:27.742Z"
-    },
-    {
-      "date": "2026-10-02",
-      "postId": "threads-publish-success",
-      "topic": "Why vector databases aren't always the answer",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-02T08:36:31.013Z"
     }
   ],
   "ig_total_posts_life_quotes": 157,
