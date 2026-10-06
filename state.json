@@ -1,14 +1,21 @@
 {
-  "last_error": "[Instagram] IG Life Quotes: All Gemini API keys failed after maximum retries.",
-  "last_error_date": "2026-10-06T19:31:18.648Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 146,
+  "ig_total_posts": 147,
   "threads_total_posts": 708,
   "ig_history": [
+    {
+      "date": "2026-10-07",
+      "postId": "ig-publish-success",
+      "topic": "topic: the specific anxiety of sending an email and waiting for a reply / the existential dread of picking a career path",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-06T19:33:28.517Z"
+    },
     {
       "date": "2026-10-05",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Ralph Waldo Emerson",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-11T07:17:31.793Z"
-    },
-    {
-      "date": "2026-09-10",
-      "postId": "ig-publish-success",
-      "topic": "Rumi",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-10T17:42:44.993Z"
     }
   ],
   "threads_history": [
