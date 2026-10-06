@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 146,
-  "threads_total_posts": 705,
+  "threads_total_posts": 706,
   "ig_history": [
     {
       "date": "2026-10-05",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-10-06",
+      "postId": "threads-publish-success",
+      "topic": "The hidden infrastructure cost of Retrieval-Augmented Generation (RAG)",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-06T09:03:21.719Z"
+    },
+    {
+      "date": "2026-10-06",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-01T19:39:42.258Z"
-    },
-    {
-      "date": "2026-10-02",
-      "postId": "threads-publish-success",
-      "topic": "The most overrated AI trend right now",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-01T19:34:53.665Z"
     }
   ],
   "ig_total_posts_life_quotes": 157,
