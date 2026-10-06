@@ -1,13 +1,13 @@
 {
-  "last_error": "[Instagram] IG Life Quotes: All Gemini API keys failed after maximum retries.",
-  "last_error_date": "2026-10-06T11:20:33.793Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 146,
-  "threads_total_posts": 707,
+  "threads_total_posts": 708,
   "ig_history": [
     {
       "date": "2026-10-05",
@@ -224,6 +224,13 @@
     {
       "date": "2026-10-06",
       "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-06T17:19:51.393Z"
+    },
+    {
+      "date": "2026-10-06",
+      "postId": "threads-reply-publish-success",
       "topic": "Replied to 1 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-06T10:36:46.302Z"
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-02T05:57:15.750Z"
-    },
-    {
-      "date": "2026-10-02",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-01T23:59:59.949Z"
     }
   ],
   "ig_total_posts_life_quotes": 157,
