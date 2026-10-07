@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 148,
+  "ig_total_posts": 149,
   "threads_total_posts": 714,
   "ig_history": [
+    {
+      "date": "2026-10-08",
+      "postId": "ig-publish-success",
+      "topic": "topic: scrolling reels for 4 hours while your to-do list cries / hating small talk but being terrified of deep conversations",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-07T20:00:25.127Z"
+    },
     {
       "date": "2026-10-07",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Kate Chopin",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-12T17:09:39.305Z"
-    },
-    {
-      "date": "2026-09-12",
-      "postId": "ig-publish-success",
-      "topic": "Ralph Waldo Emerson",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-12T07:09:46.006Z"
     }
   ],
   "threads_history": [
