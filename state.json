@@ -432,8 +432,15 @@
       "timestamp": "2026-10-02T23:07:03.268Z"
     }
   ],
-  "ig_total_posts_life_quotes": 157,
+  "ig_total_posts_life_quotes": 158,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-10-07",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: overanalyzing a text message from 3 years ago / romanticizing your life for 5 minutes then giving up",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-07T11:03:54.372Z"
+    },
     {
       "date": "2026-10-04",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Robert Frost",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-18T17:40:39.513Z"
-    },
-    {
-      "date": "2026-09-17",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Robert Frost",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-17T18:12:48.222Z"
     }
   ],
   "replied_comment_ids": [
