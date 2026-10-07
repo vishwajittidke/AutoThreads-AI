@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 148,
-  "threads_total_posts": 712,
+  "threads_total_posts": 713,
   "ig_history": [
     {
       "date": "2026-10-07",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-10-07",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-07T09:00:02.311Z"
+    },
+    {
+      "date": "2026-10-07",
       "postId": "threads-publish-success",
       "topic": "Why fine-tuning is rarely the first step you should take",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-02T23:07:03.268Z"
-    },
-    {
-      "date": "2026-10-03",
-      "postId": "threads-publish-success",
-      "topic": "Why vector databases aren't always the answer",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-02T19:22:12.597Z"
     }
   ],
   "ig_total_posts_life_quotes": 157,
