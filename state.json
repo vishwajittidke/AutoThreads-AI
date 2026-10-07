@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 149,
-  "threads_total_posts": 714,
+  "threads_total_posts": 715,
   "ig_history": [
     {
       "date": "2026-10-08",
@@ -222,6 +222,13 @@
   ],
   "threads_history": [
     {
+      "date": "2026-10-08",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 2 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-07T22:09:57.693Z"
+    },
+    {
       "date": "2026-10-07",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 1 comments",
@@ -423,13 +430,6 @@
       "topic": "The harsh reality of scaling AI products to thousands of users",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-03T08:12:26.733Z"
-    },
-    {
-      "date": "2026-10-03",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-03T02:10:22.784Z"
     }
   ],
   "ig_total_posts_life_quotes": 158,
@@ -681,6 +681,8 @@
     "18089873600240693",
     "17971591743167784",
     "18054557513798099",
-    "18108504334914083"
+    "18108504334914083",
+    "18106512689257041",
+    "17963813988207924"
   ]
 }
