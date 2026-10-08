@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 150,
-  "threads_total_posts": 717,
+  "threads_total_posts": 718,
   "ig_history": [
     {
       "date": "2026-10-08",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-10-08",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 1 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-08T09:15:40.780Z"
+    },
+    {
+      "date": "2026-10-08",
       "postId": "threads-publish-success",
       "topic": "Why local AI running on your laptop is the next big shift",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Why we need to stop romanticizing Artificial General Intelligence (AGI)",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-03T17:59:36.244Z"
-    },
-    {
-      "date": "2026-10-03",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-03T13:34:31.895Z"
     }
   ],
   "ig_total_posts_life_quotes": 158,
@@ -685,6 +685,7 @@
     "18106512689257041",
     "17963813988207924",
     "18489710776105433",
-    "18487203496108919"
+    "18487203496108919",
+    "18370803307244874"
   ]
 }
