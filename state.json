@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 149,
+  "ig_total_posts": 150,
   "threads_total_posts": 716,
   "ig_history": [
+    {
+      "date": "2026-10-08",
+      "postId": "ig-publish-success",
+      "topic": "topic: procrastinating actual work by doing fake productive tasks / imposter syndrome kicking in at the worst times",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-08T08:59:07.592Z"
+    },
     {
       "date": "2026-10-08",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Ralph Waldo Emerson",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-13T07:28:17.847Z"
-    },
-    {
-      "date": "2026-09-12",
-      "postId": "ig-publish-success",
-      "topic": "Kate Chopin",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-12T17:09:39.305Z"
     }
   ],
   "threads_history": [
