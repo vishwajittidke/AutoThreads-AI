@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 151,
-  "threads_total_posts": 724,
+  "threads_total_posts": 725,
   "ig_history": [
     {
       "date": "2026-10-09",
@@ -226,6 +226,13 @@
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
+      "timestamp": "2026-10-09T16:24:41.292Z"
+    },
+    {
+      "date": "2026-10-09",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
       "timestamp": "2026-10-09T09:23:26.432Z"
     },
     {
@@ -423,13 +430,6 @@
       "topic": "The exact reason why your AI agent keeps hallucinating",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-04T18:12:03.889Z"
-    },
-    {
-      "date": "2026-10-04",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-04T14:54:25.334Z"
     }
   ],
   "ig_total_posts_life_quotes": 161,
