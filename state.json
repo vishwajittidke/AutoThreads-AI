@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 150,
+  "ig_total_posts": 151,
   "threads_total_posts": 722,
   "ig_history": [
+    {
+      "date": "2026-10-09",
+      "postId": "ig-publish-success",
+      "topic": "topic: wanting to be invited out but not actually wanting to go / procrastinating actual work by doing fake productive tasks",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-09T09:05:54.781Z"
+    },
     {
       "date": "2026-10-08",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Ralph Waldo Emerson",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-14T07:54:35.345Z"
-    },
-    {
-      "date": "2026-09-13",
-      "postId": "ig-publish-success",
-      "topic": "Ralph Waldo Emerson",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-13T07:28:17.847Z"
     }
   ],
   "threads_history": [
