@@ -432,8 +432,15 @@
       "timestamp": "2026-10-05T09:09:52.784Z"
     }
   ],
-  "ig_total_posts_life_quotes": 162,
+  "ig_total_posts_life_quotes": 163,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-10-11",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: overanalyzing a text message from 3 years ago / the existential dread of picking a career path",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-10T18:34:36.959Z"
+    },
     {
       "date": "2026-10-10",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: Lao Tzu",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-23T09:18:11.577Z"
-    },
-    {
-      "date": "2026-09-22",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: James Clear",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-22T18:04:33.665Z"
     }
   ],
   "replied_comment_ids": [
