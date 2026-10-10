@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 153,
-  "threads_total_posts": 731,
+  "threads_total_posts": 732,
   "ig_history": [
     {
       "date": "2026-10-11",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-10-11",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-10T18:44:52.672Z"
+    },
+    {
+      "date": "2026-10-11",
       "postId": "threads-publish-success",
       "topic": "Why we need to stop romanticizing Artificial General Intelligence (AGI)",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "Why Small Language Models (SLMs) will beat giant models in production",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-05T21:32:38.295Z"
-    },
-    {
-      "date": "2026-10-05",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-05T16:15:51.012Z"
     }
   ],
   "ig_total_posts_life_quotes": 163,
