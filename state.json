@@ -432,8 +432,15 @@
       "timestamp": "2026-10-05T07:20:05.231Z"
     }
   ],
-  "ig_total_posts_life_quotes": 161,
+  "ig_total_posts_life_quotes": 162,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-10-10",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: the fake scenarios you make up before falling asleep / the dread of Sunday evening",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-10T10:36:01.129Z"
+    },
     {
       "date": "2026-10-09",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: James Clear",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-22T18:04:33.665Z"
-    },
-    {
-      "date": "2026-09-22",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: Robert Frost",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-22T09:17:37.932Z"
     }
   ],
   "replied_comment_ids": [
