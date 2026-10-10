@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 151,
-  "threads_total_posts": 727,
+  "threads_total_posts": 728,
   "ig_history": [
     {
       "date": "2026-10-09",
@@ -224,6 +224,13 @@
     {
       "date": "2026-10-10",
       "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-10T07:25:31.497Z"
+    },
+    {
+      "date": "2026-10-10",
+      "postId": "threads-reply-publish-success",
       "topic": "Replied to 1 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-10T01:04:25.539Z"
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-05T01:05:07.161Z"
-    },
-    {
-      "date": "2026-10-05",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-04T22:24:32.266Z"
     }
   ],
   "ig_total_posts_life_quotes": 161,
