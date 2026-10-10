@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 153,
-  "threads_total_posts": 730,
+  "threads_total_posts": 731,
   "ig_history": [
     {
       "date": "2026-10-11",
@@ -222,6 +222,13 @@
   ],
   "threads_history": [
     {
+      "date": "2026-10-11",
+      "postId": "threads-publish-success",
+      "topic": "Why we need to stop romanticizing Artificial General Intelligence (AGI)",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-10T18:40:04.393Z"
+    },
+    {
       "date": "2026-10-10",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 1 comments",
@@ -423,13 +430,6 @@
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-05T16:15:51.012Z"
-    },
-    {
-      "date": "2026-10-05",
-      "postId": "threads-publish-success",
-      "topic": "Why tech debt is accelerating faster than ever with AI tools",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-05T09:09:52.784Z"
     }
   ],
   "ig_total_posts_life_quotes": 163,
