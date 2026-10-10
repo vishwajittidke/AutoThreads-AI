@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 152,
+  "ig_total_posts": 153,
   "threads_total_posts": 730,
   "ig_history": [
+    {
+      "date": "2026-10-11",
+      "postId": "ig-publish-success",
+      "topic": "topic: procrastinating actual work by doing fake productive tasks / the sudden urge to change your entire life at 2am",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-10T18:36:31.683Z"
+    },
     {
       "date": "2026-10-10",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Heraclitus",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-15T18:12:09.256Z"
-    },
-    {
-      "date": "2026-09-15",
-      "postId": "ig-publish-success",
-      "topic": "Marcel Proust",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-15T07:44:57.569Z"
     }
   ],
   "threads_history": [
