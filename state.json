@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 154,
+  "ig_total_posts": 155,
   "threads_total_posts": 737,
   "ig_history": [
+    {
+      "date": "2026-10-12",
+      "postId": "ig-publish-success",
+      "topic": "topic: overanalyzing a text message from 3 years ago / hating small talk but being terrified of deep conversations",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-11T18:54:55.286Z"
+    },
     {
       "date": "2026-10-11",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Ram Dass",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-17T07:39:43.539Z"
-    },
-    {
-      "date": "2026-09-16",
-      "postId": "ig-publish-success",
-      "topic": "Lao Tzu",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-16T07:41:32.290Z"
     }
   ],
   "threads_history": [
