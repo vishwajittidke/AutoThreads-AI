@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 153,
+  "ig_total_posts": 154,
   "threads_total_posts": 734,
   "ig_history": [
+    {
+      "date": "2026-10-11",
+      "postId": "ig-publish-success",
+      "topic": "topic: imposter syndrome kicking in at the worst times / the existential dread of picking a career path",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-11T08:51:45.396Z"
+    },
     {
       "date": "2026-10-11",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Lao Tzu",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-16T07:41:32.290Z"
-    },
-    {
-      "date": "2026-09-15",
-      "postId": "ig-publish-success",
-      "topic": "Heraclitus",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-15T18:12:09.256Z"
     }
   ],
   "threads_history": [
