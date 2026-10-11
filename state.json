@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 154,
-  "threads_total_posts": 734,
+  "threads_total_posts": 735,
   "ig_history": [
     {
       "date": "2026-10-11",
@@ -223,6 +223,13 @@
   "threads_history": [
     {
       "date": "2026-10-11",
+      "postId": "threads-publish-success",
+      "topic": "Why fine-tuning is rarely the first step you should take",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-11T08:58:30.675Z"
+    },
+    {
+      "date": "2026-10-11",
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
@@ -423,13 +430,6 @@
       "topic": "The hidden infrastructure cost of Retrieval-Augmented Generation (RAG)",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-06T09:03:21.719Z"
-    },
-    {
-      "date": "2026-10-06",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-06T03:11:10.727Z"
     }
   ],
   "ig_total_posts_life_quotes": 163,
