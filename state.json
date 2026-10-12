@@ -7,7 +7,7 @@
   "total_tokens": 8000,
   "total_requests": 16,
   "ig_total_posts": 155,
-  "threads_total_posts": 740,
+  "threads_total_posts": 741,
   "ig_history": [
     {
       "date": "2026-10-12",
@@ -226,6 +226,13 @@
       "postId": "threads-reply-publish-success",
       "topic": "Replied to 0 comments",
       "contentPreview": "Published to platform",
+      "timestamp": "2026-10-12T06:15:41.352Z"
+    },
+    {
+      "date": "2026-10-12",
+      "postId": "threads-reply-publish-success",
+      "topic": "Replied to 0 comments",
+      "contentPreview": "Published to platform",
       "timestamp": "2026-10-11T23:49:24.252Z"
     },
     {
@@ -423,13 +430,6 @@
       "topic": "Why fine-tuning is rarely the first step you should take",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-07T08:45:11.932Z"
-    },
-    {
-      "date": "2026-10-07",
-      "postId": "threads-reply-publish-success",
-      "topic": "Replied to 0 comments",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-07T01:42:11.027Z"
     }
   ],
   "ig_total_posts_life_quotes": 165,
