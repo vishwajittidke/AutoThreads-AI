@@ -432,8 +432,15 @@
       "timestamp": "2026-10-07T09:00:02.311Z"
     }
   ],
-  "ig_total_posts_life_quotes": 165,
+  "ig_total_posts_life_quotes": 166,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-10-12",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: the sudden urge to change your entire life at 2am / feeling like an NPC in your own life",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-12T11:57:24.342Z"
+    },
     {
       "date": "2026-10-12",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: topic: overanalyzing a text message from 3 years ago / romanticizing your life for 5 minutes then giving up",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-24T09:18:12.429Z"
-    },
-    {
-      "date": "2026-09-23",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: topic: the existential dread of picking a career path / listening to the same song on loop until you hate it",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-23T18:25:57.748Z"
     }
   ],
   "replied_comment_ids": [
