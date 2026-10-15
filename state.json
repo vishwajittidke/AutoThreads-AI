@@ -1,14 +1,21 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Wednesday, 14-Oct-26 23:05:30 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AXtP7Nu8yN8rVVs5Pbr6oXt\"}}",
-  "last_error_date": "2026-10-15T06:05:30.736Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 155,
+  "ig_total_posts": 156,
   "threads_total_posts": 742,
   "ig_history": [
+    {
+      "date": "2026-10-15",
+      "postId": "ig-publish-success",
+      "topic": "topic: overanalyzing a text message from 3 years ago / spending money you don't have to fix a bad mood",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-15T07:29:00.482Z"
+    },
     {
       "date": "2026-10-12",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Ralph Waldo Emerson",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-17T18:13:44.719Z"
-    },
-    {
-      "date": "2026-09-17",
-      "postId": "ig-publish-success",
-      "topic": "Ram Dass",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-17T07:39:43.539Z"
     }
   ],
   "threads_history": [
