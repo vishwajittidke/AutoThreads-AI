@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 156,
+  "ig_total_posts": 157,
   "threads_total_posts": 742,
   "ig_history": [
+    {
+      "date": "2026-10-15",
+      "postId": "ig-publish-success",
+      "topic": "topic: the specific anxiety of sending an email and waiting for a reply / the sudden urge to change your entire life at 2am",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-15T18:19:11.862Z"
+    },
     {
       "date": "2026-10-15",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Kahlil Gibran",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-18T07:24:17.745Z"
-    },
-    {
-      "date": "2026-09-17",
-      "postId": "ig-publish-success",
-      "topic": "Ralph Waldo Emerson",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-17T18:13:44.719Z"
     }
   ],
   "threads_history": [
