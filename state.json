@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads: Meta API error (500): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Saturday, 17-Oct-26 00:01:01 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"ATZqlH252Mbk_Ztve_c9mkY\"}}",
-  "last_error_date": "2026-10-17T07:01:01.461Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-10-07T09:00:02.311Z"
     }
   ],
-  "ig_total_posts_life_quotes": 170,
+  "ig_total_posts_life_quotes": 171,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-10-17",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: the dread of Sunday evening / spending money you don't have to fix a bad mood",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-17T08:32:55.062Z"
+    },
     {
       "date": "2026-10-16",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: topic: the sudden urge to change your entire life at 2am / imposter syndrome kicking in at the worst times",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-26T17:45:46.037Z"
-    },
-    {
-      "date": "2026-09-26",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: topic: creating a detailed 5-year plan then forgetting to eat lunch / the sudden urge to change your entire life at 2am",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-26T09:20:42.852Z"
     }
   ],
   "replied_comment_ids": [
