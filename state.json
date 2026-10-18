@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Sunday, 18-Oct-26 07:05:07 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"Av4IqkHbkHLA0A2rGA7wd70\"}}",
-  "last_error_date": "2026-10-18T14:05:07.241Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-10-07T09:00:02.311Z"
     }
   ],
-  "ig_total_posts_life_quotes": 173,
+  "ig_total_posts_life_quotes": 174,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-10-18",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: hating small talk but being terrified of deep conversations / wanting to be invited out but not actually wanting to go",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-18T17:21:31.443Z"
+    },
     {
       "date": "2026-10-18",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: topic: forgetting why you walked into a room and questioning your reality / the sudden urge to change your entire life at 2am",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-28T10:53:03.592Z"
-    },
-    {
-      "date": "2026-09-27",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: topic: the fear of running into someone you vaguely know in public / wanting to be invited out but not actually wanting to go",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-27T18:22:38.322Z"
     }
   ],
   "replied_comment_ids": [
