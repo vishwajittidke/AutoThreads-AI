@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 158,
+  "ig_total_posts": 159,
   "threads_total_posts": 742,
   "ig_history": [
+    {
+      "date": "2026-10-18",
+      "postId": "ig-publish-success",
+      "topic": "topic: procrastinating actual work by doing fake productive tasks / the existential dread of picking a career path",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-18T17:23:38.889Z"
+    },
     {
       "date": "2026-10-18",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "Henry David Thoreau",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-22T07:43:33.922Z"
-    },
-    {
-      "date": "2026-09-21",
-      "postId": "ig-publish-success",
-      "topic": "Lao Tzu",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-21T07:58:01.115Z"
     }
   ],
   "threads_history": [
