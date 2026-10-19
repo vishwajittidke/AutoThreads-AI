@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Monday, 19-Oct-26 10:37:34 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AMTYDt3ur4Bpw2tPmbwWimH\"}}",
-  "last_error_date": "2026-10-19T17:37:34.050Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-10-07T09:00:02.311Z"
     }
   ],
-  "ig_total_posts_life_quotes": 175,
+  "ig_total_posts_life_quotes": 176,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-10-20",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: the existential dread of picking a career path / the sheer exhaustion of being perceived by others",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-19T19:54:44.635Z"
+    },
     {
       "date": "2026-10-19",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: topic: the sheer exhaustion of being perceived by others / wanting to be invited out but not actually wanting to go",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-29T19:25:35.504Z"
-    },
-    {
-      "date": "2026-09-29",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: topic: the existential dread of picking a career path / the specific anxiety of sending an email and waiting for a reply",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-28T20:33:40.785Z"
     }
   ],
   "replied_comment_ids": [
