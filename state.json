@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Tuesday, 20-Oct-26 00:48:47 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"Ads1D-M_B4binbEBxuDuv4x\"}}",
-  "last_error_date": "2026-10-20T07:48:47.899Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-10-07T09:00:02.311Z"
     }
   ],
-  "ig_total_posts_life_quotes": 176,
+  "ig_total_posts_life_quotes": 177,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-10-20",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: imposter syndrome kicking in at the worst times / listening to the same song on loop until you hate it / brain rot spiral",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-20T09:24:49.250Z"
+    },
     {
       "date": "2026-10-20",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: topic: the sudden urge to change your entire life at 2am / imposter syndrome kicking in at the worst times",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-30T10:29:09.773Z"
-    },
-    {
-      "date": "2026-09-30",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: topic: the sheer exhaustion of being perceived by others / wanting to be invited out but not actually wanting to go",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-29T19:25:35.504Z"
     }
   ],
   "replied_comment_ids": [
