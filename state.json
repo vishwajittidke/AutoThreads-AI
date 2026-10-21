@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads: Meta API error (500): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Wednesday, 21-Oct-26 00:43:50 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A1mKl3qYEHQ0nOw_u3EqBjm\"}}",
-  "last_error_date": "2026-10-21T07:43:50.319Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-10-07T09:00:02.311Z"
     }
   ],
-  "ig_total_posts_life_quotes": 178,
+  "ig_total_posts_life_quotes": 179,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-10-21",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: Sunday night dread / impulse spending while broke",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-21T09:22:00.406Z"
+    },
     {
       "date": "2026-10-20",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: topic: listening to the same song on loop until you hate it / the existential dread of picking a career path",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-01T10:56:53.885Z"
-    },
-    {
-      "date": "2026-10-01",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: topic: imposter syndrome kicking in at the worst times / the dread of Sunday evening",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-30T19:18:21.406Z"
     }
   ],
   "replied_comment_ids": [
