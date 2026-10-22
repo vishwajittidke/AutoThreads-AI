@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 164,
+  "ig_total_posts": 165,
   "threads_total_posts": 742,
   "ig_history": [
+    {
+      "date": "2026-10-23",
+      "postId": "ig-publish-success",
+      "topic": "topic: procrastinating actual work by doing fake productive tasks / the existential dread of picking a career path",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-22T18:33:04.636Z"
+    },
     {
       "date": "2026-10-22",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "topic: the fake scenarios you make up before falling asleep / the specific anxiety of sending an email and waiting for a reply",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-26T07:41:20.890Z"
-    },
-    {
-      "date": "2026-09-26",
-      "postId": "ig-publish-success",
-      "topic": "topic: overanalyzing a text message from 3 years ago / wanting to be invited out but not actually wanting to go",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-25T18:38:17.996Z"
     }
   ],
   "threads_history": [
