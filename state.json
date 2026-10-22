@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Thursday, 22-Oct-26 08:26:54 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A8CnYyjra444c4X0aV6eVWb\"}}",
-  "last_error_date": "2026-10-22T15:26:54.983Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-10-07T09:00:02.311Z"
     }
   ],
-  "ig_total_posts_life_quotes": 180,
+  "ig_total_posts_life_quotes": 181,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-10-23",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: overanalyzing a text message from 3 years ago / creating a detailed 5-year plan then forgetting to eat lunch",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-22T18:31:17.882Z"
+    },
     {
       "date": "2026-10-22",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: topic: scrolling reels for 4 hours while your to-do list cries / wanting to be invited out but not actually wanting to go",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-02T10:30:02.314Z"
-    },
-    {
-      "date": "2026-10-02",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: topic: imposter syndrome kicking in at the worst times / listening to the same song on loop until you hate it",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-01T19:31:53.768Z"
     }
   ],
   "replied_comment_ids": [
