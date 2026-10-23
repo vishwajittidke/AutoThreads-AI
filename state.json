@@ -1,14 +1,21 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Thursday, 22-Oct-26 18:42:35 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AuHAMl_K37Zc23TkcfOpDl0\"}}",
-  "last_error_date": "2026-10-23T01:42:35.696Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 165,
+  "ig_total_posts": 166,
   "threads_total_posts": 742,
   "ig_history": [
+    {
+      "date": "2026-10-23",
+      "postId": "ig-publish-success",
+      "topic": "topic: hyper-fixating on a new hobby for 3 days then dropping it / procrastinating actual work by doing fake productive tasks",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-23T07:32:14.142Z"
+    },
     {
       "date": "2026-10-23",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "topic: feeling like an NPC in your own life / hyper-fixating on a new hobby for 3 days then dropping it",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-27T08:10:19.533Z"
-    },
-    {
-      "date": "2026-09-26",
-      "postId": "ig-publish-success",
-      "topic": "topic: the fake scenarios you make up before falling asleep / the specific anxiety of sending an email and waiting for a reply",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-26T07:41:20.890Z"
     }
   ],
   "threads_history": [
