@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 166,
+  "ig_total_posts": 167,
   "threads_total_posts": 742,
   "ig_history": [
+    {
+      "date": "2026-10-23",
+      "postId": "ig-publish-success",
+      "topic": "topic: the sudden urge to change your entire life at 2am / wanting to be invited out but not actually wanting to go",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-23T18:21:34.991Z"
+    },
     {
       "date": "2026-10-23",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "topic: imposter syndrome kicking in at the worst times / wanting to be invited out but not actually wanting to go",
       "contentPreview": "Published to platform",
       "timestamp": "2026-09-27T18:24:33.764Z"
-    },
-    {
-      "date": "2026-09-27",
-      "postId": "ig-publish-success",
-      "topic": "topic: feeling like an NPC in your own life / hyper-fixating on a new hobby for 3 days then dropping it",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-09-27T08:10:19.533Z"
     }
   ],
   "threads_history": [
