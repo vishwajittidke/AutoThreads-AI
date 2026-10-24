@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Saturday, 24-Oct-26 07:42:22 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A-lR_v_ZxaCOZVuP63HQpA5\"}}",
-  "last_error_date": "2026-10-24T14:42:22.887Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-10-07T09:00:02.311Z"
     }
   ],
-  "ig_total_posts_life_quotes": 184,
+  "ig_total_posts_life_quotes": 185,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-10-24",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: the sheer exhaustion of being perceived by others / the specific rage of your earphones getting caught on a doorknob",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-24T17:26:09.164Z"
+    },
     {
       "date": "2026-10-24",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: topic: spending money you don't have to fix a bad mood / imposter syndrome kicking in at the worst times",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-04T10:34:38.924Z"
-    },
-    {
-      "date": "2026-10-03",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: topic: imposter syndrome kicking in at the worst times / the sudden urge to change your entire life at 2am",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-03T17:57:24.517Z"
     }
   ],
   "replied_comment_ids": [
