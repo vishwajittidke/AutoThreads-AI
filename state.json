@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads: Meta API error (500): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Sunday, 25-Oct-26 00:38:38 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AfyEomzwT_THNBCG8LhWQz4\"}}",
-  "last_error_date": "2026-10-25T07:38:38.197Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-10-07T09:00:02.311Z"
     }
   ],
-  "ig_total_posts_life_quotes": 185,
+  "ig_total_posts_life_quotes": 186,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-10-25",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: forgetting why you walked into a room and questioning your reality / the specific rage of your earphones getting caught on a doorknob",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-25T09:08:39.941Z"
+    },
     {
       "date": "2026-10-24",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: topic: creating a detailed 5-year plan then forgetting to eat lunch / feeling like an NPC in your own life",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-04T18:09:56.268Z"
-    },
-    {
-      "date": "2026-10-04",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: topic: spending money you don't have to fix a bad mood / imposter syndrome kicking in at the worst times",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-04T10:34:38.924Z"
     }
   ],
   "replied_comment_ids": [
