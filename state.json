@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads: Meta API error (500): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Monday, 26-Oct-26 00:51:53 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"ADMAj0M0tPZ0aSzH9MYjXqs\"}}",
-  "last_error_date": "2026-10-26T07:51:53.417Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-10-07T09:00:02.311Z"
     }
   ],
-  "ig_total_posts_life_quotes": 187,
+  "ig_total_posts_life_quotes": 188,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-10-26",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: the sheer exhaustion of being perceived by others / romanticizing your life for 5 minutes then giving up",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-26T10:05:52.504Z"
+    },
     {
       "date": "2026-10-25",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: topic: spending money you don't have to fix a bad mood / imposter syndrome kicking in at the worst times",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-08T11:21:36.905Z"
-    },
-    {
-      "date": "2026-10-07",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: topic: overanalyzing a text message from 3 years ago / romanticizing your life for 5 minutes then giving up",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-07T11:03:54.372Z"
     }
   ],
   "replied_comment_ids": [
