@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads: Meta API error (500): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Tuesday, 27-Oct-26 00:57:03 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A6oIPdse4KOj3LyKliAkbw6\"}}",
-  "last_error_date": "2026-10-27T07:57:03.447Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-10-07T09:00:02.311Z"
     }
   ],
-  "ig_total_posts_life_quotes": 189,
+  "ig_total_posts_life_quotes": 190,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-10-27",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: the sudden urge to change your entire life at 2am / imposter syndrome kicking in at the worst times / faking it through meetings",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-27T09:48:18.488Z"
+    },
     {
       "date": "2026-10-27",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: topic: hating small talk but being terrified of deep conversations / the dread of Sunday evening",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-09T11:19:07.276Z"
-    },
-    {
-      "date": "2026-10-09",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: topic: the sudden urge to change your entire life at 2am / imposter syndrome kicking in at the worst times",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-08T19:56:55.824Z"
     }
   ],
   "replied_comment_ids": [
