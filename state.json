@@ -1,14 +1,21 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Wednesday, 28-Oct-26 00:00:31 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"A2dpc8cc21FR4qnQI66lASw\"}}",
-  "last_error_date": "2026-10-28T07:00:31.539Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 172,
+  "ig_total_posts": 173,
   "threads_total_posts": 742,
   "ig_history": [
+    {
+      "date": "2026-10-28",
+      "postId": "ig-publish-success",
+      "topic": "topic: overanalyzing a text message from 3 years ago / spending money you don't have to fix a bad mood",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-28T08:32:02.174Z"
+    },
     {
       "date": "2026-10-27",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "topic: wanting to be invited out but not actually wanting to go / overanalyzing a text message from 3 years ago",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-03T08:06:09.160Z"
-    },
-    {
-      "date": "2026-10-02",
-      "postId": "ig-publish-success",
-      "topic": "topic: the existential dread of picking a career path / hating small talk but being terrified of deep conversations",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-02T08:31:55.985Z"
     }
   ],
   "threads_history": [
