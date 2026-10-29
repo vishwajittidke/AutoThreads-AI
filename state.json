@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 175,
+  "ig_total_posts": 176,
   "threads_total_posts": 742,
   "ig_history": [
+    {
+      "date": "2026-10-30",
+      "postId": "ig-publish-success",
+      "topic": "topic: scrolling reels for 4 hours while your to-do list cries / feeling like an NPC in your own life",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-29T19:38:57.506Z"
+    },
     {
       "date": "2026-10-29",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "topic: the specific anxiety of sending an email and waiting for a reply / the existential dread of picking a career path",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-06T19:33:28.517Z"
-    },
-    {
-      "date": "2026-10-05",
-      "postId": "ig-publish-success",
-      "topic": "topic: hating small talk but being terrified of deep conversations / wanting to be invited out but not actually wanting to go",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-05T09:04:39.511Z"
     }
   ],
   "threads_history": [
