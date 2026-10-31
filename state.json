@@ -1,14 +1,21 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Friday, 30-Oct-26 18:43:07 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AvFtg-qrKHW4fejogJvPY-D\"}}",
-  "last_error_date": "2026-10-31T01:43:08.097Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 178,
+  "ig_total_posts": 179,
   "threads_total_posts": 742,
   "ig_history": [
+    {
+      "date": "2026-10-31",
+      "postId": "ig-publish-success",
+      "topic": "topic: romanticizing your life for 5 minutes then giving up / hyper-fixating on a new hobby for 3 days then dropping it",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-10-31T08:25:49.295Z"
+    },
     {
       "date": "2026-10-31",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "topic: procrastinating actual work by doing fake productive tasks / imposter syndrome kicking in at the worst times",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-08T08:59:07.592Z"
-    },
-    {
-      "date": "2026-10-08",
-      "postId": "ig-publish-success",
-      "topic": "topic: scrolling reels for 4 hours while your to-do list cries / hating small talk but being terrified of deep conversations",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-07T20:00:25.127Z"
     }
   ],
   "threads_history": [
