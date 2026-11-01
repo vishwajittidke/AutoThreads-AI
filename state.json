@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Sunday, 01-Nov-26 01:28:29 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AzDX4l_YVmcWyzjPqtZoAu6\"}}",
-  "last_error_date": "2026-11-01T09:28:29.226Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-10-07T09:00:02.311Z"
     }
   ],
-  "ig_total_posts_life_quotes": 199,
+  "ig_total_posts_life_quotes": 200,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-11-01",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: creating a detailed 5-year plan then forgetting to eat lunch / the dread of Sunday evening",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-11-01T11:15:23.978Z"
+    },
     {
       "date": "2026-11-01",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: topic: the dread of Sunday evening / spending money you don't have to fix a bad mood",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-17T08:32:55.062Z"
-    },
-    {
-      "date": "2026-10-16",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: topic: feeling like an NPC in your own life / spending money you don't have to fix a bad mood",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-16T18:02:35.414Z"
     }
   ],
   "replied_comment_ids": [
