@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Tuesday, 03-Nov-26 09:57:36 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AGEXVODJLfCuz4w-rtu6qGn\"}}",
-  "last_error_date": "2026-11-03T17:57:36.930Z",
+  "last_error": "[Instagram] IG Life Quotes: Meta API Error (Publishing): Media ID is not available",
+  "last_error_date": "2026-11-03T20:30:34.823Z",
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
