@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads: Meta API error (500): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Wednesday, 04-Nov-26 01:22:02 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"Al8dyaio-wi8GG0wRiF5FPH\"}}",
-  "last_error_date": "2026-11-04T09:22:02.320Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-10-07T09:00:02.311Z"
     }
   ],
-  "ig_total_posts_life_quotes": 204,
+  "ig_total_posts_life_quotes": 205,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-11-04",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: the sudden urge to change your entire life at 2am / overanalyzing a text message from 3 years ago",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-11-04T12:05:23.523Z"
+    },
     {
       "date": "2026-11-03",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: topic: the existential dread of picking a career path / the sheer exhaustion of being perceived by others",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-19T19:54:44.635Z"
-    },
-    {
-      "date": "2026-10-19",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: topic: scrolling reels for 4 hours while your to-do list cries / wanting to be invited out but not actually wanting to go",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-19T09:52:29.332Z"
     }
   ],
   "replied_comment_ids": [
