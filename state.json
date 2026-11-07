@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 188,
+  "ig_total_posts": 189,
   "threads_total_posts": 742,
   "ig_history": [
+    {
+      "date": "2026-11-08",
+      "postId": "ig-publish-success",
+      "topic": "topic: imposter syndrome kicking in at the worst times / forgetting why you walked into a room and questioning your reality",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-11-07T18:48:23.078Z"
+    },
     {
       "date": "2026-11-07",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "topic: procrastinating actual work by doing fake productive tasks / wanting to be invited out but not actually wanting to go",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-19T07:47:20.968Z"
-    },
-    {
-      "date": "2026-10-18",
-      "postId": "ig-publish-success",
-      "topic": "topic: procrastinating actual work by doing fake productive tasks / the existential dread of picking a career path",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-18T17:23:38.889Z"
     }
   ],
   "threads_history": [
