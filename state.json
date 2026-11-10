@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 191,
+  "ig_total_posts": 192,
   "threads_total_posts": 742,
   "ig_history": [
+    {
+      "date": "2026-11-11",
+      "postId": "ig-publish-success",
+      "topic": "topic: imposter syndrome kicking in at the worst times / spending money you don't have to fix a bad mood",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-11-10T20:49:56.236Z"
+    },
     {
       "date": "2026-11-10",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "topic: wanting to be invited out but not actually wanting to go / romanticizing your life for 5 minutes then giving up",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-21T07:39:39.258Z"
-    },
-    {
-      "date": "2026-10-20",
-      "postId": "ig-publish-success",
-      "topic": "topic: hyper-fixating on a new hobby for 3 days then dropping it / wanting to be invited out but not actually wanting to go",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-20T07:34:03.747Z"
     }
   ],
   "threads_history": [
