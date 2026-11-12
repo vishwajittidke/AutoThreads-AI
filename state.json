@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Thursday, 12-Nov-26 03:36:47 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"Ar8S1z5Aj1LqBnBgDr_vYGx\"}}",
-  "last_error_date": "2026-11-12T11:36:47.141Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-10-07T09:00:02.311Z"
     }
   ],
-  "ig_total_posts_life_quotes": 219,
+  "ig_total_posts_life_quotes": 220,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-11-12",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: the specific anxiety of sending an email and waiting for a reply / overanalyzing a text message from 3 years ago",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-11-12T12:43:40.164Z"
+    },
     {
       "date": "2026-11-12",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: topic: spending money you don't have to fix a bad mood / romanticizing your life for 5 minutes then giving up / total lack of dopamine after failed retail therapy",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-27T19:26:24.708Z"
-    },
-    {
-      "date": "2026-10-27",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: topic: the sudden urge to change your entire life at 2am / imposter syndrome kicking in at the worst times / faking it through meetings",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-27T09:48:18.488Z"
     }
   ],
   "replied_comment_ids": [
