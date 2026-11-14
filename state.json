@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Saturday, 14-Nov-26 02:44:32 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AoGQrz60vHj022lUEC-q9Fp\"}}",
-  "last_error_date": "2026-11-14T10:44:32.990Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-10-07T09:00:02.311Z"
     }
   ],
-  "ig_total_posts_life_quotes": 223,
+  "ig_total_posts_life_quotes": 224,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-11-14",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: the sheer exhaustion of being perceived by others / creating a detailed 5-year plan then forgetting to eat lunch",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-11-14T11:27:11.524Z"
+    },
     {
       "date": "2026-11-14",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: topic: the sudden urge to change your entire life at 2am / imposter syndrome kicking in at the worst times / morning reality check",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-29T19:37:24.121Z"
-    },
-    {
-      "date": "2026-10-29",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: topic: hyper-fixating on a new hobby for 3 days then dropping it / wanting to be invited out but not actually wanting to go",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-29T10:53:14.722Z"
     }
   ],
   "replied_comment_ids": [
