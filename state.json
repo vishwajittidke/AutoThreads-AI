@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Sunday, 15-Nov-26 01:41:44 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"Ardr-n2Vpk_K7gOYL7nqjJX\"}}",
-  "last_error_date": "2026-11-15T09:41:44.718Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-10-07T09:00:02.311Z"
     }
   ],
-  "ig_total_posts_life_quotes": 225,
+  "ig_total_posts_life_quotes": 226,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-11-15",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: scrolling reels for 4 hours while your to-do list cries / imposter syndrome kicking in at the worst times",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-11-15T11:56:16.333Z"
+    },
     {
       "date": "2026-11-15",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: topic: imposter syndrome kicking in at the worst times / hating small talk but being terrified of deep conversations",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-30T19:20:17.470Z"
-    },
-    {
-      "date": "2026-10-30",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: topic: scrolling reels for 4 hours while your to-do list cries / wanting to be invited out but not actually wanting to go / screen time reality check",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-30T10:52:03.460Z"
     }
   ],
   "replied_comment_ids": [
