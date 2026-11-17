@@ -1,6 +1,6 @@
 {
-  "last_error": "[Instagram] IG: All Gemini API keys failed after maximum retries.",
-  "last_error_date": "2026-11-17T10:51:33.282Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
@@ -432,8 +432,15 @@
       "timestamp": "2026-10-07T09:00:02.311Z"
     }
   ],
-  "ig_total_posts_life_quotes": 229,
+  "ig_total_posts_life_quotes": 230,
   "ig_history_life_quotes": [
+    {
+      "date": "2026-11-17",
+      "postId": "ig-publish-success",
+      "topic": "LifeQuotes: topic: the existential dread of picking a career path / spending money you don't have to fix a bad mood / chronic doom spending",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-11-17T13:21:46.402Z"
+    },
     {
       "date": "2026-11-17",
       "postId": "ig-publish-success",
@@ -636,13 +643,6 @@
       "topic": "LifeQuotes: topic: romanticizing your life for 5 minutes then giving up / the dread of Sunday evening",
       "contentPreview": "Published to platform",
       "timestamp": "2026-11-01T18:55:19.234Z"
-    },
-    {
-      "date": "2026-11-01",
-      "postId": "ig-publish-success",
-      "topic": "LifeQuotes: topic: creating a detailed 5-year plan then forgetting to eat lunch / the dread of Sunday evening",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-11-01T11:15:23.978Z"
     }
   ],
   "replied_comment_ids": [
