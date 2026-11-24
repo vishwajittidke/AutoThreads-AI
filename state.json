@@ -1,6 +1,6 @@
 {
-  "last_error": "[Threads] Threads: Meta API error (500): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Tuesday, 24-Nov-26 04:34:12 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AoOPlp1-VR9EPn5aiTfqWml\"}}",
-  "last_error_date": "2026-11-24T12:34:12.341Z",
+  "last_error": "[Instagram] IG Life Quotes: All Gemini API keys failed after maximum retries.",
+  "last_error_date": "2026-11-24T14:50:47.935Z",
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
