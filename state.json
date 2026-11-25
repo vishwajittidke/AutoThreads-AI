@@ -1,14 +1,21 @@
 {
-  "last_error": "[Threads] Threads-Reply: Meta API error (400): {\"error\":{\"message\":\"Error validating access token: Session has expired on Monday, 12-Oct-26 06:36:10 PDT. The current time is Wednesday, 25-Nov-26 06:44:10 PST.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":0,\"fbtrace_id\":\"AsK71nRSAbgnR0vF-SApGOA\"}}",
-  "last_error_date": "2026-11-25T14:44:10.621Z",
+  "last_error": null,
+  "last_error_date": null,
   "token_created_at": "2026-07-10T00:56:49.000Z",
   "last_manual_commit": "2026-07-10T00:56:49.000Z",
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 208,
+  "ig_total_posts": 209,
   "threads_total_posts": 742,
   "ig_history": [
+    {
+      "date": "2026-11-26",
+      "postId": "ig-publish-success",
+      "topic": "topic: overanalyzing a text message from 3 years ago / the fake scenarios you make up before falling asleep",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-11-25T23:13:33.945Z"
+    },
     {
       "date": "2026-11-25",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "topic: forgetting why you walked into a room and questioning your reality / romanticizing your life for 5 minutes then giving up",
       "contentPreview": "Published to platform",
       "timestamp": "2026-10-31T18:34:13.979Z"
-    },
-    {
-      "date": "2026-10-31",
-      "postId": "ig-publish-success",
-      "topic": "topic: romanticizing your life for 5 minutes then giving up / hyper-fixating on a new hobby for 3 days then dropping it",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-10-31T08:25:49.295Z"
     }
   ],
   "threads_history": [
