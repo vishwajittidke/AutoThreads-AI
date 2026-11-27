@@ -6,9 +6,16 @@
   "keep_alive_counter": 0,
   "total_tokens": 8000,
   "total_requests": 16,
-  "ig_total_posts": 211,
+  "ig_total_posts": 212,
   "threads_total_posts": 742,
   "ig_history": [
+    {
+      "date": "2026-11-28",
+      "postId": "ig-publish-success",
+      "topic": "topic: procrastinating actual work by doing fake productive tasks / spending money you don't have to fix a bad mood",
+      "contentPreview": "Published to platform",
+      "timestamp": "2026-11-27T22:43:12.854Z"
+    },
     {
       "date": "2026-11-27",
       "postId": "ig-publish-success",
@@ -211,13 +218,6 @@
       "topic": "topic: the sudden urge to change your entire life at 2am / the fake scenarios you make up before falling asleep",
       "contentPreview": "Published to platform",
       "timestamp": "2026-11-02T09:30:44.504Z"
-    },
-    {
-      "date": "2026-11-02",
-      "postId": "ig-publish-success",
-      "topic": "topic: spending money you don't have to fix a bad mood / wanting to be invited out but not actually wanting to go",
-      "contentPreview": "Published to platform",
-      "timestamp": "2026-11-01T18:56:46.222Z"
     }
   ],
   "threads_history": [
